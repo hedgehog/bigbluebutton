@@ -1,0 +1,1807 @@
+[0K[chefserver] Fixed port collision 'ssh'. Now on port 2201.
+[0K[chefserver] Provisioning enabled with chef_solo...
+[0K[chefserver] Importing base box 'chefserver'...
+[0KProgress: 0%[0KProgress: 6%[0KProgress: 28%[0KProgress: 43%[0KProgress: 44%[0KProgress: 57%[0KProgress: 59%[0KProgress: 63%[0KProgress: 78%[0KProgress: 79%[0KProgress: 99%[0K[chefserver] Matching MAC address for NAT networking...
+[33m[0K[chefserver] The guest additions on this VM do not match the install version of
+VirtualBox! This may cause things such as forwarded ports, shared
+folders, and more to not work properly. If any of those things fail on
+this machine, please update the guest additions and repackage the
+box.
+
+Guest Additions Version: 4.0.2
+VirtualBox Version: 4.0.4[0m
+[0K[chefserver] Running any VM customizations...
+[0K[chefserver] Clearing any previously set forwarded ports...
+[0K[chefserver] Forwarding ports...
+[0K[chefserver] -- ssh: 22 => 2201 (adapter 1)
+[0K[chefserver] -- chefs: 4000 => 4000 (adapter 1)
+[0K[chefserver] -- chefs_web: 4040 => 4040 (adapter 1)
+[0K[chefserver] Creating shared folders metadata...
+[0K[chefserver] Preparing host only network...
+[0K[chefserver] Booting VM...
+[0K[chefserver] Waiting for VM to boot. This can take a few minutes.
+[0K[chefserver] VM booted and ready for use!
+[0K[chefserver] Enabling host only network...
+[0K[chefserver] Mounting shared folders...
+[0K[chefserver] -- v-root: /vagrant
+[0K[chefserver] -- chef: ~/chef
+[0K[chefserver] -- chef-server-etc: /etc/chef
+[0K[chefserver] -- v-csc-0: /tmp/vagrant-chef/cookbooks-0
+[0K[chefserver] -- v-csc-1: /tmp/vagrant-chef/cookbooks-1
+[0K[chefserver] Running provisioner: Vagrant::Provisioners::ChefSolo...
+[0K[chefserver] Generating chef JSON and uploading...
+[0K[chefserver] Running chef-solo...
+[0K[chefserver] [Mon, 21 Feb 2011 15:54:01 -0800] DEBUG: Building node object for 
+[Mon, 21 Feb 2011 15:54:01 -0800] DEBUG: Extracting run list from JSON attributes provided on command line
+[Mon, 21 Feb 2011 15:54:01 -0800] INFO: Setting the run_list to ["recipe[hosts::chefserver]", "recipe[apt]", "recipe[build-essential]", "recipe[chef::bootstrap_server]"] from JSON
+[Mon, 21 Feb 2011 15:54:01 -0800] DEBUG: Applying attributes from json file
+[Mon, 21 Feb 2011 15:54:01 -0800] DEBUG: Platform is ubuntu version 10.04
+[Mon, 21 Feb 2011 15:54:01 -0800] INFO: Starting Chef Run (Version 0.9.12)
+[Mon, 21 Feb 2011 15:54:01 -0800] DEBUG: Loading cookbook openssl's library file: /tmp/vagrant-chef/cookbooks-0/openssl/libraries/secure_password.rb
+[Mon, 21 Feb 2011 15:54:01 -0800] DEBUG: Loading cookbook daemontools's providers from /tmp/vagrant-chef/cookbooks-0/daemontools/providers/service.rb
+[Mon, 21 Feb 2011 15:54:01 -0800] DEBUG: Loaded contents of /tmp/vagrant-chef/cookbooks-0/daemontools/providers/service.rb into a provider named daemontools_service defined in Chef::Provider::DaemontoolsService
+[Mon, 21 Feb 2011 15:54:01 -0800] DEBUG: Loading cookbook apt's providers from /tmp/vagrant-chef/cookbooks-0/apt/providers/repository.rb
+[Mon, 21 Feb 2011 15:54:01 -0800] DEBUG: Loaded contents of /tmp/vagrant-chef/cookbooks-0/apt/providers/repository.rb into a provider named apt_repository defined in Chef::Provider::AptRepository
+[Mon, 21 Feb 2011 15:54:01 -0800] DEBUG: Loading cookbook bluepill's providers from /tmp/vagrant-chef/cookbooks-0/bluepill/providers/service.rb
+[Mon, 21 Feb 2011 15:54:01 -0800] DEBUG: Loaded contents of /tmp/vagrant-chef/cookbooks-0/bluepill/providers/service.rb into a provider named bluepill_service defined in Chef::Provider::BluepillService
+[Mon, 21 Feb 2011 15:54:01 -0800] DEBUG: Loading cookbook daemontools's resources from /tmp/vagrant-chef/cookbooks-0/daemontools/resources/service.rb
+[Mon, 21 Feb 2011 15:54:01 -0800] DEBUG: Loaded contents of /tmp/vagrant-chef/cookbooks-0/daemontools/resources/service.rb into a resource named daemontools_service defined in Chef::Resource::DaemontoolsService
+[Mon, 21 Feb 2011 15:54:01 -0800] DEBUG: Loading cookbook apt's resources from /tmp/vagrant-chef/cookbooks-0/apt/resources/repository.rb
+[Mon, 21 Feb 2011 15:54:01 -0800] DEBUG: Loaded contents of /tmp/vagrant-chef/cookbooks-0/apt/resources/repository.rb into a resource named apt_repository defined in Chef::Resource::AptRepository
+[Mon, 21 Feb 2011 15:54:01 -0800] DEBUG: Loading cookbook bluepill's resources from /tmp/vagrant-chef/cookbooks-0/bluepill/resources/service.rb
+[Mon, 21 Feb 2011 15:54:01 -0800] DEBUG: Loaded contents of /tmp/vagrant-chef/cookbooks-0/bluepill/resources/service.rb into a resource named bluepill_service defined in Chef::Resource::BluepillService
+[Mon, 21 Feb 2011 15:54:01 -0800] DEBUG: node chefserver loading cookbook runit's attribute file /tmp/vagrant-chef/cookbooks-0/runit/attributes/default.rb
+[Mon, 21 Feb 2011 15:54:01 -0800] DEBUG: node chefserver loading cookbook daemontools's attribute file /tmp/vagrant-chef/cookbooks-0/daemontools/attributes/default.rb
+[Mon, 21 Feb 2011 15:54:01 -0800] DEBUG: node chefserver loading cookbook couchdb's attribute file /tmp/vagrant-chef/cookbooks-0/couchdb/attributes/default.rb
+[Mon, 21 Feb 2011 15:54:01 -0800] DEBUG: node chefserver loading cookbook java's attribute file /tmp/vagrant-chef/cookbooks-0/java/attributes/default.rb
+[Mon, 21 Feb 2011 15:54:01 -0800] DEBUG: node chefserver loading cookbook hosts's attribute file /tmp/vagrant-chef/cookbooks-0/hosts/attributes/hosts.rb
+[Mon, 21 Feb 2011 15:54:01 -0800] DEBUG: node chefserver loading cookbook chef's attribute file /tmp/vagrant-chef/cookbooks-0/chef/attributes/server_proxy.rb
+[Mon, 21 Feb 2011 15:54:01 -0800] DEBUG: Loading Attribute apache2
+[Mon, 21 Feb 2011 15:54:01 -0800] DEBUG: Loading Attribute chef
+[Mon, 21 Feb 2011 15:54:01 -0800] DEBUG: node chefserver loading cookbook chef's attribute file /tmp/vagrant-chef/cookbooks-0/chef/attributes/default.rb
+[Mon, 21 Feb 2011 15:54:01 -0800] DEBUG: node chefserver lo: stdout[0K[chefserver] ading cookbook apache2's attribute file /tmp/vagrant-chef/cookbooks-0/apache2/attributes/default.rb
+[Mon, 21 Feb 2011 15:54:01 -0800] DEBUG: node chefserver loading cookbook ucspi-tcp's attribute file /tmp/vagrant-chef/cookbooks-0/ucspi-tcp/attributes/default.rb
+[Mon, 21 Feb 2011 15:54:01 -0800] DEBUG: node chefserver loading cookbook erlang's attribute file /tmp/vagrant-chef/cookbooks-0/erlang/attributes/default.rb
+[Mon, 21 Feb 2011 15:54:01 -0800] DEBUG: node chefserver loading cookbook bluepill's attribute file /tmp/vagrant-chef/cookbooks-0/bluepill/attributes/default.rb
+[Mon, 21 Feb 2011 15:54:01 -0800] DEBUG: Loading cookbook runit's definitions from /tmp/vagrant-chef/cookbooks-0/runit/definitions/runit_service.rb
+[Mon, 21 Feb 2011 15:54:01 -0800] DEBUG: Loading cookbook apache2's definitions from /tmp/vagrant-chef/cookbooks-0/apache2/definitions/apache_conf.rb
+[Mon, 21 Feb 2011 15:54:01 -0800] DEBUG: Loading cookbook apache2's definitions from /tmp/vagrant-chef/cookbooks-0/apache2/definitions/apache_module.rb
+[Mon, 21 Feb 2011 15:54:01 -0800] DEBUG: Loading cookbook apache2's definitions from /tmp/vagrant-chef/cookbooks-0/apache2/definitions/web_app.rb
+[Mon, 21 Feb 2011 15:54:01 -0800] DEBUG: Loading cookbook apache2's definitions from /tmp/vagrant-chef/cookbooks-0/apache2/definitions/apache_site.rb
+[Mon, 21 Feb 2011 15:54:01 -0800] DEBUG: Loading Recipe hosts::chefserver via include_recipe
+[Mon, 21 Feb 2011 15:54:01 -0800] DEBUG: Found recipe chefserver in cookbook hosts
+[Mon, 21 Feb 2011 15:54:01 -0800] DEBUG: Loading Recipe apt via include_recipe
+[Mon, 21 Feb 2011 15:54:01 -0800] DEBUG: Found recipe default in cookbook apt
+[Mon, 21 Feb 2011 15:54:01 -0800] DEBUG: Executing apt-get update
+: stdout
+[0K[chefserver] [Mon, 21 Feb 2011 15:54:10 -0800] DEBUG: ---- Begin output of apt-get update ----
+[Mon, 21 Feb 2011 15:54:10 -0800] DEBUG: STDOUT: Get:1 http://security.ubuntu.com lucid-security Release.gpg [198B]
+Hit http://us.archive.ubuntu.com lucid Release.gpg
+Get:2 http://us.archive.ubuntu.com lucid-updates Release.gpg [198B]
+Get:3 http://security.ubuntu.com lucid-security Release [44.7kB]
+Hit http://us.archive.ubuntu.com lucid Release
+Get:4 http://us.archive.ubuntu.com lucid-updates Release [44.7kB]
+Get:5 http://security.ubuntu.com lucid-security/main Packages [144kB]
+Hit http://us.archive.ubuntu.com lucid/main Packages
+Hit http://us.archive.ubuntu.com lucid/restricted Packages
+Hit http://us.archive.ubuntu.com lucid/main Sources
+Hit http://us.archive.ubuntu.com lucid/restricted Sources
+Hit http://us.archive.ubuntu.com lucid/universe Packages
+Hit http://us.archive.ubuntu.com lucid/universe Sources
+Hit http://us.archive.ubuntu.com lucid/multiverse Packages
+Hit http://us.archive.ubuntu.com lucid/multiverse Sources
+Get:6 http://us.archive.ubuntu.com lucid-updates/main Packages [449kB]
+Get:7 http://security.ubuntu.com lucid-security/restricted Packages [14B]
+Get:8 http://security.ubuntu.com lucid-security/main Sources [45.5kB]
+Get:9 http://security.ubuntu.com lucid-security/restricted Sources [14B]
+Get:10 http://security.ubuntu.com lucid-security/universe Packages [64.4kB]
+Get:11 http://security.ubuntu.com lucid-security/universe Sources [19.0kB]
+Get:12 http://security.ubuntu.com lucid-security/multiverse Packages [1856B]
+Get:13 http://security.ubuntu.com lucid-security/multiverse Sources [651B]
+Get:14 http://us.archive.ubuntu.com lucid-updates/restricted Packages [3267B]
+Get:15 http://us.archive.ubuntu.com lucid-updates/main Sources [179kB]
+Get:16 http://us.archive.ubuntu.com lucid-updates/restricted Sources [1443B]
+Get:17 http://us.archive.ubuntu.com lucid-updates/universe Packages [185kB]
+Get:18 http://us.archive.ubuntu.com lucid-updates/universe Sources [66.6kB]
+Get:19 http://us.archive.ubuntu.com lucid-updates/multiverse Packages [8346B]
+Get:20 http://us.archive.ubuntu.com lucid-updates/multiverse Sources [4369B]
+Fetched 1263kB in 7s (163kB/s)
+Reading package lists...
+[Mon, 21 Feb 2011 15:54:10 -0800] DEBUG: STDERR: 
+[Mon, 21 Feb 2011 15:54:10 -0800] DEBUG: ---- End output of apt-get update ----
+[Mon, 21 Feb 2011 15:54:10 -0800] DEBUG: Ran apt-get update returned 0
+[Mon, 21 Feb 2011 15:54:10 -0800] INFO: Ran execute[apt-get update] successfully
+[Mon, 21 Feb 2011 15:54:10 -0800] DEBUG: Loading Recipe build-essential via include_recipe
+[Mon, 21 Feb 2011 15:54:10 -0800] DEBUG: Found recipe default in cookbook build-essential
+[Mon, 21 Feb 2011 15:54:10 -0800] DEBUG: Loading Recipe chef::bootstrap_server via include_recipe
+[Mon, 21 Feb 2011 15:54:10 -0800] DEBUG: Found recipe bootstrap_server in cookbook chef
+[Mon, 21 Feb 2011 15:54:10 -0800] DEBUG: Loading Recipe chef::bootstrap_client via include_recipe
+[Mon, 21 Feb 2011 15:54:10 -0800] DEBUG: Found recipe bootstrap_client in cookbook chef
+[Mon, 21 Feb 2011 15:54:10 -0800] DEBUG: Loading Recipe chef::client_service via include_recipe
+[Mon, 21 Feb 2011 15:54:10 -0800] DEBUG: Found recipe client_service in cookbook chef
+[Mon, 21 Feb 2011 15:54:10 -0800] DEBUG: Setting directory[/var/log/chef] to the state of the prior directory[/var/log/chef]
+[Mon, 21 Feb 2011 15:54:10 -0800] DEBUG: Loading Recipe runit via include_recipe
+[Mon, 21 Feb 2011 15:54:10 -0800] DEBUG: Found recipe default in cookbook runit
+[Mon, 21 Feb 2011 15:54:10 -0800] DEBUG: I am not loading runit, because I have already seen it.
+[Mon, 21 Feb 2011 15:54:10 -0800] DEBUG: Loading Recipe couchdb via include_recipe
+[Mon, 21 Feb 2011 15:54:10 -0800] DEBUG: Found recipe default in cookbook couchdb
+[Mon, 21 Feb 2011 15:54:10 -0800] DEBUG: Loading Recipe erlang via include_recipe
+[Mon, 21 Feb 2011 15:54:10 -0800] DEBUG: Found recipe default in cookbook erlang
+[Mon, 21 Feb 2011 15:54:10 -0800] DEBUG: Loading Recipe java via include_recipe
+[Mon, 21 Feb 2011 15:54:10 -0800] DEBUG: Found recipe default in cookbook java
+[Mon, 21 Feb: stdout[0K[chefserver]  2011 15:54:10 -0800] DEBUG: Loading Recipe java::openjdk via include_recipe
+[Mon, 21 Feb 2011 15:54:10 -0800] DEBUG: Found recipe openjdk in cookbook java
+[Mon, 21 Feb 2011 15:54:10 -0800] DEBUG: Loading Recipe rabbitmq_chef via include_recipe
+[Mon, 21 Feb 2011 15:54:10 -0800] DEBUG: Found recipe default in cookbook rabbitmq_chef
+[Mon, 21 Feb 2011 15:54:10 -0800] DEBUG: Loading Recipe zlib via include_recipe
+[Mon, 21 Feb 2011 15:54:10 -0800] DEBUG: Found recipe default in cookbook zlib
+[Mon, 21 Feb 2011 15:54:10 -0800] DEBUG: Loading Recipe xml via include_recipe
+[Mon, 21 Feb 2011 15:54:10 -0800] DEBUG: Found recipe default in cookbook xml
+[Mon, 21 Feb 2011 15:54:10 -0800] DEBUG: Setting directory[/srv/chef] to the state of the prior directory[/srv/chef]
+[Mon, 21 Feb 2011 15:54:11 -0800] DEBUG: I am not loading runit, because I have already seen it.
+[Mon, 21 Feb 2011 15:54:11 -0800] DEBUG: I am not loading runit, because I have already seen it.
+[Mon, 21 Feb 2011 15:54:11 -0800] DEBUG: I am not loading runit, because I have already seen it.
+[Mon, 21 Feb 2011 15:54:11 -0800] DEBUG: I am not loading runit, because I have already seen it.
+[Mon, 21 Feb 2011 15:54:11 -0800] DEBUG: I am not loading runit, because I have already seen it.
+[Mon, 21 Feb 2011 15:54:11 -0800] DEBUG: Setting service[chef-server] to the state of the prior service[chef-server]
+[Mon, 21 Feb 2011 15:54:11 -0800] DEBUG: Setting service[chef-server-webui] to the state of the prior service[chef-server-webui]
+[Mon, 21 Feb 2011 15:54:11 -0800] DEBUG: loading from cookbook_path: /tmp/vagrant-chef/cookbooks-0, /tmp/vagrant-chef/cookbooks-1
+[Mon, 21 Feb 2011 15:54:11 -0800] DEBUG: Converging node chefserver
+[Mon, 21 Feb 2011 15:54:11 -0800] DEBUG: Processing template[/usr/bin/update_vagrant_hostname] on chefserver
+[Mon, 21 Feb 2011 15:54:11 -0800] DEBUG: looking for template update_vagrant_hostname.erb in cookbook :hosts
+[Mon, 21 Feb 2011 15:54:11 -0800] DEBUG: Current content's checksum:  
+[Mon, 21 Feb 2011 15:54:11 -0800] DEBUG: Rendered content's checksum: adc78b153de25ee827c7b1a7645c6b0097d0786457eeb0a723428a4f17a9e8a9
+[Mon, 21 Feb 2011 15:54:11 -0800] INFO: Writing updated content for template[/usr/bin/update_vagrant_hostname] to /usr/bin/update_vagrant_hostname
+[Mon, 21 Feb 2011 15:54:11 -0800] DEBUG: setting mode on /tmp/chef-rendered-template20110221-1594-4ujm01-0 to 755
+[Mon, 21 Feb 2011 15:54:11 -0800] DEBUG: Processing execute[update_vagrant_hostname] on chefserver
+[Mon, 21 Feb 2011 15:54:11 -0800] DEBUG: Executing /usr/bin/update_vagrant_hostname
+: stdout[0K[chefserver] [Mon, 21 Feb 2011 15:54:11 -0800] DEBUG: ---- Begin output of /usr/bin/update_vagrant_hostname ----
+[Mon, 21 Feb 2011 15:54:11 -0800] DEBUG: STDOUT: 127.0.0.1	localhost
+10.0.2.15 chefserver.taqtik.com chefserver
+33.33.33.10 chefserver.taqtik.com chefserver
+
+# The following lines are desirable for IPv6 capable hosts
+::1     localhost ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+[Mon, 21 Feb 2011 15:54:11 -0800] DEBUG: STDERR: 
+[Mon, 21 Feb 2011 15:54:11 -0800] DEBUG: ---- End output of /usr/bin/update_vagrant_hostname ----
+[Mon, 21 Feb 2011 15:54:11 -0800] DEBUG: Ran /usr/bin/update_vagrant_hostname returned 0
+[Mon, 21 Feb 2011 15:54:11 -0800] INFO: Ran execute[update_vagrant_hostname] successfully
+[Mon, 21 Feb 2011 15:54:11 -0800] DEBUG: Processing execute[apt-get update] on chefserver
+[Mon, 21 Feb 2011 15:54:11 -0800] DEBUG: Doing nothing for execute[apt-get update]
+[Mon, 21 Feb 2011 15:54:11 -0800] DEBUG: Processing directory[/var/cache/local] on chefserver
+[Mon, 21 Feb 2011 15:54:11 -0800] INFO: Creating directory[/var/cache/local] at /var/cache/local
+[Mon, 21 Feb 2011 15:54:11 -0800] INFO: Setting owner to 0 for directory[/var/cache/local]
+[Mon, 21 Feb 2011 15:54:11 -0800] INFO: Setting group to 0 for directory[/var/cache/local]
+[Mon, 21 Feb 2011 15:54:11 -0800] INFO: Setting mode to 755 for directory[/var/cache/local]
+[Mon, 21 Feb 2011 15:54:11 -0800] DEBUG: Processing directory[/var/cache/local/preseeding] on chefserver
+[Mon, 21 Feb 2011 15:54:11 -0800] INFO: Creating directory[/var/cache/local/preseeding] at /var/cache/local/preseeding
+[Mon, 21 Feb 2011 15:54:11 -0800] INFO: Setting owner to 0 for directory[/var/cache/local/preseeding]
+[Mon, 21 Feb 2011 15:54:11 -0800] INFO: Setting group to 0 for directory[/var/cache/local/preseeding]
+[Mon, 21 Feb 2011 15:54:11 -0800] INFO: Setting mode to 755 for directory[/var/cache/local/preseeding]
+[Mon, 21 Feb 2011 15:54:11 -0800] DEBUG: Processing package[build-essential] on chefserver
+[Mon, 21 Feb 2011 15:54:11 -0800] DEBUG: Checking apt-cache policy for build-essential
+: stdout[0K[chefserver] [Mon, 21 Feb 2011 15:54:11 -0800] DEBUG: Current version is 11.4build1
+[Mon, 21 Feb 2011 15:54:11 -0800] DEBUG: Current version is 11.4build1
+[Mon, 21 Feb 2011 15:54:11 -0800] DEBUG: Processing package[binutils-doc] on chefserver
+[Mon, 21 Feb 2011 15:54:11 -0800] DEBUG: Checking apt-cache policy for binutils-doc
+: stdout
+[0K[chefserver] [Mon, 21 Feb 2011 15:54:11 -0800] DEBUG: Current version is nil
+[Mon, 21 Feb 2011 15:54:11 -0800] DEBUG: Current version is 2.20.1-3ubuntu7
+[Mon, 21 Feb 2011 15:54:11 -0800] INFO: Installing package[binutils-doc] version 2.20.1-3ubuntu7
+[Mon, 21 Feb 2011 15:54:11 -0800] DEBUG: Executing apt-get -q -y install binutils-doc=2.20.1-3ubuntu7
+: stdout
+[0K[chefserver] [Mon, 21 Feb 2011 15:54:16 -0800] DEBUG: ---- Begin output of apt-get -q -y install binutils-doc=2.20.1-3ubuntu7 ----
+[Mon, 21 Feb 2011 15:54:16 -0800] DEBUG: STDOUT: Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  binutils-doc
+0 upgraded, 1 newly installed, 0 to remove and 46 not upgraded.
+Need to get 553kB of archives.
+After this operation, 610kB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main binutils-doc 2.20.1-3ubuntu7 [553kB]
+Fetched 553kB in 4s (134kB/s)
+Selecting previously deselected package binutils-doc.
+(Reading database ... 58434 files and directories currently installed.)
+Unpacking binutils-doc (from .../binutils-doc_2.20.1-3ubuntu7_all.deb) ...
+Processing triggers for install-info ...
+Setting up binutils-doc (2.20.1-3ubuntu7) ...
+[Mon, 21 Feb 2011 15:54:16 -0800] DEBUG: STDERR: 
+[Mon, 21 Feb 2011 15:54:16 -0800] DEBUG: ---- End output of apt-get -q -y install binutils-doc=2.20.1-3ubuntu7 ----
+[Mon, 21 Feb 2011 15:54:16 -0800] DEBUG: Ran apt-get -q -y install binutils-doc=2.20.1-3ubuntu7 returned 0
+[Mon, 21 Feb 2011 15:54:16 -0800] DEBUG: Processing package[autoconf] on chefserver
+[Mon, 21 Feb 2011 15:54:16 -0800] DEBUG: Checking apt-cache policy for autoconf
+: stdout[0K[chefserver] [Mon, 21 Feb 2011 15:54:17 -0800] DEBUG: Current version is nil
+[Mon, 21 Feb 2011 15:54:17 -0800] DEBUG: Current version is 2.65-3ubuntu1
+[Mon, 21 Feb 2011 15:54:17 -0800] INFO: Installing package[autoconf] version 2.65-3ubuntu1
+[Mon, 21 Feb 2011 15:54:17 -0800] DEBUG: Executing apt-get -q -y install autoconf=2.65-3ubuntu1
+: stdout
+[0K[chefserver] [Mon, 21 Feb 2011 15:54:28 -0800] DEBUG: ---- Begin output of apt-get -q -y install autoconf=2.65-3ubuntu1 ----
+[Mon, 21 Feb 2011 15:54:28 -0800] DEBUG: STDOUT: Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  autoconf automake autotools-dev m4
+Suggested packages:
+  autoconf2.13 autoconf-archive gnu-standards autoconf-doc libtool gettext
+The following NEW packages will be installed:
+  autoconf automake autotools-dev m4
+0 upgraded, 4 newly installed, 0 to remove and 46 not upgraded.
+Need to get 1,730kB of archives.
+After this operation, 5,005kB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu/ lucid/main m4 1.4.13-3 [286kB]
+Get:2 http://us.archive.ubuntu.com/ubuntu/ lucid/main autoconf 2.65-3ubuntu1 [772kB]
+Get:3 http://us.archive.ubuntu.com/ubuntu/ lucid/main autotools-dev 20090611.1 [64.1kB]
+Get:4 http://us.archive.ubuntu.com/ubuntu/ lucid/main automake 1:1.11.1-1 [608kB]
+Fetched 1,730kB in 8s (198kB/s)
+Selecting previously deselected package m4.
+(Reading database ... 58446 files and directories currently installed.)
+Unpacking m4 (from .../archives/m4_1.4.13-3_amd64.deb) ...
+Selecting previously deselected package autoconf.
+Unpacking autoconf (from .../autoconf_2.65-3ubuntu1_all.deb) ...
+Selecting previously deselected package autotools-dev.
+Unpacking autotools-dev (from .../autotools-dev_20090611.1_all.deb) ...
+Selecting previously deselected package automake.
+Unpacking automake (from .../automake_1%3a1.11.1-1_all.deb) ...
+Processing triggers for install-info ...
+Processing triggers for man-db ...
+Setting up m4 (1.4.13-3) ...
+Setting up autoconf (2.65-3ubuntu1) ...
+Setting up autotools-dev (20090611.1) ...
+Setting up automake (1:1.11.1-1) ...
+update-alternatives: using /usr/bin/automake-1.11 to provide /usr/bin/automake (automake) in auto mode.
+
+[Mon, 21 Feb 2011 15:54:28 -0800] DEBUG: STDERR: 
+[Mon, 21 Feb 2011 15:54:28 -0800] DEBUG: ---- End output of apt-get -q -y install autoconf=2.65-3ubuntu1 ----
+[Mon, 21 Feb 2011 15:54:28 -0800] DEBUG: Ran apt-get -q -y install autoconf=2.65-3ubuntu1 returned 0
+[Mon, 21 Feb 2011 15:54:28 -0800] DEBUG: Processing package[flex] on chefserver
+[Mon, 21 Feb 2011 15:54:28 -0800] DEBUG: Checking apt-cache policy for flex
+: stdout[0K[chefserver] [Mon, 21 Feb 2011 15:54:28 -0800] DEBUG: Current version is nil
+[Mon, 21 Feb 2011 15:54:28 -0800] DEBUG: Current version is 2.5.35-9
+[Mon, 21 Feb 2011 15:54:28 -0800] INFO: Installing package[flex] version 2.5.35-9
+[Mon, 21 Feb 2011 15:54:28 -0800] DEBUG: Executing apt-get -q -y install flex=2.5.35-9
+: stdout
+[0K[chefserver] [Mon, 21 Feb 2011 15:54:33 -0800] DEBUG: ---- Begin output of apt-get -q -y install flex=2.5.35-9 ----
+[Mon, 21 Feb 2011 15:54:33 -0800] DEBUG: STDOUT: Reading package lists...
+Building dependency tree...
+Reading state information...
+Suggested packages:
+  bison
+The following NEW packages will be installed:
+  flex
+0 upgraded, 1 newly installed, 0 to remove and 46 not upgraded.
+Need to get 261kB of archives.
+After this operation, 1,032kB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu/ lucid/main flex 2.5.35-9 [261kB]
+Fetched 261kB in 3s (77.2kB/s)
+Selecting previously deselected package flex.
+(Reading database ... 58735 files and directories currently installed.)
+Unpacking flex (from .../flex_2.5.35-9_amd64.deb) ...
+Processing triggers for install-info ...
+Processing triggers for man-db ...
+Setting up flex (2.5.35-9) ...
+
+[Mon, 21 Feb 2011 15:54:33 -0800] DEBUG: STDERR: 
+[Mon, 21 Feb 2011 15:54:33 -0800] DEBUG: ---- End output of apt-get -q -y install flex=2.5.35-9 ----
+[Mon, 21 Feb 2011 15:54:33 -0800] DEBUG: Ran apt-get -q -y install flex=2.5.35-9 returned 0
+[Mon, 21 Feb 2011 15:54:33 -0800] DEBUG: Processing package[bison] on chefserver
+[Mon, 21 Feb 2011 15:54:33 -0800] DEBUG: Checking apt-cache policy for bison
+: stdout[0K[chefserver] [Mon, 21 Feb 2011 15:54:34 -0800] DEBUG: Current version is nil
+[Mon, 21 Feb 2011 15:54:34 -0800] DEBUG: Current version is 1:2.4.1.dfsg-3
+[Mon, 21 Feb 2011 15:54:34 -0800] INFO: Installing package[bison] version 1:2.4.1.dfsg-3
+[Mon, 21 Feb 2011 15:54:34 -0800] DEBUG: Executing apt-get -q -y install bison=1:2.4.1.dfsg-3
+: stdout
+[0K[chefserver] [Mon, 21 Feb 2011 15:54:39 -0800] DEBUG: ---- Begin output of apt-get -q -y install bison=1:2.4.1.dfsg-3 ----
+[Mon, 21 Feb 2011 15:54:39 -0800] DEBUG: STDOUT: Reading package lists...
+Building dependency tree...
+Reading state information...
+Suggested packages:
+  bison-doc
+The following NEW packages will be installed:
+  bison
+0 upgraded, 1 newly installed, 0 to remove and 46 not upgraded.
+Need to get 493kB of archives.
+After this operation, 1,851kB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu/ lucid/main bison 1:2.4.1.dfsg-3 [493kB]
+Fetched 493kB in 3s (125kB/s)
+Selecting previously deselected package bison.
+(Reading database ... 58758 files and directories currently installed.)
+Unpacking bison (from .../bison_1%3a2.4.1.dfsg-3_amd64.deb) ...
+Processing triggers for man-db ...
+Setting up bison (1:2.4.1.dfsg-3) ...
+update-alternatives: using /usr/bin/bison.yacc to provide /usr/bin/yacc (yacc) in auto mode.
+
+[Mon, 21 Feb 2011 15:54:39 -0800] DEBUG: STDERR: 
+[Mon, 21 Feb 2011 15:54:39 -0800] DEBUG: ---- End output of apt-get -q -y install bison=1:2.4.1.dfsg-3 ----
+[Mon, 21 Feb 2011 15:54:39 -0800] DEBUG: Ran apt-get -q -y install bison=1:2.4.1.dfsg-3 returned 0
+[Mon, 21 Feb 2011 15:54:39 -0800] DEBUG: Processing gem_package[chef] on chefserver
+[Mon, 21 Feb 2011 15:54:39 -0800] DEBUG: Found installed gem chef version 0.9.12 matching chef (= 0.9.12, runtime)
+[Mon, 21 Feb 2011 15:54:39 -0800] DEBUG: Processing directory[/var/log/chef] on chefserver
+[Mon, 21 Feb 2011 15:54:39 -0800] INFO: Creating directory[/var/log/chef] at /var/log/chef
+[Mon, 21 Feb 2011 15:54:39 -0800] INFO: Setting owner to 0 for directory[/var/log/chef]
+[Mon, 21 Feb 2011 15:54:39 -0800] INFO: Setting group to 0 for directory[/var/log/chef]
+[Mon, 21 Feb 2011 15:54:39 -0800] INFO: Setting mode to 755 for directory[/var/log/chef]
+[Mon, 21 Feb 2011 15:54:39 -0800] DEBUG: Processing directory[/srv/chef] on chefserver
+[Mon, 21 Feb 2011 15:54:39 -0800] INFO: Creating directory[/srv/chef] at /srv/chef
+[Mon, 21 Feb 2011 15:54:39 -0800] INFO: Setting owner to 0 for directory[/srv/chef]
+[Mon, 21 Feb 2011 15:54:39 -0800] INFO: Setting group to 0 for directory[/srv/chef]
+[Mon, 21 Feb 2011 15:54:39 -0800] INFO: Setting mode to 755 for directory[/srv/chef]
+[Mon, 21 Feb 2011 15:54:39 -0800] DEBUG: Processing directory[/etc/chef] on chefserver
+[Mon, 21 Feb 2011 15:54:39 -0800] INFO: Setting owner to 0 for directory[/etc/chef]
+[Mon, 21 Feb 2011 15:54:39 -0800] INFO: Setting group to 0 for directory[/etc/chef]
+[Mon, 21 Feb 2011 15:54:39 -0800] INFO: Setting mode to 755 for directory[/etc/chef]
+[Mon, 21 Feb 2011 15:54:39 -0800] DEBUG: Processing template[/etc/chef/client.rb] on chefserver
+[Mon, 21 Feb 2011 15:54:39 -0800] DEBUG: looking for template client.rb.erb in cookbook :chef
+[Mon, 21 Feb 2011 15:54:39 -0800] DEBUG: Current content's checksum:  
+[Mon, 21 Feb 2011 15:54:39 -0800] DEBUG: Rendered content's checksum: b1ea58017b5b159ca0b208d8b0f556966925035412c90f11a16b91a6530f8d41
+[Mon, 21 Feb 2011 15:54:39 -0800] INFO: Writing updated content for template[/etc/chef/client.rb] to /etc/chef/client.rb
+[Mon, 21 Feb 2011 15:54:39 -0800] DEBUG: setting mode on /tmp/chef-rendered-template20110221-1594-1kyppd6-0 to 644
+[Mon, 21 Feb 2011 15:54:39 -0800] DEBUG: Processing directory[/var/log/chef] on chefserver
+[Mon, 21 Feb 2011 15:54:39 -0800] DEBUG: Processing execute[start-runsvdir] on chefserver
+[Mon, 21 Feb 2011 15:54:39 -0800] DEBUG: Doing nothing for execute[start-runsvdir]
+[Mon, 21 Feb 2011 15:54:39 -0800] DEBUG: Processing execute[runit-hup-init] on chefserver
+[Mon, 21 Feb 2011 15:54:39 -0800] DEBUG: Executing grep ^SV /etc/inittab
+: stdout[0K[chefserver] [Mon, 21 Feb 2011 15:54:39 -0800] DEBUG: ---- Begin output of grep ^SV /etc/inittab ----
+[Mon, 21 Feb 2011 15:54:39 -0800] DEBUG: STDOUT: 
+[Mon, 21 Feb 2011 15:54:39 -0800] DEBUG: STDERR: grep: /etc/inittab: No such file or directory
+[Mon, 21 Feb 2011 15:54:39 -0800] DEBUG: ---- End output of grep ^SV /etc/inittab ----
+[Mon, 21 Feb 2011 15:54:39 -0800] DEBUG: Ran grep ^SV /etc/inittab returned 2
+[Mon, 21 Feb 2011 15:54:39 -0800] DEBUG: Skipping execute[runit-hup-init] due to only_if
+[Mon, 21 Feb 2011 15:54:39 -0800] DEBUG: Processing package[runit] on chefserver
+[Mon, 21 Feb 2011 15:54:39 -0800] DEBUG: Checking apt-cache policy for runit
+: stdout[0K[chefserver] [Mon, 21 Feb 2011 15:54:39 -0800] DEBUG: Current version is nil
+[Mon, 21 Feb 2011 15:54:39 -0800] DEBUG: Current version is 2.0.0-1ubuntu4
+[Mon, 21 Feb 2011 15:54:39 -0800] INFO: Installing package[runit] version 2.0.0-1ubuntu4
+[Mon, 21 Feb 2011 15:54:39 -0800] DEBUG: Creating directory /tmp/vagrant-chef/preseed
+[Mon, 21 Feb 2011 15:54:39 -0800] DEBUG: Creating directory /tmp/vagrant-chef/preseed/runit
+[Mon, 21 Feb 2011 15:54:39 -0800] DEBUG: Fetching preseed file to /tmp/vagrant-chef/preseed/runit/runit-2.0.0-1ubuntu4.seed
+[Mon, 21 Feb 2011 15:54:39 -0800] DEBUG: Fetching preseed file to /tmp/vagrant-chef/preseed/runit/runit-2.0.0-1ubuntu4.seed
+[Mon, 21 Feb 2011 15:54:39 -0800] DEBUG: File /tmp/vagrant-chef/preseed/runit/runit-2.0.0-1ubuntu4.seed does not exist, so there is no checksum to generate
+[Mon, 21 Feb 2011 15:54:39 -0800] DEBUG: content of file /tmp/vagrant-chef/preseed/runit/runit-2.0.0-1ubuntu4.seed requires update
+[Mon, 21 Feb 2011 15:54:39 -0800] DEBUG: staging /tmp/vagrant-chef/cookbooks-0/runit/files/default/runit.seed to /tmp/runit-2.0.0-1ubuntu4.seed20110221-1594-cx3fnt-0
+[Mon, 21 Feb 2011 15:54:39 -0800] INFO: Pre-seeding package[runit] with package installation instructions.
+[Mon, 21 Feb 2011 15:54:39 -0800] DEBUG: Executing debconf-set-selections /tmp/vagrant-chef/preseed/runit/runit-2.0.0-1ubuntu4.seed
+: stdout
+[0K[chefserver] [Mon, 21 Feb 2011 15:54:39 -0800] DEBUG: ---- Begin output of debconf-set-selections /tmp/vagrant-chef/preseed/runit/runit-2.0.0-1ubuntu4.seed ----
+[Mon, 21 Feb 2011 15:54:39 -0800] DEBUG: STDOUT: 
+[Mon, 21 Feb 2011 15:54:39 -0800] DEBUG: STDERR: 
+[Mon, 21 Feb 2011 15:54:39 -0800] DEBUG: ---- End output of debconf-set-selections /tmp/vagrant-chef/preseed/runit/runit-2.0.0-1ubuntu4.seed ----
+[Mon, 21 Feb 2011 15:54:39 -0800] DEBUG: Ran debconf-set-selections /tmp/vagrant-chef/preseed/runit/runit-2.0.0-1ubuntu4.seed returned 0
+[Mon, 21 Feb 2011 15:54:39 -0800] DEBUG: Executing apt-get -q -y install runit=2.0.0-1ubuntu4
+: stdout[0K[chefserver] [Mon, 21 Feb 2011 15:54:44 -0800] DEBUG: ---- Begin output of apt-get -q -y install runit=2.0.0-1ubuntu4 ----
+[Mon, 21 Feb 2011 15:54:44 -0800] DEBUG: STDOUT: Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  fgetty runit
+Suggested packages:
+  runit-run socklog-run
+The following NEW packages will be installed:
+  fgetty runit
+0 upgraded, 2 newly installed, 0 to remove and 46 not upgraded.
+Need to get 145kB of archives.
+After this operation, 721kB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu/ lucid/universe fgetty 0.6-5build1 [25.4kB]
+Get:2 http://us.archive.ubuntu.com/ubuntu/ lucid/universe runit 2.0.0-1ubuntu4 [120kB]
+Fetched 145kB in 2s (52.2kB/s)
+Selecting previously deselected package fgetty.
+(Reading database ... 58797 files and directories currently installed.)
+Unpacking fgetty (from .../fgetty_0.6-5build1_amd64.deb) ...
+Selecting previously deselected package runit.
+Unpacking runit (from .../runit_2.0.0-1ubuntu4_amd64.deb) ...
+Processing triggers for man-db ...
+Processing triggers for ureadahead ...
+ureadahead will be reprofiled on next reboot
+Setting up fgetty (0.6-5build1) ...
+Setting up runit (2.0.0-1ubuntu4) ...
+runsvdir start/running, process 2253
+
+[Mon, 21 Feb 2011 15:54:44 -0800] DEBUG: STDERR: 
+[Mon, 21 Feb 2011 15:54:44 -0800] DEBUG: ---- End output of apt-get -q -y install runit=2.0.0-1ubuntu4 ----
+[Mon, 21 Feb 2011 15:54:44 -0800] DEBUG: Ran apt-get -q -y install runit=2.0.0-1ubuntu4 returned 0
+[Mon, 21 Feb 2011 15:54:44 -0800] INFO: package[runit] sending nothing action to execute[start-runsvdir] (immediate)
+[Mon, 21 Feb 2011 15:54:44 -0800] DEBUG: Doing nothing for execute[start-runsvdir]
+[Mon, 21 Feb 2011 15:54:44 -0800] INFO: package[runit] sending nothing action to execute[runit-hup-init] (immediate)
+[Mon, 21 Feb 2011 15:54:44 -0800] DEBUG: Executing grep ^SV /etc/inittab
+: stdout[0K[chefserver] [Mon, 21 Feb 2011 15:54:44 -0800] DEBUG: ---- Begin output of grep ^SV /etc/inittab ----
+[Mon, 21 Feb 2011 15:54:44 -0800] DEBUG: STDOUT: 
+[Mon, 21 Feb 2011 15:54:44 -0800] DEBUG: STDERR: grep: /etc/inittab: No such file or directory
+[Mon, 21 Feb 2011 15:54:44 -0800] DEBUG: ---- End output of grep ^SV /etc/inittab ----
+[Mon, 21 Feb 2011 15:54:44 -0800] DEBUG: Ran grep ^SV /etc/inittab returned 2
+[Mon, 21 Feb 2011 15:54:44 -0800] DEBUG: Skipping execute[runit-hup-init] due to only_if
+[Mon, 21 Feb 2011 15:54:44 -0800] DEBUG: Processing directory[/etc/sv/chef-client] on chefserver
+[Mon, 21 Feb 2011 15:54:44 -0800] INFO: Creating directory[/etc/sv/chef-client] at /etc/sv/chef-client
+[Mon, 21 Feb 2011 15:54:44 -0800] INFO: Setting owner to 0 for directory[/etc/sv/chef-client]
+[Mon, 21 Feb 2011 15:54:44 -0800] INFO: Setting group to 0 for directory[/etc/sv/chef-client]
+[Mon, 21 Feb 2011 15:54:44 -0800] INFO: Setting mode to 755 for directory[/etc/sv/chef-client]
+[Mon, 21 Feb 2011 15:54:44 -0800] DEBUG: Processing directory[/etc/sv/chef-client/log] on chefserver
+[Mon, 21 Feb 2011 15:54:44 -0800] INFO: Creating directory[/etc/sv/chef-client/log] at /etc/sv/chef-client/log
+[Mon, 21 Feb 2011 15:54:44 -0800] INFO: Setting owner to 0 for directory[/etc/sv/chef-client/log]
+[Mon, 21 Feb 2011 15:54:44 -0800] INFO: Setting group to 0 for directory[/etc/sv/chef-client/log]
+[Mon, 21 Feb 2011 15:54:44 -0800] INFO: Setting mode to 755 for directory[/etc/sv/chef-client/log]
+[Mon, 21 Feb 2011 15:54:44 -0800] DEBUG: Processing directory[/etc/sv/chef-client/log/main] on chefserver
+[Mon, 21 Feb 2011 15:54:44 -0800] INFO: Creating directory[/etc/sv/chef-client/log/main] at /etc/sv/chef-client/log/main
+[Mon, 21 Feb 2011 15:54:44 -0800] INFO: Setting owner to 0 for directory[/etc/sv/chef-client/log/main]
+[Mon, 21 Feb 2011 15:54:44 -0800] INFO: Setting group to 0 for directory[/etc/sv/chef-client/log/main]
+[Mon, 21 Feb 2011 15:54:44 -0800] INFO: Setting mode to 755 for directory[/etc/sv/chef-client/log/main]
+[Mon, 21 Feb 2011 15:54:44 -0800] DEBUG: Processing template[/etc/sv/chef-client/run] on chefserver
+[Mon, 21 Feb 2011 15:54:44 -0800] DEBUG: looking for template sv-chef-client-run.erb in cookbook :chef
+[Mon, 21 Feb 2011 15:54:44 -0800] DEBUG: Current content's checksum:  
+[Mon, 21 Feb 2011 15:54:44 -0800] DEBUG: Rendered content's checksum: 646d73ee1732cfb64ef95fd8ad4e93959f6666959ee97f6778b692dddd461d47
+[Mon, 21 Feb 2011 15:54:44 -0800] INFO: Writing updated content for template[/etc/sv/chef-client/run] to /etc/sv/chef-client/run
+[Mon, 21 Feb 2011 15:54:44 -0800] DEBUG: setting mode on /tmp/chef-rendered-template20110221-1594-p18nr4-0 to 755
+[Mon, 21 Feb 2011 15:54:44 -0800] DEBUG: Processing template[/etc/sv/chef-client/log/run] on chefserver
+[Mon, 21 Feb 2011 15:54:44 -0800] DEBUG: looking for template sv-chef-client-log-run.erb in cookbook :chef
+[Mon, 21 Feb 2011 15:54:44 -0800] DEBUG: Current content's checksum:  
+[Mon, 21 Feb 2011 15:54:44 -0800] DEBUG: Rendered content's checksum: e6414888435514f7e40fc743afe7422d6a09e23da9d7353442b025519ce75834
+[Mon, 21 Feb 2011 15:54:44 -0800] INFO: Writing updated content for template[/etc/sv/chef-client/log/run] to /etc/sv/chef-client/log/run
+[Mon, 21 Feb 2011 15:54:44 -0800] DEBUG: setting mode on /tmp/chef-rendered-template20110221-1594-az162l-0 to 755
+[Mon, 21 Feb 2011 15:54:44 -0800] DEBUG: Processing link[/etc/init.d/chef-client] on chefserver
+[Mon, 21 Feb 2011 15:54:44 -0800] INFO: Creating a symbolic link from /usr/bin/sv -> /etc/init.d/chef-client for link[/etc/init.d/chef-client]
+[Mon, 21 Feb 2011 15:54:44 -0800] DEBUG: Processing link[/etc/service/chef-client] on chefserver
+[Mon, 21 Feb 2011 15:54:44 -0800] INFO: Creating a symbolic link from /etc/sv/chef-client -> /etc/service/chef-client for link[/etc/service/chef-client]
+[Mon, 21 Feb 2011 15:54:44 -0800] DEBUG: Processing ruby_block[supervise_chef-client_sleep] on chefserver
+[Mon, 21 Feb 2011 15:54:44 -0800] DEBUG: Waiting until named pipe /etc/sv/chef-client/supervise/ok exists.
+[Mon, 21 Feb 2011 15:54:49 -0800] DEBUG: Processing service: stdout[0K[chefserver] [chef-client] on chefserver
+[Mon, 21 Feb 2011 15:54:49 -0800] DEBUG: service[chef-client] you have specified a status command, running..
+[Mon, 21 Feb 2011 15:54:49 -0800] DEBUG: Executing /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-client
+: stdout
+[0K[chefserver] [Mon, 21 Feb 2011 15:54:49 -0800] DEBUG: ---- Begin output of /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-client ----
+[Mon, 21 Feb 2011 15:54:49 -0800] DEBUG: STDOUT: run: /etc/service/chef-client: (pid 2260) 0s; run: log: (pid 2259) 0s
+[Mon, 21 Feb 2011 15:54:49 -0800] DEBUG: STDERR: 
+[Mon, 21 Feb 2011 15:54:49 -0800] DEBUG: ---- End output of /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-client ----
+[Mon, 21 Feb 2011 15:54:49 -0800] DEBUG: Ran /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-client returned 0
+[Mon, 21 Feb 2011 15:54:49 -0800] DEBUG: Doing nothing for service[chef-client]
+[Mon, 21 Feb 2011 15:54:49 -0800] DEBUG: Processing user[chef] on chefserver
+[Mon, 21 Feb 2011 15:54:49 -0800] DEBUG: User chef does not exist
+[Mon, 21 Feb 2011 15:54:49 -0800] DEBUG: Setting user[chef] shell to /bin/sh
+[Mon, 21 Feb 2011 15:54:49 -0800] DEBUG: Setting user[chef] home to /srv/chef
+[Mon, 21 Feb 2011 15:54:49 -0800] DEBUG: Executing useradd -s '/bin/sh' -d '/srv/chef' -r chef
+: stdout[0K[chefserver] [Mon, 21 Feb 2011 15:54:49 -0800] DEBUG: ---- Begin output of useradd -s '/bin/sh' -d '/srv/chef' -r chef ----
+[Mon, 21 Feb 2011 15:54:49 -0800] DEBUG: STDOUT: 
+[Mon, 21 Feb 2011 15:54:49 -0800] DEBUG: STDERR: 
+[Mon, 21 Feb 2011 15:54:49 -0800] DEBUG: ---- End output of useradd -s '/bin/sh' -d '/srv/chef' -r chef ----
+[Mon, 21 Feb 2011 15:54:49 -0800] DEBUG: Ran useradd -s '/bin/sh' -d '/srv/chef' -r chef returned 0
+[Mon, 21 Feb 2011 15:54:49 -0800] INFO: Created user[chef]
+[Mon, 21 Feb 2011 15:54:49 -0800] DEBUG: Processing package[erlang-nox] on chefserver
+[Mon, 21 Feb 2011 15:54:49 -0800] DEBUG: Checking apt-cache policy for erlang-nox
+: stdout[0K[chefserver] [Mon, 21 Feb 2011 15:54:49 -0800] DEBUG: Current version is nil
+[Mon, 21 Feb 2011 15:54:49 -0800] DEBUG: Current version is 1:13.b.3-dfsg-2ubuntu2.1
+[Mon, 21 Feb 2011 15:54:49 -0800] INFO: Installing package[erlang-nox] version 1:13.b.3-dfsg-2ubuntu2.1
+[Mon, 21 Feb 2011 15:54:49 -0800] DEBUG: Executing apt-get -q -y install erlang-nox=1:13.b.3-dfsg-2ubuntu2.1
+: stdout
+[0K[chefserver] [Mon, 21 Feb 2011 15:55:42 -0800] DEBUG: ---- Begin output of apt-get -q -y install erlang-nox=1:13.b.3-dfsg-2ubuntu2.1 ----
+[Mon, 21 Feb 2011 15:55:42 -0800] DEBUG: STDOUT: Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  erlang-asn1 erlang-base erlang-corba erlang-crypto erlang-docbuilder
+  erlang-edoc erlang-eunit erlang-ic erlang-inets erlang-inviso erlang-mnesia
+  erlang-nox erlang-odbc erlang-os-mon erlang-parsetools erlang-percept
+  erlang-public-key erlang-runtime-tools erlang-snmp erlang-ssh erlang-ssl
+  erlang-syntax-tools erlang-tools erlang-webtool erlang-xmerl libltdl7
+  libsctp1 lksctp-tools odbcinst odbcinst1debian1 unixodbc
+Suggested packages:
+  erlang erlang-manpages erlang-doc-html erlang-observer libmyodbc
+  odbc-postgresql tdsodbc unixodbc-bin
+The following NEW packages will be installed:
+  erlang-asn1 erlang-base erlang-corba erlang-crypto erlang-docbuilder
+  erlang-edoc erlang-eunit erlang-ic erlang-inets erlang-inviso erlang-mnesia
+  erlang-nox erlang-odbc erlang-os-mon erlang-parsetools erlang-percept
+  erlang-public-key erlang-runtime-tools erlang-snmp erlang-ssh erlang-ssl
+  erlang-syntax-tools erlang-tools erlang-webtool erlang-xmerl libltdl7
+  libsctp1 lksctp-tools odbcinst odbcinst1debian1 unixodbc
+0 upgraded, 31 newly installed, 0 to remove and 46 not upgraded.
+Need to get 9,982kB of archives.
+After this operation, 20.5MB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main erlang-base 1:13.b.3-dfsg-2ubuntu2.1 [4,369kB]
+Get:2 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main erlang-syntax-tools 1:13.b.3-dfsg-2ubuntu2.1 [125kB]
+Get:3 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/universe erlang-asn1 1:13.b.3-dfsg-2ubuntu2.1 [371kB]
+Get:4 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main erlang-mnesia 1:13.b.3-dfsg-2ubuntu2.1 [260kB]
+Get:5 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main erlang-runtime-tools 1:13.b.3-dfsg-2ubuntu2.1 [111kB]
+Get:6 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main erlang-crypto 1:13.b.3-dfsg-2ubuntu2.1 [53.9kB]
+Get:7 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main erlang-public-key 1:13.b.3-dfsg-2ubuntu2.1 [125kB]
+Get:8 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main erlang-ssl 1:13.b.3-dfsg-2ubuntu2.1 [229kB]
+Get:9 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main erlang-inets 1:13.b.3-dfsg-2ubuntu2.1 [300kB]
+Get:10 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/universe erlang-corba 1:13.b.3-dfsg-2ubuntu2.1 [848kB]
+Get:11 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main erlang-xmerl 1:13.b.3-dfsg-2ubuntu2.1 [387kB]
+Get:12 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/universe erlang-edoc 1:13.b.3-dfsg-2ubuntu2.1 [118kB]
+Get:13 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/universe erlang-docbuilder 1:13.b.3-dfsg-2ubuntu2.1 [143kB]
+Get:14 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/universe erlang-eunit 1:13.b.3-dfsg-2ubuntu2.1 [86.4kB]
+Get:15 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/universe erlang-ic 1:13.b.3-dfsg-2ubuntu2.1 [288kB]
+Get:16 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/universe erlang-inviso 1:13.b.3-dfsg-2ubuntu2.1 [80.0kB]
+Get:17 http://us.archive.ubuntu.com/ubuntu/ lucid/main libltdl7 2.2.6b-2ubuntu1 [296kB]
+Get:18 http://us.archive.ubuntu.com/ubuntu/ lucid/main odbcinst 2.2.11-21 [35.5kB]
+Get:19 http://us.archive.ubuntu.com/ubuntu/ lucid/main odbcinst1debian1 2.2.11-21 [66.6kB]
+Get:20 http://us.archive.ubuntu.com/ubuntu/ lucid/main unixodbc 2.2.11-21 [209kB]
+Get:21 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/universe erlang-odbc 1:13.b.3-dfsg-2ubuntu2.1 [62.4kB]
+Get:22 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main erlang-snmp 1:13.b.3-dfsg-2ubuntu2.1 [582kB]
+Get:23 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main erlang-os-mon 1:13.b.3-dfsg-2ubuntu2.1 [79.0kB]
+Get:24 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/universe erlang-parsetools 1:13.b.3-dfsg-2ubuntu2.1 [86.5kB]
+Get:25 http://us.: stdout
+[0K[chefserver] archive.ubuntu.com/ubuntu/ lucid-updates/universe erlang-percept 1:13.b.3-dfsg-2ubuntu2.1 [91.2kB]
+Get:26 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/universe erlang-ssh 1:13.b.3-dfsg-2ubuntu2.1 [155kB]
+Get:27 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/universe erlang-webtool 1:13.b.3-dfsg-2ubuntu2.1 [49.4kB]
+Get:28 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/universe erlang-tools 1:13.b.3-dfsg-2ubuntu2.1 [266kB]
+Get:29 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/universe erlang-nox 1:13.b.3-dfsg-2ubuntu2.1 [35.0kB]
+Get:30 http://us.archive.ubuntu.com/ubuntu/ lucid/main libsctp1 1.0.11+dfsg-1 [29.9kB]
+Get:31 http://us.archive.ubuntu.com/ubuntu/ lucid/main lksctp-tools 1.0.11+dfsg-1 [43.0kB]
+Fetched 9,982kB in 45s (219kB/s)
+Selecting previously deselected package erlang-base.
+(Reading database ... 58877 files and directories currently installed.)
+Unpacking erlang-base (from .../erlang-base_1%3a13.b.3-dfsg-2ubuntu2.1_amd64.deb) ...
+Selecting previously deselected package erlang-syntax-tools.
+Unpacking erlang-syntax-tools (from .../erlang-syntax-tools_1%3a13.b.3-dfsg-2ubuntu2.1_amd64.deb) ...
+Selecting previously deselected package erlang-asn1.
+Unpacking erlang-asn1 (from .../erlang-asn1_1%3a13.b.3-dfsg-2ubuntu2.1_amd64.deb) ...
+Selecting previously deselected package erlang-mnesia.
+Unpacking erlang-mnesia (from .../erlang-mnesia_1%3a13.b.3-dfsg-2ubuntu2.1_amd64.deb) ...
+Selecting previously deselected package erlang-runtime-tools.
+Unpacking erlang-runtime-tools (from .../erlang-runtime-tools_1%3a13.b.3-dfsg-2ubuntu2.1_amd64.deb) ...
+Selecting previously deselected package erlang-crypto.
+Unpacking erlang-crypto (from .../erlang-crypto_1%3a13.b.3-dfsg-2ubuntu2.1_amd64.deb) ...
+Selecting previously deselected package erlang-public-key.
+Unpacking erlang-public-key (from .../erlang-public-key_1%3a13.b.3-dfsg-2ubuntu2.1_amd64.deb) ...
+Selecting previously deselected package erlang-ssl.
+Unpacking erlang-ssl (from .../erlang-ssl_1%3a13.b.3-dfsg-2ubuntu2.1_amd64.deb) ...
+Selecting previously deselected package erlang-inets.
+Unpacking erlang-inets (from .../erlang-inets_1%3a13.b.3-dfsg-2ubuntu2.1_amd64.deb) ...
+Selecting previously deselected package erlang-corba.
+Unpacking erlang-corba (from .../erlang-corba_1%3a13.b.3-dfsg-2ubuntu2.1_amd64.deb) ...
+Selecting previously deselected package erlang-xmerl.
+Unpacking erlang-xmerl (from .../erlang-xmerl_1%3a13.b.3-dfsg-2ubuntu2.1_amd64.deb) ...
+Selecting previously deselected package erlang-edoc.
+Unpacking erlang-edoc (from .../erlang-edoc_1%3a13.b.3-dfsg-2ubuntu2.1_amd64.deb) ...
+Selecting previously deselected package erlang-docbuilder.
+Unpacking erlang-docbuilder (from .../erlang-docbuilder_1%3a13.b.3-dfsg-2ubuntu2.1_amd64.deb) ...
+Selecting previously deselected package erlang-eunit.
+Unpacking erlang-eunit (from .../erlang-eunit_1%3a13.b.3-dfsg-2ubuntu2.1_amd64.deb) ...
+Selecting previously deselected package erlang-ic.
+Unpacking erlang-ic (from .../erlang-ic_1%3a13.b.3-dfsg-2ubuntu2.1_amd64.deb) ...
+Selecting previously deselected package erlang-inviso.
+Unpacking erlang-inviso (from .../erlang-inviso_1%3a13.b.3-dfsg-2ubuntu2.1_amd64.deb) ...
+Selecting previously deselected package libltdl7.
+Unpacking libltdl7 (from .../libltdl7_2.2.6b-2ubuntu1_amd64.deb) ...
+Selecting previously deselected package odbcinst.
+Unpacking odbcinst (from .../odbcinst_2.2.11-21_amd64.deb) ...
+Selecting previously deselected package odbcinst1debian1.
+Unpacking odbcinst1debian1 (from .../odbcinst1debian1_2.2.11-21_amd64.deb) ...
+Selecting previously deselected package unixodbc.
+Unpacking unixodbc (from .../unixodbc_2.2.11-21_amd64.deb) ...
+Selecting previously deselected package erlang-odbc.
+Unpacking erlang-odbc (from .../erlang-odbc_1%3a13.b.3-dfsg-2ubuntu2.1_amd64.deb) ...
+Selecting previously deselected package erlang-snmp.
+Unpacking erlang-snmp (from .../erlang-snmp_1%3a13.b.3-dfsg-2ubuntu2.1_amd64.deb) ...
+Selecting previously deselected package erlang-os-mon.
+Unpacking erlang-os-mon (from .../erlang-os-mon_1%3a13.b.3-dfsg-2ubuntu2.1_amd64.deb) ...
+Selecting previously dese: stdout
+[0K[chefserver] lected package erlang-parsetools.
+Unpacking erlang-parsetools (from .../erlang-parsetools_1%3a13.b.3-dfsg-2ubuntu2.1_amd64.deb) ...
+Selecting previously deselected package erlang-percept.
+Unpacking erlang-percept (from .../erlang-percept_1%3a13.b.3-dfsg-2ubuntu2.1_amd64.deb) ...
+Selecting previously deselected package erlang-ssh.
+Unpacking erlang-ssh (from .../erlang-ssh_1%3a13.b.3-dfsg-2ubuntu2.1_amd64.deb) ...
+Selecting previously deselected package erlang-webtool.
+Unpacking erlang-webtool (from .../erlang-webtool_1%3a13.b.3-dfsg-2ubuntu2.1_amd64.deb) ...
+Selecting previously deselected package erlang-tools.
+Unpacking erlang-tools (from .../erlang-tools_1%3a13.b.3-dfsg-2ubuntu2.1_amd64.deb) ...
+Selecting previously deselected package erlang-nox.
+Unpacking erlang-nox (from .../erlang-nox_1%3a13.b.3-dfsg-2ubuntu2.1_amd64.deb) ...
+Selecting previously deselected package libsctp1.
+Unpacking libsctp1 (from .../libsctp1_1.0.11+dfsg-1_amd64.deb) ...
+Selecting previously deselected package lksctp-tools.
+Unpacking lksctp-tools (from .../lksctp-tools_1.0.11+dfsg-1_amd64.deb) ...
+Processing triggers for man-db ...
+Setting up erlang-base (1:13.b.3-dfsg-2ubuntu2.1) ...
+Searching for services which depend on erlang and should be started...none found.
+
+Setting up erlang-syntax-tools (1:13.b.3-dfsg-2ubuntu2.1) ...
+Setting up erlang-asn1 (1:13.b.3-dfsg-2ubuntu2.1) ...
+Setting up erlang-mnesia (1:13.b.3-dfsg-2ubuntu2.1) ...
+Setting up erlang-runtime-tools (1:13.b.3-dfsg-2ubuntu2.1) ...
+Setting up erlang-crypto (1:13.b.3-dfsg-2ubuntu2.1) ...
+Setting up erlang-public-key (1:13.b.3-dfsg-2ubuntu2.1) ...
+Setting up erlang-ssl (1:13.b.3-dfsg-2ubuntu2.1) ...
+Setting up erlang-inets (1:13.b.3-dfsg-2ubuntu2.1) ...
+Setting up erlang-corba (1:13.b.3-dfsg-2ubuntu2.1) ...
+Setting up erlang-xmerl (1:13.b.3-dfsg-2ubuntu2.1) ...
+Setting up erlang-edoc (1:13.b.3-dfsg-2ubuntu2.1) ...
+Setting up erlang-docbuilder (1:13.b.3-dfsg-2ubuntu2.1) ...
+Setting up erlang-eunit (1:13.b.3-dfsg-2ubuntu2.1) ...
+Setting up erlang-ic (1:13.b.3-dfsg-2ubuntu2.1) ...
+Setting up erlang-inviso (1:13.b.3-dfsg-2ubuntu2.1) ...
+Setting up libltdl7 (2.2.6b-2ubuntu1) ...
+
+Setting up erlang-snmp (1:13.b.3-dfsg-2ubuntu2.1) ...
+Setting up erlang-os-mon (1:13.b.3-dfsg-2ubuntu2.1) ...
+Setting up erlang-parsetools (1:13.b.3-dfsg-2ubuntu2.1) ...
+Setting up erlang-percept (1:13.b.3-dfsg-2ubuntu2.1) ...
+Setting up erlang-ssh (1:13.b.3-dfsg-2ubuntu2.1) ...
+Setting up erlang-webtool (1:13.b.3-dfsg-2ubuntu2.1) ...
+Setting up erlang-tools (1:13.b.3-dfsg-2ubuntu2.1) ...
+Setting up libsctp1 (1.0.11+dfsg-1) ...
+
+Setting up lksctp-tools (1.0.11+dfsg-1) ...
+Setting up odbcinst (2.2.11-21) ...
+Setting up odbcinst1debian1 (2.2.11-21) ...
+
+Setting up unixodbc (2.2.11-21) ...
+
+Setting up erlang-odbc (1:13.b.3-dfsg-2ubuntu2.1) ...
+Setting up erlang-nox (1:13.b.3-dfsg-2ubuntu2.1) ...
+Processing triggers for libc-bin ...
+ldconfig deferred processing now taking place
+[Mon, 21 Feb 2011 15:55:42 -0800] DEBUG: STDERR: Extracting templates from packages: 96%Extracting templates from packages: 100%
+[Mon, 21 Feb 2011 15:55:42 -0800] DEBUG: ---- End output of apt-get -q -y install erlang-nox=1:13.b.3-dfsg-2ubuntu2.1 ----
+[Mon, 21 Feb 2011 15:55:42 -0800] DEBUG: Ran apt-get -q -y install erlang-nox=1:13.b.3-dfsg-2ubuntu2.1 returned 0
+[Mon, 21 Feb 2011 15:55:42 -0800] DEBUG: Processing package[erlang-dev] on chefserver
+[Mon, 21 Feb 2011 15:55:42 -0800] DEBUG: Checking apt-cache policy for erlang-dev
+: stdout
+[0K[chefserver] [Mon, 21 Feb 2011 15:55:43 -0800] DEBUG: Current version is nil
+[Mon, 21 Feb 2011 15:55:43 -0800] DEBUG: Current version is 1:13.b.3-dfsg-2ubuntu2.1
+[Mon, 21 Feb 2011 15:55:43 -0800] INFO: Installing package[erlang-dev] version 1:13.b.3-dfsg-2ubuntu2.1
+[Mon, 21 Feb 2011 15:55:43 -0800] DEBUG: Executing apt-get -q -y install erlang-dev=1:13.b.3-dfsg-2ubuntu2.1
+: stdout
+[0K[chefserver] [Mon, 21 Feb 2011 15:55:48 -0800] DEBUG: ---- Begin output of apt-get -q -y install erlang-dev=1:13.b.3-dfsg-2ubuntu2.1 ----
+[Mon, 21 Feb 2011 15:55:48 -0800] DEBUG: STDOUT: Reading package lists...
+Building dependency tree...
+Reading state information...
+Suggested packages:
+  erlang erlang-manpages erlang-doc-html
+The following NEW packages will be installed:
+  erlang-dev
+0 upgraded, 1 newly installed, 0 to remove and 46 not upgraded.
+Need to get 503kB of archives.
+After this operation, 3,256kB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main erlang-dev 1:13.b.3-dfsg-2ubuntu2.1 [503kB]
+Fetched 503kB in 4s (114kB/s)
+Selecting previously deselected package erlang-dev.
+(Reading database ... 60775 files and directories currently installed.)
+Unpacking erlang-dev (from .../erlang-dev_1%3a13.b.3-dfsg-2ubuntu2.1_amd64.deb) ...
+Processing triggers for man-db ...
+Setting up erlang-dev (1:13.b.3-dfsg-2ubuntu2.1) ...
+[Mon, 21 Feb 2011 15:55:48 -0800] DEBUG: STDERR: 
+[Mon, 21 Feb 2011 15:55:48 -0800] DEBUG: ---- End output of apt-get -q -y install erlang-dev=1:13.b.3-dfsg-2ubuntu2.1 ----
+[Mon, 21 Feb 2011 15:55:48 -0800] DEBUG: Ran apt-get -q -y install erlang-dev=1:13.b.3-dfsg-2ubuntu2.1 returned 0
+[Mon, 21 Feb 2011 15:55:48 -0800] DEBUG: Processing package[couchdb] on chefserver
+[Mon, 21 Feb 2011 15:55:48 -0800] DEBUG: Checking apt-cache policy for couchdb
+: stdout[0K[chefserver] [Mon, 21 Feb 2011 15:55:49 -0800] DEBUG: Current version is nil
+[Mon, 21 Feb 2011 15:55:49 -0800] DEBUG: Current version is 0.10.0-1ubuntu2
+[Mon, 21 Feb 2011 15:55:49 -0800] INFO: Installing package[couchdb] version 0.10.0-1ubuntu2
+[Mon, 21 Feb 2011 15:55:49 -0800] DEBUG: Executing apt-get -q -y install couchdb=0.10.0-1ubuntu2
+: stdout
+[0K[chefserver] [Mon, 21 Feb 2011 15:58:57 -0800] DEBUG: ---- Begin output of apt-get -q -y install couchdb=0.10.0-1ubuntu2 ----
+[Mon, 21 Feb 2011 15:58:57 -0800] DEBUG: STDOUT: Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  couchdb couchdb-bin defoma dictionaries-common fontconfig fontconfig-config
+  hicolor-icon-theme hunspell-en-us libasound2 libatk1.0-0 libatk1.0-data
+  libavahi-client3 libavahi-common-data libavahi-common3 libcairo2 libcups2
+  libcurl3 libdatrie1 libdirectfb-1.2-0 libfontconfig1 libfontenc1 libgtk2.0-0
+  libgtk2.0-bin libgtk2.0-common libhunspell-1.2-0 libice6 libicu42 libidl0
+  libjasper1 libjpeg62 libnspr4-0d libnss3-1d libpango1.0-0 libpango1.0-common
+  libpixman-1-0 libsm6 libstartup-notification0 libsysfs2 libthai-data
+  libthai0 libtiff4 libts-0.0-0 libxcb-atom1 libxcb-aux0 libxcb-event1
+  libxcb-render-util0 libxcb-render0 libxcomposite1 libxcursor1 libxdamage1
+  libxfixes3 libxfont1 libxft2 libxi6 libxinerama1 libxrandr2 libxrender1
+  libxt6 shared-mime-info tsconf ttf-dejavu-core x-ttcidfont-conf x11-common
+  xfonts-encodings xfonts-utils xulrunner-1.9.2
+Suggested packages:
+  defoma-doc psfontmgr dfontmgr libfont-freetype-perl ispell emacsen-common
+  jed-extra hunspell openoffice.org-hunspell openoffice.org-core
+  libasound2-plugins cups-common librsvg2-common gvfs libjasper-runtime
+  ttf-japanese-gothic ttf-japanese-mincho ttf-thryomanes ttf-baekmuk
+  ttf-arphic-gbsn00lp ttf-arphic-bsmi00lp ttf-arphic-gkai00mp
+  ttf-arphic-bkai00mp
+The following NEW packages will be installed:
+  couchdb couchdb-bin defoma dictionaries-common fontconfig fontconfig-config
+  hicolor-icon-theme hunspell-en-us libasound2 libatk1.0-0 libatk1.0-data
+  libavahi-client3 libavahi-common-data libavahi-common3 libcairo2 libcups2
+  libcurl3 libdatrie1 libdirectfb-1.2-0 libfontconfig1 libfontenc1 libgtk2.0-0
+  libgtk2.0-bin libgtk2.0-common libhunspell-1.2-0 libice6 libicu42 libidl0
+  libjasper1 libjpeg62 libnspr4-0d libnss3-1d libpango1.0-0 libpango1.0-common
+  libpixman-1-0 libsm6 libstartup-notification0 libsysfs2 libthai-data
+  libthai0 libtiff4 libts-0.0-0 libxcb-atom1 libxcb-aux0 libxcb-event1
+  libxcb-render-util0 libxcb-render0 libxcomposite1 libxcursor1 libxdamage1
+  libxfixes3 libxfont1 libxft2 libxi6 libxinerama1 libxrandr2 libxrender1
+  libxt6 shared-mime-info tsconf ttf-dejavu-core x-ttcidfont-conf x11-common
+  xfonts-encodings xfonts-utils xulrunner-1.9.2
+0 upgraded, 66 newly installed, 0 to remove and 46 not upgraded.
+Need to get 33.1MB of archives.
+After this operation, 116MB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu/ lucid/main x11-common 1:7.5+5ubuntu1 [308kB]
+Get:2 http://us.archive.ubuntu.com/ubuntu/ lucid/main libcurl3 7.19.7-1ubuntu1 [227kB]
+Get:3 http://us.archive.ubuntu.com/ubuntu/ lucid/main libicu42 4.2.1-3 [7,605kB]
+Get:4 http://us.archive.ubuntu.com/ubuntu/ lucid/main libasound2 1.0.22-0ubuntu7 [437kB]
+Get:5 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libatk1.0-0 1.30.0-0ubuntu2.1 [58.3kB]
+Get:6 http://us.archive.ubuntu.com/ubuntu/ lucid/main libsysfs2 2.1.0-6 [23.9kB]
+Get:7 http://us.archive.ubuntu.com/ubuntu/ lucid/main tsconf 1.0-7build1 [12.8kB]
+Get:8 http://us.archive.ubuntu.com/ubuntu/ lucid/main libts-0.0-0 1.0-7build1 [29.1kB]
+Get:9 http://us.archive.ubuntu.com/ubuntu/ lucid/main libdirectfb-1.2-0 1.2.8-5ubuntu2 [1,191kB]
+Get:10 http://us.archive.ubuntu.com/ubuntu/ lucid/main ttf-dejavu-core 2.30-2 [1,436kB]
+Get:11 http://us.archive.ubuntu.com/ubuntu/ lucid/main fontconfig-config 2.8.0-2ubuntu1 [205kB]
+Get:12 http://us.archive.ubuntu.com/ubuntu/ lucid/main libfontconfig1 2.8.0-2ubuntu1 [285kB]
+Get:13 http://us.archive.ubuntu.com/ubuntu/ lucid/main libpixman-1-0 0.16.4-1ubuntu2 [237kB]
+Get:14 http://us.archive.ubuntu.com/ubuntu/ lucid/main libxcb-render0 1.5-2 [15.5kB]
+Get:15 http://us.archive.ubuntu.com/ubuntu/ lucid/main libxcb-render-util0 0.3.6-1build1 [10.1kB]
+Get:16 http://us.archive.ubuntu.com/ubuntu/ lucid/main libxrender1 1:0.9.5-1 [28.8kB]
+Get:17 http://us.a: stdout
+[0K[chefserver] rchive.ubuntu.com/ubuntu/ lucid/main libcairo2 1.8.10-2ubuntu1 [530kB]
+Get:18 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libgtk2.0-common 2.20.1-0ubuntu2 [723kB]
+Get:19 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libavahi-common-data 0.6.25-1ubuntu6.1 [34.2kB]
+Get:20 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libavahi-common3 0.6.25-1ubuntu6.1 [25.5kB]
+Get:21 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libavahi-client3 0.6.25-1ubuntu6.1 [56.7kB]
+Get:22 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libcups2 1.4.3-1ubuntu1.3 [224kB]
+Get:23 http://us.archive.ubuntu.com/ubuntu/ lucid/main libjpeg62 6b-15ubuntu1 [94.5kB]
+Get:24 http://us.archive.ubuntu.com/ubuntu/ lucid/main libjasper1 1.900.1-7 [154kB]
+Get:25 http://us.archive.ubuntu.com/ubuntu/ lucid/main defoma 0.11.10-4ubuntu1 [101kB]
+Get:26 http://us.archive.ubuntu.com/ubuntu/ lucid/main fontconfig 2.8.0-2ubuntu1 [158kB]
+Get:27 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libpango1.0-common 1.28.0-0ubuntu2.1 [111kB]
+Get:28 http://us.archive.ubuntu.com/ubuntu/ lucid/main libdatrie1 0.2.2-3 [25.6kB]
+Get:29 http://us.archive.ubuntu.com/ubuntu/ lucid/main libthai-data 0.1.13-1build1 [196kB]
+Get:30 http://us.archive.ubuntu.com/ubuntu/ lucid/main libthai0 0.1.13-1build1 [40.7kB]
+Get:31 http://us.archive.ubuntu.com/ubuntu/ lucid/main libxft2 2.1.14-1ubuntu1 [56.0kB]
+Get:32 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libpango1.0-0 1.28.0-0ubuntu2.1 [326kB]
+Get:33 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libtiff4 3.9.2-2ubuntu0.3 [149kB]
+Get:34 http://us.archive.ubuntu.com/ubuntu/ lucid/main libxfixes3 1:4.0.4-1 [16.3kB]
+Get:35 http://us.archive.ubuntu.com/ubuntu/ lucid/main libxcomposite1 1:0.4.1-1 [12.9kB]
+Get:36 http://us.archive.ubuntu.com/ubuntu/ lucid/main libxcursor1 1:1.1.10-1 [25.6kB]
+Get:37 http://us.archive.ubuntu.com/ubuntu/ lucid/main libxdamage1 1:1.1.2-1 [12.3kB]
+Get:38 http://us.archive.ubuntu.com/ubuntu/ lucid/main libxi6 2:1.3-3 [56.0kB]
+Get:39 http://us.archive.ubuntu.com/ubuntu/ lucid/main libxinerama1 2:1.1-2 [12.3kB]
+Get:40 http://us.archive.ubuntu.com/ubuntu/ lucid/main libxrandr2 2:1.3.0-3 [28.4kB]
+Get:41 http://us.archive.ubuntu.com/ubuntu/ lucid/main shared-mime-info 0.71-1ubuntu2 [431kB]
+Get:42 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libgtk2.0-0 2.20.1-0ubuntu2 [2,720kB]
+Get:43 http://us.archive.ubuntu.com/ubuntu/ lucid/main libhunspell-1.2-0 1.2.8-6ubuntu1 [150kB]
+Get:44 http://us.archive.ubuntu.com/ubuntu/ lucid/main libidl0 0.8.13-1 [96.2kB]
+Get:45 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libnspr4-0d 4.8.6-0ubuntu0.10.04.2 [136kB]
+Get:46 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libnss3-1d 3.12.8-0ubuntu0.10.04.1 [1,235kB]
+Get:47 http://us.archive.ubuntu.com/ubuntu/ lucid/main libice6 2:1.0.6-1 [54.3kB]
+Get:48 http://us.archive.ubuntu.com/ubuntu/ lucid/main libsm6 2:1.1.1-1 [25.4kB]
+Get:49 http://us.archive.ubuntu.com/ubuntu/ lucid/main libxcb-atom1 0.3.6-1build1 [10.3kB]
+Get:50 http://us.archive.ubuntu.com/ubuntu/ lucid/main libxcb-aux0 0.3.6-1build1 [8,962B]
+Get:51 http://us.archive.ubuntu.com/ubuntu/ lucid/main libxcb-event1 0.3.6-1build1 [9,608B]
+Get:52 http://us.archive.ubuntu.com/ubuntu/ lucid/main libstartup-notification0 0.10-1build1 [20.0kB]
+Get:53 http://us.archive.ubuntu.com/ubuntu/ lucid/main libxt6 1:1.0.7-1 [195kB]
+Get:54 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main xulrunner-1.9.2 1.9.2.13+build3+nobinonly-0ubuntu0.10.04.1 [10.4MB]
+Get:55 http://us.archive.ubuntu.com/ubuntu/ lucid/main couchdb-bin 0.10.0-1ubuntu2 [547kB]
+Get:56 http://us.archive.ubuntu.com/ubuntu/ lucid/universe couchdb 0.10.0-1ubuntu2 [10.8kB]
+Get:57 http://us.archive.ubuntu.com/ubuntu/ lucid/main dictionaries-common 1.4.0ubuntu2 [288kB]
+Get:58 http://us.archive.ubuntu.com/ubuntu/ lucid/main hicolor-icon-theme 0.11-1 [9,956B]
+Get:59 http://us.archive.ubuntu.com/ubuntu/ lucid/main hunspell-en-us 20070829-4ubuntu1 [249kB]
+Get:60 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libatk1.0-data 1.30.0-0ubuntu2.1 [14.6kB]
+Get:61 http://us.archive.ubuntu.com/ubuntu/ lucid/main libfontenc1 1:1.0.5-1 [20.4kB]
+Get:62 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libgtk2.0-bin 2.20.1-0ubuntu2 [337kB]
+Get:63 http://us.archive.ubuntu.com/ubuntu/ lucid/main libxfont1 1:1.4.1-1 [154kB]
+Get:64 http://us.archive.ubuntu.com/ubuntu/ lucid/main xfonts-encodings 1:1.0.3-1 [584kB]
+Get:65 http://us.archive.ubuntu.com/ubuntu/ lucid/main xfonts-utils 1:7.5+2 [99.3kB]
+Get:66 http://us.archive.ubuntu.com/ubuntu/ lucid/main x-ttcidfont-conf 32 [23.8kB]
+Preconfiguring packages ...
+Fetched 33.1MB in 2min 40s (206kB/s)
+Selecting previously deselected package x11-common.
+(Reading database ... 61092 files and directories currently installed.)
+Unpacking x11-common (from .../x11-common_1%3a7.5+5ubuntu1_all.deb) ...
+Selecting previously deselected package libcurl3.
+Unpacking libcurl3 (from .../libcurl3_7.19.7-1ubuntu1_amd64.deb) ...
+Selecting previously deselected package libicu42.
+Unpacking libicu42 (from .../libicu42_4.2.1-3_amd64.deb) ...
+Selecting previously deselected package libasound2.
+Unpacking libasound2 (from .../libasound2_1.0.22-0ubuntu7_amd64.deb) ...
+Selecting previously deselected package libatk1.0-0.
+Unpacking libatk1.0-0 (from .../libatk1.0-0_1.30.0-0ubuntu2.1_amd64.deb) ...
+Selecting previously deselected package libsysfs2.
+Unpacking libsysfs2 (from .../libsysfs2_2.1.0-6_amd64.deb) ...
+Selecting previously deselected package tsconf.
+Unpacking tsconf (from .../tsconf_1.0-7build1_all.deb) ...
+Selecting previously deselected package libts-0.0-0.
+Unpacking libts-0.0-0 (from .../libts-0.0-0_1.0-7build1_amd64.deb) ...
+Selecting previously deselected package libdirectfb-1.2-0.
+Unpacking libdirectfb-1.2-0 (from .../libdirectfb-1.2-0_1.2.8-5ubuntu2_amd64.deb) ...
+Selecting previously deselected package ttf-dejavu-core.
+Unpacking ttf-dejavu-core (from .../ttf-dejavu-core_2.30-2_all.deb) ...
+Selecting previously deselected package fontconfig-config.
+Unpacking fontconfig-config (from .../fontconfig-config_2.8.0-2ubuntu1_all.deb) ...
+Selecting previously deselected package libfontconfig1.
+Unpacking libfontconfig1 (from .../libfontconfig1_2.8.0-2ubuntu1_amd64.deb) ...
+Selecting previously deselected package libpixman-1-0.
+Unpacking libpixman-1-0 (from .../libpixman-1-0_0.16.4-1ubuntu2_amd64.deb) ...
+Selecting previously deselected package libxcb-render0.
+Unpacking libxcb-render0 (from .../libxcb-render0_1.5-2_amd64.deb) ...
+Selecting previously deselected package libxcb-render-util0.
+Unpacking libxcb-render-util0 (from .../libxcb-render-util0_0.3.6-1build1_amd64.deb) ...
+Selecting previously deselected package libxrender1.
+Unpacking libxrender1 (from .../libxrender1_1%3a0.9.5-1_amd64.deb) ...
+Selecting previously deselected package libcairo2.
+Unpacking libcairo2 (from .../libcairo2_1.8.10-2ubuntu1_amd64.deb) ...
+Selecting previously deselected package libgtk2.0-common.
+Unpacking libgtk2.0-common (from .../libgtk2.0-common_2.20.1-0ubuntu2_all.deb) ...
+Selecting previously deselected package libavahi-common-data.
+Unpacking libavahi-common-data (from .../libavahi-common-data_0.6.25-1ubuntu6.1_amd64.deb) ...
+Selecting previously deselected package libavahi-common3.
+Unpacking libavahi-common3 (from .../libavahi-common3_0.6.25-1ubuntu6.1_amd64.deb) ...
+Selecting previously deselected package libavahi-client3.
+Unpacking libavahi-client3 (from .../libavahi-client3_0.6.25-1ubuntu6.1_amd64.deb) ...
+Selecting previously deselected package libcups2.
+Unpacking libcups2 (from .../libcups2_1.4.3-1ubuntu1.3_amd64.deb) ...
+Selecting previously deselected package libjpeg62.
+Unpacking libjpeg62 (from .../libjpeg62_6b-15ubuntu1_amd64.deb) ...
+Selecting previously deselected package libjasper1.
+Unpacking libjasper1 (from .../libjasper1_1.900.1-7_amd64.deb) ...
+Selecting previously deselected package defoma.
+Unpacking defoma (from .../defoma_0.11.10-4ubuntu1_all.deb) ...
+Selecting previously deselected package fontconfig.
+Unpacking fontconfig (from .../fontconfig_2.8.0-2ubuntu1_amd64.deb) ...
+Selecting previously deselected package libpango1.0-common.
+Unpacking libpango1.0-common (from .../libpango1.0-common_1.28.0-0ubuntu2.1_all.deb) ...
+Selecting previously deselected package libdatrie1.
+Unpacking libdatrie1 (from .../libdatrie1_0.2.2-3_amd64.deb) ...
+Selecting previously deselected package libthai-data.
+Unpacking libthai-data (from .../libthai-data_0.1.13-1build1_all.deb) ...
+Selecting previously deselected package libthai0.
+Unpacking libthai0 (from .../libthai0_0.1.13-1build1_amd64.deb) ...
+Selecting previously deselected package libxft2.
+Unpacking libxft2 (from .../libxft2_2.1.14-1ubuntu1_amd64.deb) ...
+Selecting previously deselected package libpango1.0-0.
+Unpacking libpango1.0-0 (from .../libpango1.0-0_1.28.0-0ubuntu2.1_amd64.deb) ...
+Selecting previously deselected package libtiff4.
+Unpacking libtiff4 (from .../libtiff4_3.9.2-2ubuntu0.3_amd64.deb) ...
+Selecting previously deselected package libxfixes3.
+Unpacking libxfixes3 (from .../libxfixes3_1%3a4.0.4-1_amd64.deb) ...
+Selecting previously deselected package libxcomposite1.
+Unpacking libxcomposite1 (from .../libxcomposite1_1%3a0.4.1-1_amd64.deb) ...
+Selecting previously deselected package libxcursor1.
+Unpacking libxcursor1 (from .../libxcursor1_1%3a1.1.10-1_amd64.deb) ...
+Selecting previously deselected package libxdamage1.
+Unpacking libxdamage1 (from .../libxdamage1_1%3a1.1.2-1_amd64.deb) ...
+Selecting previously deselected package libxi6.
+Unpacking libxi6 (from .../libxi6_2%3a1.3-3_amd64.deb) ...
+Selecting previously deselected package libxinerama1.
+Unpacking libxinerama1 (from .../libxinerama1_2%3a1.1-2_amd64.deb) ...
+Selecting previously deselected package libxrandr2.
+Unpacking libxrandr2 (from .../libxrandr2_2%3a1.3.0-3_amd64.deb) ...
+Selecting previously deselected package shared-mime-info.
+Unpacking shared-mime-info (from .../shared-mime-info_0.71-1ubuntu2_amd64.deb) ...
+Selecting previously deselected package libgtk2.0-0.
+Unpacking libgtk2.0-0 (from .../libgtk2.0-0_2.20.1-0ubuntu2_amd64.deb) ...
+Selecting previously deselected package libhunspell-1.2-0.
+Unpacking libhunspell-1.2-0 (from .../libhunspell-1.2-0_1.2.8-6ubuntu1_amd64.deb) ...
+Selecting previously deselected package libidl0.
+Unpacking libidl0 (from .../libidl0_0.8.13-1_amd64.deb) ...
+Selecting previously deselected package libnspr4-0d.
+Unpacking libnspr4-0d (from .../libnspr4-0d_4.8.6-0ubuntu0.10.04.2_amd64.deb) ...
+Selecting previously deselected package libnss3-1d.
+Unpacking libnss3-1d (from .../libnss3-1d_3.12.8-0ubuntu0.10.04.1_amd64.deb) ...
+Selecting previously deselected package libice6.
+Unpacking libice6 (from .../libice6_2%3a1.0.6-1_amd64.deb) ...
+Selecting previously deselected package libsm6.
+Unpacking libsm6 (from .../libsm6_2%3a1.1.1-1_amd64.deb) ...
+Selecting previously deselected package libxcb-atom1.
+Unpacking libxcb-atom1 (from .../libxcb-atom1_0.3.6-1build1_amd64.deb) ...
+Selecting previously deselected package libxcb-aux0.
+Unpacking libxcb-aux0 (from .../libxcb-aux0_0.3.6-1build1_amd64.deb) ...
+Selecting previously deselected package libxcb-event1.
+Unpacking libxcb-event1 (from .../libxcb-event1_0.3.6-1build1_amd64.deb) ...
+Selecting previously deselected package libstartup-notification0.
+Unpacking libstartup-notification0 (from .../libstartup-notification0_0.10-1build1_amd64.deb) ...
+Selecting previously deselected package libxt6.
+Unpacking libxt6 (from .../libxt6_1%3a1.0.7-1_amd64.deb) ...
+Selecting previously deselected package xulrunner-1.9.2.
+Unpacking xulrunner-1.9.2 (from .../xulrunner-1.9.2_1.9.2.13+build3+nobinonly-0ubuntu0.10.04.1_amd64.deb) ...
+Selecting previously deselected package couchdb-bin.
+Unpacking couchdb-bin (from .../couchdb-bin_0.10.0-1ubuntu2_amd64.deb) ...
+Selecting previously deselected package couchdb.
+Unpacking couchdb (from .../couchdb_0.10.0-1ubuntu2_all.deb) ...
+Selecting previously deselected package dictionaries-common.
+Unpacking dictionaries-common (from .../dictionaries-common_1.4.0ubuntu2_all.deb) ...
+Adding `diversion of /usr/share/dict/words to /usr/share/dict/words.pre-dictionaries-common by dictionaries-common'
+Selecting previously deselected package hicolor-icon-theme.
+Unpacking hicolor-icon-theme (from .../hicolor-icon-theme_0.11-1_all.deb) ...
+Selecting previously deselected package hunspell-en-us.
+Unpacking hunspell-en-us (from .../hunspell-en-us_20070829-4ubuntu1_all.deb) ...
+Selecting previously deselected package libatk1.0-data.
+Unpacking libatk1.0-data (from .../libatk1.0-data_1.30.0-0ubuntu2.1_all.deb) ...
+Selecting previously deselected package libfontenc1.
+Unpacking libfontenc1 (from .../libfontenc1_1%3a1.0.5-1_amd64.deb) ...
+Selecting previously deselected package libgtk2.0-bin.
+Unpacking libgtk2.0-bin (from .../libgtk2.0-bin_2.20.1-0ubuntu2_all.deb) ...
+Selecting previously deselected package libxfont1.
+Unpacking libxfont1 (from .../libxfont1_1%3a1.4.1-1_amd64.deb) ...
+Selecting previously deselected package xfonts-encodings.
+Unpacking xfonts-encodings (from .../xfonts-encodings_1%3a1.0.3-1_all.deb) ...
+Selecting previously deselected package xfonts-utils.
+Unpacking xfonts-utils (from .../xfonts-utils_1%3a7.5+2_amd64.deb) ...
+Selecting previously deselected package x-ttcidfont-conf.
+Unpacking x-ttcidfont-conf (from .../x-ttcidfont-conf_32_all.deb) ...
+Processing triggers for ureadahead ...
+Processing triggers for man-db ...
+Setting up x11-common (1:7.5+5ubuntu1) ...
+
+Setting up libcurl3 (7.19.7-1ubuntu1) ...
+
+Setting up libicu42 (4.2.1-3) ...
+
+Setting up libasound2 (1.0.22-0ubuntu7) ...
+
+Setting up libatk1.0-0 (1.30.0-0ubuntu2.1) ...
+
+Setting up libsysfs2 (2.1.0-6) ...
+
+Setting up tsconf (1.0-7build1) ...
+Setting up libts-0.0-0 (1.0-7build1) ...
+
+Setting up libdirectfb-1.2-0 (1.2.8-5ubuntu2) ...
+
+Setting up ttf-dejavu-core (2.30-2) ...
+Setting up fontconfig-config (2.8.0-2ubuntu1) ...
+
+Setting up libfontconfig1 (2.8.0-2ubuntu1) ...
+
+Setting up libpixman-1-0 (0.16.4-1ubuntu2) ...
+
+Setting up libxcb-render0 (1.5-2) ...
+
+Setting up libxcb-render-util0 (0.3.6-1build1) ...
+
+Setting up libxrender1 (1:0.9.5-1) ...
+
+Setting up libcairo2 (1.8.10-2ubuntu1) ...
+
+Setting up libgtk2.0-common (2.20.1-0ubuntu2) ...
+Setting up libavahi-common-data (0.6.25-1ubuntu6.1) ...
+Setting up libavahi-common3 (0.6.25-1ubuntu6.1) ...
+
+Setting up libavahi-client3 (0.6.25-1ubuntu6.1) ...
+
+Setting up libcups2 (1.4.3-1ubuntu1.3) ...
+
+Setting up libjpeg62 (6b-15ubuntu1) ...
+
+Setting up libjasper1 (1.900.1-7) ...
+
+Setting up defoma (0.11.10-4ubuntu1) ...
+
+Setting up fontconfig (2.8.0-2ubuntu1) ...
+Cleaning up old fontconfig caches... done.
+Regenerating fonts cache... done.
+
+Setting up libpango1.0-common (1.28.0-0ubuntu2.1) ...
+*** You don't have any defomized font packages.
+*** So we are trying to force to generate pangox.aliases...
+
+Setting up libdatrie1 (0.2.2-3) ...
+
+Setting up libthai-data (0.1.13-1build1) ...
+Setting up libthai0 (0.1.13-1build1) ...
+
+Setting up libxft2 (2.1.14-1ubuntu1) ...
+
+Setting up libpango1.0-0 (1.28.0-0ubuntu2.1) ...
+
+Setting up libtiff4 (3.9.2-2ubuntu0.3) ...
+
+Setting up libxfixes3 (1:4.0.4-1) ...
+
+Setting up libxcomposite1 (1:0.4.1-1) ...
+
+Setting up libxcursor1 (1:1.1.10-1) ...
+
+Setting up libxdamage1 (1:1.1.2-1) ...
+
+Setting up libxi6 (2:1.3-3) ...
+
+Setting up libxinerama1 (2:1.1-2) ...
+
+Setting up libxrandr2 (2:1.3.0-3) ...
+
+Setting up shared-mime-info (0.71-1ubuntu2) ...
+
+Setting up libgtk2.0-0 (2.20.1-0ubuntu2) ...
+
+Setting up libhunspell-1.2-0 (1.2.8-6ubuntu1) ...
+
+Setting up libidl0 (0.8.13-1) ...
+
+Setting up libnspr4-0d (4.8.6-0ubuntu0.10.04.2) ...
+
+Setting up libnss3-1d (3.12.8-0ubuntu0.10.04.1) ...
+
+Setting up libice6 (2:1.0.6-1) ...
+
+Setting up libsm6 (2:1.1.1-1) ...
+
+Setting up libxcb-atom1 (0.3.6-1build1) ...
+
+Setting up libxcb-aux0 (0.3.6-1build1) ...
+
+Setting up libxcb-event1 (0.3.6-1build1) ...
+
+Setting up libstartup-notification0 (0.10-1build1) ...
+
+Setting up libxt6 (1:1.0.7-1) ...
+
+Setting up xulrunner-1.9.2 (1.9.2.13+build3+nobinonly-0ubuntu0.10.04.1) ...
+update-alternatives: using /usr/bin/xulrunner-1.9.2 to provide /usr/bin/xulrunner (xulrunner) in auto mode.
+
+Setting up couchdb-bin (0.10.0-1ubuntu2) ...
+
+Setting up couchdb (0.10.0-1ubuntu2) ...
+ * Starting database server couchdb
+   ...done.
+
+Setting up dictionaries-common (1.4.0ubuntu2) ...
+
+Setting up hicolor-icon-theme (0.11-1) ..: stdout
+[0K[chefserver] .
+
+Setting up hunspell-en-us (20070829-4ubuntu1) ...
+
+Setting up libatk1.0-data (1.30.0-0ubuntu2.1) ...
+Setting up libfontenc1 (1:1.0.5-1) ...
+
+Setting up libgtk2.0-bin (2.20.1-0ubuntu2) ...
+Setting up libxfont1 (1:1.4.1-1) ...
+
+Setting up xfonts-encodings (1:1.0.3-1) ...
+Setting up xfonts-utils (1:7.5+2) ...
+
+Setting up x-ttcidfont-conf (32) ...
+
+Processing triggers for libc-bin ...
+ldconfig deferred processing now taking place
+[Mon, 21 Feb 2011 15:58:57 -0800] DEBUG: STDERR: Extracting templates from packages: 45%Extracting templates from packages: 90%Extracting templates from packages: 100%
+Updating font configuration of fontconfig...
+Cleaning up category cid..
+Cleaning up category truetype..
+Cleaning up category type1..
+Updating category type1..
+Updating category truetype..
+Updating category cid..
+Cleaning up font configuration of pango...
+Updating font configuration of pango...
+Cleaning up category xfont..
+Updating category xfont..
+Updating font configuration of x-ttcidfont-conf...
+Cleaning up category cmap..
+Cleaning up category cid..
+Cleaning up category truetype..
+Updating category truetype..
+Updating category cid..
+Updating category cmap..
+[Mon, 21 Feb 2011 15:58:57 -0800] DEBUG: ---- End output of apt-get -q -y install couchdb=0.10.0-1ubuntu2 ----
+[Mon, 21 Feb 2011 15:58:57 -0800] DEBUG: Ran apt-get -q -y install couchdb=0.10.0-1ubuntu2 returned 0
+[Mon, 21 Feb 2011 15:58:57 -0800] DEBUG: Processing directory[/var/lib/couchdb] on chefserver
+[Mon, 21 Feb 2011 15:58:57 -0800] DEBUG: Processing service[couchdb] on chefserver
+[Mon, 21 Feb 2011 15:58:57 -0800] DEBUG: service[couchdb] supports status, running
+[Mon, 21 Feb 2011 15:58:57 -0800] DEBUG: Executing /etc/init.d/couchdb status
+: stdout
+[0K[chefserver] [Mon, 21 Feb 2011 15:58:57 -0800] DEBUG: ---- Begin output of /etc/init.d/couchdb status ----
+[Mon, 21 Feb 2011 15:58:57 -0800] DEBUG: STDOUT: Apache CouchDB is running as process 4284, time to relax.
+[Mon, 21 Feb 2011 15:58:57 -0800] DEBUG: STDERR: 
+[Mon, 21 Feb 2011 15:58:57 -0800] DEBUG: ---- End output of /etc/init.d/couchdb status ----
+[Mon, 21 Feb 2011 15:58:57 -0800] DEBUG: Ran /etc/init.d/couchdb status returned 0
+: stdout[0K[chefserver] [Mon, 21 Feb 2011 15:58:57 -0800] DEBUG: service[couchdb]: not enabling, already enabled
+[Mon, 21 Feb 2011 15:58:57 -0800] DEBUG: service[couchdb] supports status, running
+[Mon, 21 Feb 2011 15:58:57 -0800] DEBUG: Executing /etc/init.d/couchdb status
+: stdout
+[0K[chefserver] [Mon, 21 Feb 2011 15:58:57 -0800] DEBUG: ---- Begin output of /etc/init.d/couchdb status ----
+[Mon, 21 Feb 2011 15:58:57 -0800] DEBUG: STDOUT: Apache CouchDB is running as process 4284, time to relax.
+[Mon, 21 Feb 2011 15:58:57 -0800] DEBUG: STDERR: 
+[Mon, 21 Feb 2011 15:58:57 -0800] DEBUG: ---- End output of /etc/init.d/couchdb status ----
+[Mon, 21 Feb 2011 15:58:57 -0800] DEBUG: Ran /etc/init.d/couchdb status returned 0
+: stdout[0K[chefserver] [Mon, 21 Feb 2011 15:58:57 -0800] DEBUG: service[couchdb]: not starting, already running
+[Mon, 21 Feb 2011 15:58:57 -0800] DEBUG: Processing ruby_block[reload_ohai] on chefserver
+[Mon, 21 Feb 2011 15:58:57 -0800] DEBUG: Doing nothing for ruby_block[reload_ohai]
+[Mon, 21 Feb 2011 15:58:57 -0800] DEBUG: Processing execute[update-java-alternatives] on chefserver
+[Mon, 21 Feb 2011 15:58:57 -0800] DEBUG: Doing nothing for execute[update-java-alternatives]
+[Mon, 21 Feb 2011 15:58:57 -0800] DEBUG: Processing package[openjdk-6-jre] on chefserver
+[Mon, 21 Feb 2011 15:58:57 -0800] DEBUG: Checking apt-cache policy for openjdk-6-jre
+: stdout
+[0K[chefserver] [Mon, 21 Feb 2011 15:58:57 -0800] DEBUG: Current version is nil
+[Mon, 21 Feb 2011 15:58:57 -0800] DEBUG: Current version is 6b20-1.9.5-0ubuntu1~10.04.1
+[Mon, 21 Feb 2011 15:58:57 -0800] INFO: Installing package[openjdk-6-jre] version 6b20-1.9.5-0ubuntu1~10.04.1
+[Mon, 21 Feb 2011 15:58:57 -0800] DEBUG: Executing apt-get -q -y install openjdk-6-jre=6b20-1.9.5-0ubuntu1~10.04.1
+: stdout
+[0K[chefserver] [Mon, 21 Feb 2011 16:01:56 -0800] DEBUG: ---- Begin output of apt-get -q -y install openjdk-6-jre=6b20-1.9.5-0ubuntu1~10.04.1 ----
+[Mon, 21 Feb 2011 16:01:56 -0800] DEBUG: STDOUT: Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  ca-certificates-java icedtea-6-jre-cacao java-common libaccess-bridge-java
+  libaccess-bridge-java-jni libflac8 libgif4 liblcms1 libogg0 libpulse0
+  libsndfile1 libvorbis0a libvorbisenc2 libxtst6 openjdk-6-jre
+  openjdk-6-jre-headless openjdk-6-jre-lib ttf-dejavu-extra tzdata-java
+Suggested packages:
+  default-jre equivs liblcms-utils pulseaudio icedtea6-plugin libnss-mdns
+  sun-java6-fonts ttf-baekmuk ttf-unfonts ttf-unfonts-core ttf-sazanami-gothic
+  ttf-kochi-gothic ttf-sazanami-mincho ttf-kochi-mincho ttf-wqy-microhei
+  ttf-wqy-zenhei ttf-indic-fonts-core ttf-telugu-fonts ttf-oriya-fonts
+  ttf-kannada-fonts ttf-bengali-fonts
+The following NEW packages will be installed:
+  ca-certificates-java icedtea-6-jre-cacao java-common libaccess-bridge-java
+  libaccess-bridge-java-jni libflac8 libgif4 liblcms1 libogg0 libpulse0
+  libsndfile1 libvorbis0a libvorbisenc2 libxtst6 openjdk-6-jre
+  openjdk-6-jre-headless openjdk-6-jre-lib ttf-dejavu-extra tzdata-java
+0 upgraded, 19 newly installed, 0 to remove and 46 not upgraded.
+Need to get 37.4MB of archives.
+After this operation, 101MB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main openjdk-6-jre-lib 6b20-1.9.5-0ubuntu1~10.04.1 [6,156kB]
+Get:2 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main tzdata-java 2010o-0ubuntu0.10.04 [144kB]
+Get:3 http://us.archive.ubuntu.com/ubuntu/ lucid/main java-common 0.34 [80.3kB]
+Get:4 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main liblcms1 1.18.dfsg-1ubuntu2.10.04.1 [111kB]
+Get:5 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main openjdk-6-jre-headless 6b20-1.9.5-0ubuntu1~10.04.1 [25.6MB]
+Get:6 http://us.archive.ubuntu.com/ubuntu/ lucid/main ca-certificates-java 20100406ubuntu1 [101kB]
+Get:7 http://us.archive.ubuntu.com/ubuntu/ lucid/main libgif4 4.1.6-9 [41.4kB]
+Get:8 http://us.archive.ubuntu.com/ubuntu/ lucid/main libogg0 1.1.4~dfsg-2 [17.3kB]
+Get:9 http://us.archive.ubuntu.com/ubuntu/ lucid/main libflac8 1.2.1-2build2 [151kB]
+Get:10 http://us.archive.ubuntu.com/ubuntu/ lucid/main libvorbis0a 1.2.3-3ubuntu1 [111kB]
+Get:11 http://us.archive.ubuntu.com/ubuntu/ lucid/main libvorbisenc2 1.2.3-3ubuntu1 [97.2kB]
+Get:12 http://us.archive.ubuntu.com/ubuntu/ lucid/main libsndfile1 1.0.21-2 [233kB]
+Get:13 http://us.archive.ubuntu.com/ubuntu/ lucid/main libxtst6 2:1.1.0-2 [19.9kB]
+Get:14 http://us.archive.ubuntu.com/ubuntu/ lucid/main libpulse0 1:0.9.22~0.9.21+stable-queue-32-g8478-0ubuntu14 [274kB]
+Get:15 http://us.archive.ubuntu.com/ubuntu/ lucid/main libaccess-bridge-java-jni 1.26.2-3 [8,676B]
+Get:16 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main openjdk-6-jre 6b20-1.9.5-0ubuntu1~10.04.1 [271kB]
+Get:17 http://us.archive.ubuntu.com/ubuntu/ lucid/main libaccess-bridge-java 1.26.2-3 [409kB]
+Get:18 http://us.archive.ubuntu.com/ubuntu/ lucid/main ttf-dejavu-extra 2.30-2 [3,107kB]
+Get:19 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main icedtea-6-jre-cacao 6b20-1.9.5-0ubuntu1~10.04.1 [431kB]
+Fetched 37.4MB in 2min 43s (229kB/s)
+Selecting previously deselected package openjdk-6-jre-lib.
+(Reading database ... 63043 files and directories currently installed.)
+Unpacking openjdk-6-jre-lib (from .../openjdk-6-jre-lib_6b20-1.9.5-0ubuntu1~10.04.1_all.deb) ...
+Selecting previously deselected package tzdata-java.
+Unpacking tzdata-java (from .../tzdata-java_2010o-0ubuntu0.10.04_all.deb) ...
+Selecting previously deselected package java-common.
+Unpacking java-common (from .../java-common_0.34_all.deb) ...
+Selecting previously deselected package liblcms1.
+Unpacking liblcms1 (from .../liblcms1_1.18.dfsg-1ubuntu2.10.04.1_amd64.deb) ...
+Selecting previously deselected package openjdk-6-jre-headless.
+Unpacking openjdk-6-jre-headless (from .../openjdk-6-jre-headless_6b20-1.9.5-0ubuntu1~10.04.1_amd64.deb) ...
+Selecting previously deselected package ca-certificates-java.
+Unpacking ca-certificates-java (from .../ca-certificates-java_20100406ubuntu1_all.deb) ...
+Selecting previously deselected package libgif4.
+Unpacking libgif4 (from .../libgif4_4.1.6-9_amd64.deb) ...
+Selecting previously deselected package libogg0.
+Unpacking libogg0 (from .../libogg0_1.1.4~dfsg-2_amd64.deb) ...
+Selecting previously deselected package libflac8.
+Unpacking libflac8 (from .../libflac8_1.2.1-2build2_amd64.deb) ...
+Selecting previously deselected package libvorbis0a.
+Unpacking libvorbis0a (from .../libvorbis0a_1.2.3-3ubuntu1_amd64.deb) ...
+Selecting previously deselected package libvorbisenc2.
+Unpacking libvorbisenc2 (from .../libvorbisenc2_1.2.3-3ubuntu1_amd64.deb) ...
+Selecting previously deselected package libsndfile1.
+Unpacking libsndfile1 (from .../libsndfile1_1.0.21-2_amd64.deb) ...
+Selecting previously deselected package libxtst6.
+Unpacking libxtst6 (from .../libxtst6_2%3a1.1.0-2_amd64.deb) ...
+Selecting previously deselected package libpulse0.
+Unpacking libpulse0 (from .../libpulse0_1%3a0.9.22~0.9.21+stable-queue-32-g8478-0ubuntu14_amd64.deb) ...
+Selecting previously deselected package libaccess-bridge-java-jni.
+Unpacking libaccess-bridge-java-jni (from .../libaccess-bridge-java-jni_1.26.2-3_amd64.deb) ...
+Selecting previously deselected package openjdk-6-jre.
+Unpacking openjdk-6-jre (from .../openjdk-6-jre_6b20-1.9.5-0ubuntu1~10.04.1_amd64.deb) ...
+Selecting previously deselected package libaccess-bridge-java.
+Unpacking libaccess-bridge-java (from .../libaccess-bridge-java_1.26.2-3_all.deb) ...
+Selecting previously deselected package ttf-dejavu-extra.
+Unpacking ttf-dejavu-extra (from .../ttf-dejavu-extra_2.30-2_all.deb) ...
+Selecting previously deselected package icedtea-6-jre-cacao.
+Unpacking icedtea-6-jre-cacao (from .../icedtea-6-jre-cacao_6b20-1.9.5-0ubuntu1~10.04.1_amd64.deb) ...
+Processing triggers for man-db ...
+Processing triggers for hicolor-icon-theme ...
+Processing triggers for fontconfig ...
+Setting up tzdata-java (2010o-0ubuntu0.10.04) ...
+Setting up java-common (0.34) ...
+Setting up liblcms1 (1.18.dfsg-1ubuntu2.10.04.1) ...
+
+Setting up libgif4 (4.1.6-9) ...
+
+Setting up libogg0 (1.1.4~dfsg-2) ...
+
+Setting up libflac8 (1.2.1-2build2) ...
+
+Setting up libvorbis0a (1.2.3-3ubuntu1) ...
+
+Setting up libvorbisenc2 (1.2.3-3ubuntu1) ...
+
+Setting up libsndfile1 (1.0.21-2) ...
+
+Setting up libxtst6 (2:1.1.0-2) ...
+
+Setting up libpulse0 (1:0.9.22~0.9.21+stable-queue-32-g8478-0ubuntu14) ...
+
+Setting up ttf-dejavu-extra (2.30-2) ...
+Setting up openjdk-6-jre-lib (6b20-1.9.5-0ubuntu1~10.04.1) ...
+
+Setting up openjdk-6-jre-headless (6b20-1.9.5-0ubuntu1~10.04.1) ...
+update-alternatives: using /usr/lib/jvm/java-6-openjdk/jre/bin/java to provide /usr/bin/java (java) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-6-openjdk/jre/bin/keytool to provide /usr/bin/keytool (keytool) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-6-openjdk/jre/bin/pack200 to provide /usr/bin/pack200 (pack200) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-6-openjdk/jre/bin/rmid to provide /usr/bin/rmid (rmid) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-6-openjdk/jre/bin/rmiregistry to provide /usr/bin/rmiregistry (rmiregistry) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-6-openjdk/jre/bin/unpack200 to provide /usr/bin/unpack200 (unpack200) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-6-openjdk/jre/bin/orbd to provide /usr/bin/orbd (orbd) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-6-openjdk/jre/bin/servertool to provide /usr/bin/servertool (servertool) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-6-openjdk/jre/bin/tnameserv to provide /usr/bin/tnameserv (tnameserv) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-6-openjdk/jre/lib/jexec to provide /usr/bin/jexec (jexec) in auto mode.
+
+Setting up libaccess-bridge-java (1.26.2-3) ...
+Setting up libaccess-bridge-java-jni (1.26.2-3) ...
+
+Setting up icedtea-6-jre-cacao (6b20-1.9.5-0ubuntu1~10.04.1) ...
+Setting up ca-certificates-java (20100406ubuntu1) ...
+creating /etc/ssl/certs/java/cacerts...
+done.
+
+Setting up openjdk-6-jre (6b20-1.9.5-0ubuntu1~10.04.1) ...
+update-alternatives: using /usr/lib/jvm/java-6-openjdk/jre/bin/javaws to provide /usr/bin/javaws (javaws) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-6-openjdk/jre/bin/pluginappletviewer to provide /usr/bin/pluginappletviewer (pluginappletviewer) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-6-openjdk/jre/bin/policytool to provide /usr/bin/policytool (policytool) in auto mode.
+
+Processing triggers for libc-bin ...
+ldconfig deferred processing now taking place
+[Mon, 21 Feb 2011 16:01:56 -0800] DEBUG: STDERR: 
+[Mon, 21 Feb 2011 16:01:56 -0800] DEBUG: ---- End output of apt-get -q -y install openjdk-6-jre=6b20-1.9.5-0ubuntu1~10.04.1 ----
+[Mon, 21 Feb 2011 16:01:56 -0800] DEBUG: Ran apt-get -q -y install openjdk-6-jre=6b20-1.9.5-0ubuntu1~10.04.1 returned 0
+[Mon, 21 Feb 2011 16:01:56 -0800] DEBUG: Processing package[default-jre] on chefserver
+[Mon, 21 Feb 2011 16:01:56 -0800] DEBUG: Checking apt-cache policy for default-jre
+: stdout[0K[chefserver] [Mon, 21 Feb 2011 16:01:56 -0800] DEBUG: Current version is nil
+[Mon, 21 Feb 2011 16:01:56 -0800] DEBUG: Current version is 1.6-34
+[Mon, 21 Feb 2011 16:01:56 -0800] INFO: Installing package[default-jre] version 1.6-34
+[Mon, 21 Feb 2011 16:01:56 -0800] DEBUG: Executing apt-get -q -y install default-jre=1.6-34
+: stdout
+[0K[chefserver] [Mon, 21 Feb 2011 16:01:58 -0800] DEBUG: ---- Begin output of apt-get -q -y install default-jre=1.6-34 ----
+[Mon, 21 Feb 2011 16:01:58 -0800] DEBUG: STDOUT: Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  default-jre default-jre-headless
+The following NEW packages will be installed:
+  default-jre default-jre-headless
+0 upgraded, 2 newly installed, 0 to remove and 46 not upgraded.
+Need to get 7,326B of archives.
+After this operation, 86.0kB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu/ lucid/main default-jre-headless 1.6-34 [6,258B]
+Get:2 http://us.archive.ubuntu.com/ubuntu/ lucid/main default-jre 1.6-34 [1,068B]
+Fetched 7,326B in 1s (5,448B/s)
+Selecting previously deselected package default-jre-headless.
+(Reading database ... 63950 files and directories currently installed.)
+Unpacking default-jre-headless (from .../default-jre-headless_1.6-34_amd64.deb) ...
+Selecting previously deselected package default-jre.
+Unpacking default-jre (from .../default-jre_1.6-34_amd64.deb) ...
+Setting up default-jre-headless (1.6-34) ...
+Setting up default-jre (1.6-34) ...
+[Mon, 21 Feb 2011 16:01:58 -0800] DEBUG: STDERR: 
+[Mon, 21 Feb 2011 16:01:58 -0800] DEBUG: ---- End output of apt-get -q -y install default-jre=1.6-34 ----
+[Mon, 21 Feb 2011 16:01:58 -0800] DEBUG: Ran apt-get -q -y install default-jre=1.6-34 returned 0
+[Mon, 21 Feb 2011 16:01:58 -0800] INFO: package[default-jre] not queuing delayed action run on execute[update-java-alternatives] (delayed), as it's already been queued
+[Mon, 21 Feb 2011 16:01:58 -0800] DEBUG: Processing package[icedtea6-plugin] on chefserver
+[Mon, 21 Feb 2011 16:01:58 -0800] DEBUG: Checking apt-cache policy for icedtea6-plugin
+: stdout[0K[chefserver] [Mon, 21 Feb 2011 16:01:58 -0800] DEBUG: Current version is nil
+[Mon, 21 Feb 2011 16:01:58 -0800] DEBUG: Current version is 6b20-1.9.5-0ubuntu1~10.04.1
+[Mon, 21 Feb 2011 16:01:58 -0800] INFO: Installing package[icedtea6-plugin] version 6b20-1.9.5-0ubuntu1~10.04.1
+[Mon, 21 Feb 2011 16:01:58 -0800] DEBUG: Executing apt-get -q -y install icedtea6-plugin=6b20-1.9.5-0ubuntu1~10.04.1
+: stdout
+[0K[chefserver] [Mon, 21 Feb 2011 16:02:02 -0800] DEBUG: ---- Begin output of apt-get -q -y install icedtea6-plugin=6b20-1.9.5-0ubuntu1~10.04.1 ----
+[Mon, 21 Feb 2011 16:02:02 -0800] DEBUG: STDOUT: Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  icedtea6-plugin
+0 upgraded, 1 newly installed, 0 to remove and 46 not upgraded.
+Need to get 84.1kB of archives.
+After this operation, 283kB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main icedtea6-plugin 6b20-1.9.5-0ubuntu1~10.04.1 [84.1kB]
+Fetched 84.1kB in 2s (35.2kB/s)
+Selecting previously deselected package icedtea6-plugin.
+(Reading database ... 63957 files and directories currently installed.)
+Unpacking icedtea6-plugin (from .../icedtea6-plugin_6b20-1.9.5-0ubuntu1~10.04.1_amd64.deb) ...
+Setting up icedtea6-plugin (6b20-1.9.5-0ubuntu1~10.04.1) ...
+
+[Mon, 21 Feb 2011 16:02:02 -0800] DEBUG: STDERR: 
+[Mon, 21 Feb 2011 16:02:02 -0800] DEBUG: ---- End output of apt-get -q -y install icedtea6-plugin=6b20-1.9.5-0ubuntu1~10.04.1 ----
+[Mon, 21 Feb 2011 16:02:02 -0800] DEBUG: Ran apt-get -q -y install icedtea6-plugin=6b20-1.9.5-0ubuntu1~10.04.1 returned 0
+[Mon, 21 Feb 2011 16:02:02 -0800] INFO: package[icedtea6-plugin] not queuing delayed action run on execute[update-java-alternatives] (delayed), as it's already been queued
+[Mon, 21 Feb 2011 16:02:02 -0800] DEBUG: Processing package[rabbitmq-server] on chefserver
+[Mon, 21 Feb 2011 16:02:02 -0800] DEBUG: Checking apt-cache policy for rabbitmq-server
+: stdout[0K[chefserver] [Mon, 21 Feb 2011 16:02:02 -0800] DEBUG: Current version is nil
+[Mon, 21 Feb 2011 16:02:02 -0800] DEBUG: Current version is 1.7.2-1ubuntu1
+[Mon, 21 Feb 2011 16:02:02 -0800] INFO: Installing package[rabbitmq-server] version 1.7.2-1ubuntu1
+[Mon, 21 Feb 2011 16:02:02 -0800] DEBUG: Executing apt-get -q -y install rabbitmq-server=1.7.2-1ubuntu1
+: stdout
+[0K[chefserver] [Mon, 21 Feb 2011 16:02:11 -0800] DEBUG: ---- Begin output of apt-get -q -y install rabbitmq-server=1.7.2-1ubuntu1 ----
+[Mon, 21 Feb 2011 16:02:11 -0800] DEBUG: STDOUT: Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  rabbitmq-server
+0 upgraded, 1 newly installed, 0 to remove and 46 not upgraded.
+Need to get 560kB of archives.
+After this operation, 1,069kB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu/ lucid/main rabbitmq-server 1.7.2-1ubuntu1 [560kB]
+Preconfiguring packages ...
+Fetched 560kB in 4s (134kB/s)
+Selecting previously deselected package rabbitmq-server.
+(Reading database ... 63961 files and directories currently installed.)
+Unpacking rabbitmq-server (from .../rabbitmq-server_1.7.2-1ubuntu1_all.deb) ...
+Processing triggers for man-db ...
+Processing triggers for ureadahead ...
+Setting up rabbitmq-server (1.7.2-1ubuntu1) ...
+Adding group `rabbitmq' (GID 113) ...
+Done.
+Adding system user `rabbitmq' (UID 106) ...
+Adding new user `rabbitmq' (UID 106) with group `rabbitmq' ...
+Not creating home directory `/var/lib/rabbitmq'.
+Starting rabbitmq-server: SUCCESS
+rabbitmq-server.
+
+[Mon, 21 Feb 2011 16:02:11 -0800] DEBUG: STDERR: 
+[Mon, 21 Feb 2011 16:02:11 -0800] DEBUG: ---- End output of apt-get -q -y install rabbitmq-server=1.7.2-1ubuntu1 ----
+[Mon, 21 Feb 2011 16:02:11 -0800] DEBUG: Ran apt-get -q -y install rabbitmq-server=1.7.2-1ubuntu1 returned 0
+[Mon, 21 Feb 2011 16:02:11 -0800] DEBUG: Processing service[rabbitmq-server] on chefserver
+[Mon, 21 Feb 2011 16:02:11 -0800] DEBUG: service[rabbitmq-server] supports status, running
+[Mon, 21 Feb 2011 16:02:11 -0800] DEBUG: Executing /etc/init.d/rabbitmq-server status
+: stdout[0K[chefserver] [Mon, 21 Feb 2011 16:02:11 -0800] DEBUG: ---- Begin output of /etc/init.d/rabbitmq-server status ----
+[Mon, 21 Feb 2011 16:02:11 -0800] DEBUG: STDOUT: Status of all running nodes...
+Node 'rabbit@chefserver' with Pid 5663: running
+done.
+[Mon, 21 Feb 2011 16:02:11 -0800] DEBUG: STDERR: 
+[Mon, 21 Feb 2011 16:02:11 -0800] DEBUG: ---- End output of /etc/init.d/rabbitmq-server status ----
+[Mon, 21 Feb 2011 16:02:11 -0800] DEBUG: Ran /etc/init.d/rabbitmq-server status returned 0
+: stdout[0K[chefserver] [Mon, 21 Feb 2011 16:02:11 -0800] DEBUG: service[rabbitmq-server]: not enabling, already enabled
+[Mon, 21 Feb 2011 16:02:11 -0800] DEBUG: service[rabbitmq-server] supports status, running
+[Mon, 21 Feb 2011 16:02:11 -0800] DEBUG: Executing /etc/init.d/rabbitmq-server status
+: stdout
+[0K[chefserver] [Mon, 21 Feb 2011 16:02:11 -0800] DEBUG: ---- Begin output of /etc/init.d/rabbitmq-server status ----
+[Mon, 21 Feb 2011 16:02:11 -0800] DEBUG: STDOUT: Status of all running nodes...
+Node 'rabbit@chefserver' with Pid 5663: running
+done.
+[Mon, 21 Feb 2011 16:02:11 -0800] DEBUG: STDERR: 
+[Mon, 21 Feb 2011 16:02:11 -0800] DEBUG: ---- End output of /etc/init.d/rabbitmq-server status ----
+[Mon, 21 Feb 2011 16:02:11 -0800] DEBUG: Ran /etc/init.d/rabbitmq-server status returned 0
+: stdout[0K[chefserver] [Mon, 21 Feb 2011 16:02:11 -0800] DEBUG: service[rabbitmq-server]: not starting, already running
+[Mon, 21 Feb 2011 16:02:11 -0800] DEBUG: Processing execute[rabbitmqctl add_vhost /chef] on chefserver
+[Mon, 21 Feb 2011 16:02:11 -0800] DEBUG: Executing rabbitmqctl list_vhosts| grep /chef
+: stdout
+[0K[chefserver] [Mon, 21 Feb 2011 16:02:11 -0800] DEBUG: ---- Begin output of rabbitmqctl list_vhosts| grep /chef ----
+[Mon, 21 Feb 2011 16:02:11 -0800] DEBUG: STDOUT: 
+[Mon, 21 Feb 2011 16:02:11 -0800] DEBUG: STDERR: 
+[Mon, 21 Feb 2011 16:02:11 -0800] DEBUG: ---- End output of rabbitmqctl list_vhosts| grep /chef ----
+[Mon, 21 Feb 2011 16:02:11 -0800] DEBUG: Ran rabbitmqctl list_vhosts| grep /chef returned 1
+[Mon, 21 Feb 2011 16:02:11 -0800] DEBUG: Executing rabbitmqctl add_vhost /chef
+: stdout[0K[chefserver] [Mon, 21 Feb 2011 16:02:11 -0800] DEBUG: ---- Begin output of rabbitmqctl add_vhost /chef ----
+[Mon, 21 Feb 2011 16:02:11 -0800] DEBUG: STDOUT: Creating vhost "/chef" ...
+...done.
+[Mon, 21 Feb 2011 16:02:11 -0800] DEBUG: STDERR: 
+[Mon, 21 Feb 2011 16:02:11 -0800] DEBUG: ---- End output of rabbitmqctl add_vhost /chef ----
+[Mon, 21 Feb 2011 16:02:11 -0800] DEBUG: Ran rabbitmqctl add_vhost /chef returned 0
+[Mon, 21 Feb 2011 16:02:11 -0800] INFO: Ran execute[rabbitmqctl add_vhost /chef] successfully
+[Mon, 21 Feb 2011 16:02:11 -0800] DEBUG: Processing execute[rabbitmqctl add_user chef testing] on chefserver
+[Mon, 21 Feb 2011 16:02:11 -0800] DEBUG: Executing rabbitmqctl list_users |grep chef
+: stdout[0K[chefserver] [Mon, 21 Feb 2011 16:02:12 -0800] DEBUG: ---- Begin output of rabbitmqctl list_users |grep chef ----
+[Mon, 21 Feb 2011 16:02:12 -0800] DEBUG: STDOUT: 
+[Mon, 21 Feb 2011 16:02:12 -0800] DEBUG: STDERR: 
+[Mon, 21 Feb 2011 16:02:12 -0800] DEBUG: ---- End output of rabbitmqctl list_users |grep chef ----
+[Mon, 21 Feb 2011 16:02:12 -0800] DEBUG: Ran rabbitmqctl list_users |grep chef returned 1
+[Mon, 21 Feb 2011 16:02:12 -0800] DEBUG: Executing rabbitmqctl add_user chef testing
+: stdout[0K[chefserver] [Mon, 21 Feb 2011 16:02:12 -0800] DEBUG: ---- Begin output of rabbitmqctl add_user chef testing ----
+[Mon, 21 Feb 2011 16:02:12 -0800] DEBUG: STDOUT: Creating user "chef" ...
+...done.
+[Mon, 21 Feb 2011 16:02:12 -0800] DEBUG: STDERR: 
+[Mon, 21 Feb 2011 16:02:12 -0800] DEBUG: ---- End output of rabbitmqctl add_user chef testing ----
+[Mon, 21 Feb 2011 16:02:12 -0800] DEBUG: Ran rabbitmqctl add_user chef testing returned 0
+[Mon, 21 Feb 2011 16:02:12 -0800] INFO: Ran execute[rabbitmqctl add_user chef testing] successfully
+[Mon, 21 Feb 2011 16:02:12 -0800] DEBUG: Processing execute[rabbitmqctl set_permissions -p /chef chef ".*" ".*" ".*"] on chefserver
+[Mon, 21 Feb 2011 16:02:12 -0800] DEBUG: Executing rabbitmqctl list_user_permissions chef|grep /chef
+: stdout[0K[chefserver] [Mon, 21 Feb 2011 16:02:12 -0800] DEBUG: ---- Begin output of rabbitmqctl list_user_permissions chef|grep /chef ----
+[Mon, 21 Feb 2011 16:02:12 -0800] DEBUG: STDOUT: 
+[Mon, 21 Feb 2011 16:02:12 -0800] DEBUG: STDERR: 
+[Mon, 21 Feb 2011 16:02:12 -0800] DEBUG: ---- End output of rabbitmqctl list_user_permissions chef|grep /chef ----
+[Mon, 21 Feb 2011 16:02:12 -0800] DEBUG: Ran rabbitmqctl list_user_permissions chef|grep /chef returned 1
+[Mon, 21 Feb 2011 16:02:12 -0800] DEBUG: Executing rabbitmqctl set_permissions -p /chef chef ".*" ".*" ".*"
+: stdout[0K[chefserver] [Mon, 21 Feb 2011 16:02:12 -0800] DEBUG: ---- Begin output of rabbitmqctl set_permissions -p /chef chef ".*" ".*" ".*" ----
+[Mon, 21 Feb 2011 16:02:12 -0800] DEBUG: STDOUT: Setting permissions for user "chef" in vhost "/chef" ...
+...done.
+[Mon, 21 Feb 2011 16:02:12 -0800] DEBUG: STDERR: 
+[Mon, 21 Feb 2011 16:02:12 -0800] DEBUG: ---- End output of rabbitmqctl set_permissions -p /chef chef ".*" ".*" ".*" ----
+[Mon, 21 Feb 2011 16:02:12 -0800] DEBUG: Ran rabbitmqctl set_permissions -p /chef chef ".*" ".*" ".*" returned 0
+[Mon, 21 Feb 2011 16:02:12 -0800] INFO: Ran execute[rabbitmqctl set_permissions -p /chef chef ".*" ".*" ".*"] successfully
+[Mon, 21 Feb 2011 16:02:12 -0800] DEBUG: Processing package[zlib-devel] on chefserver
+[Mon, 21 Feb 2011 16:02:12 -0800] DEBUG: Checking apt-cache policy for zlib1g-dev
+: stdout[0K[chefserver] [Mon, 21 Feb 2011 16:02:12 -0800] DEBUG: Current version is nil
+[Mon, 21 Feb 2011 16:02:12 -0800] DEBUG: Current version is 1:1.2.3.3.dfsg-15ubuntu1
+[Mon, 21 Feb 2011 16:02:12 -0800] INFO: Installing package[zlib-devel] version 1:1.2.3.3.dfsg-15ubuntu1
+[Mon, 21 Feb 2011 16:02:12 -0800] DEBUG: Executing apt-get -q -y install zlib1g-dev=1:1.2.3.3.dfsg-15ubuntu1
+: stdout
+[0K[chefserver] [Mon, 21 Feb 2011 16:02:16 -0800] DEBUG: ---- Begin output of apt-get -q -y install zlib1g-dev=1:1.2.3.3.dfsg-15ubuntu1 ----
+[Mon, 21 Feb 2011 16:02:16 -0800] DEBUG: STDOUT: Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  zlib1g-dev
+0 upgraded, 1 newly installed, 0 to remove and 46 not upgraded.
+Need to get 167kB of archives.
+After this operation, 410kB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu/ lucid/main zlib1g-dev 1:1.2.3.3.dfsg-15ubuntu1 [167kB]
+Fetched 167kB in 2s (58.6kB/s)
+Selecting previously deselected package zlib1g-dev.
+(Reading database ... 64054 files and directories currently installed.)
+Unpacking zlib1g-dev (from .../zlib1g-dev_1%3a1.2.3.3.dfsg-15ubuntu1_amd64.deb) ...
+Processing triggers for man-db ...
+Setting up zlib1g-dev (1:1.2.3.3.dfsg-15ubuntu1) ...
+[Mon, 21 Feb 2011 16:02:16 -0800] DEBUG: STDERR: 
+[Mon, 21 Feb 2011 16:02:16 -0800] DEBUG: ---- End output of apt-get -q -y install zlib1g-dev=1:1.2.3.3.dfsg-15ubuntu1 ----
+[Mon, 21 Feb 2011 16:02:16 -0800] DEBUG: Ran apt-get -q -y install zlib1g-dev=1:1.2.3.3.dfsg-15ubuntu1 returned 0
+[Mon, 21 Feb 2011 16:02:16 -0800] DEBUG: Processing package[libxml-devel] on chefserver
+[Mon, 21 Feb 2011 16:02:16 -0800] DEBUG: Checking apt-cache policy for libxml2-dev
+: stdout[0K[chefserver] [Mon, 21 Feb 2011 16:02:17 -0800] DEBUG: Current version is nil
+[Mon, 21 Feb 2011 16:02:17 -0800] DEBUG: Current version is 2.7.6.dfsg-1ubuntu1.1
+[Mon, 21 Feb 2011 16:02:17 -0800] INFO: Installing package[libxml-devel] version 2.7.6.dfsg-1ubuntu1.1
+[Mon, 21 Feb 2011 16:02:17 -0800] DEBUG: Executing apt-get -q -y install libxml2-dev=2.7.6.dfsg-1ubuntu1.1
+: stdout
+[0K[chefserver] [Mon, 21 Feb 2011 16:02:24 -0800] DEBUG: ---- Begin output of apt-get -q -y install libxml2-dev=2.7.6.dfsg-1ubuntu1.1 ----
+[Mon, 21 Feb 2011 16:02:24 -0800] DEBUG: STDOUT: Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  libxml2-dev
+0 upgraded, 1 newly installed, 0 to remove and 46 not upgraded.
+Need to get 830kB of archives.
+After this operation, 2,818kB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libxml2-dev 2.7.6.dfsg-1ubuntu1.1 [830kB]
+Fetched 830kB in 5s (144kB/s)
+Selecting previously deselected package libxml2-dev.
+(Reading database ... 64080 files and directories currently installed.)
+Unpacking libxml2-dev (from .../libxml2-dev_2.7.6.dfsg-1ubuntu1.1_amd64.deb) ...
+Processing triggers for man-db ...
+Setting up libxml2-dev (2.7.6.dfsg-1ubuntu1.1) ...
+[Mon, 21 Feb 2011 16:02:24 -0800] DEBUG: STDERR: 
+[Mon, 21 Feb 2011 16:02:24 -0800] DEBUG: ---- End output of apt-get -q -y install libxml2-dev=2.7.6.dfsg-1ubuntu1.1 ----
+[Mon, 21 Feb 2011 16:02:24 -0800] DEBUG: Ran apt-get -q -y install libxml2-dev=2.7.6.dfsg-1ubuntu1.1 returned 0
+[Mon, 21 Feb 2011 16:02:24 -0800] DEBUG: Processing gem_package[chef-server-api] on chefserver
+[Mon, 21 Feb 2011 16:02:24 -0800] DEBUG: No installed version found for chef-server-api (= 0.9.12, runtime)
+[Mon, 21 Feb 2011 16:02:24 -0800] INFO: Installing gem_package[chef-server-api] version 0.9.12
+
+(::) (::) (::) (::) (::) (::) (::) (::) (::) (::) (::) (::) (::) (::) (::)
+
+                     (::)   U P G R A D I N G    (::)
+
+Thank you for installing merb-core 1.1.3
+
+The planned route for upgrading from merb 1.1.x to 1.2 will involve
+changes which may break existing merb apps.  Fear not, fixes for
+apps broken by 1.2 should be trivial. Please be sure to read
+http://wiki.github.com/merb/merb/release-120 for the details
+regarding usage of the upcoming 1.2 release.
+
+(::) (::) (::) (::) (::) (::) (::) (::) (::) (::) (::) (::) (::) (::) (::)
+Building native extensions.  This could take a while...
+Building native extensions.  This could take a while...
+[Mon, 21 Feb 2011 16:03:35 -0800] DEBUG: Processing gem_package[chef-solr] on chefserver
+[Mon, 21 Feb 2011 16:03:35 -0800] DEBUG: No installed version found for chef-solr (= 0.9.12, runtime)
+[Mon, 21 Feb 2011 16:03:35 -0800] INFO: Installing gem_package[chef-solr] version 0.9.12
+Building native extensions.  This could take a while...
+[Mon, 21 Feb 2011 16:05:17 -0800] DEBUG: Processing gem_package[chef-server-webui] on chefserver
+[Mon, 21 Feb 2011 16:05:17 -0800] DEBUG: No installed version found for chef-server-webui (= 0.9.12, runtime)
+[Mon, 21 Feb 2011 16:05:17 -0800] INFO: Installing gem_package[chef-server-webui] version 0.9.12
+[Mon, 21 Feb 2011 16:05:52 -0800] DEBUG: Processing template[/etc/chef/server.rb] on chefserver
+[Mon, 21 Feb 2011 16:05:52 -0800] DEBUG: looking for template server.rb.erb in cookbook :chef
+[Mon, 21 Feb 2011 16:05:52 -0800] DEBUG: Current content's checksum:  
+[Mon, 21 Feb 2011 16:05:52 -0800] DEBUG: Rendered content's checksum: 179192452901ae4de535619b0d56c4dc50e0589db64a7bfcb6dc4ae258f62013
+[Mon, 21 Feb 2011 16:05:52 -0800] INFO: Writing updated content for template[/etc/chef/server.rb] to /etc/chef/server.rb
+[Mon, 21 Feb 2011 16:05:52 -0800] DEBUG: setting owner on /tmp/chef-rendered-template20110221-1594-8tcd9w-0 to 998
+[Mon, 21 Feb 2011 16:05:52 -0800] DEBUG: Processing template[/etc/chef/solr.rb] on chefserver
+[Mon, 21 Feb 2011 16:05:52 -0800] DEBUG: looking for template solr.rb.erb in cookbook :chef
+[Mon, 21 Feb 2011 16:05:52 -0800] DEBUG: Current content's checksum:  
+[Mon, 21 Feb 2011 16:05:52 -0800] DEBUG: Rendered content's checksum: 30c8f6555cd0c59db8470fee0dc222cadc08288dff90e30d3a576af2d3a3ac97
+[Mon, 21 Feb 2011 16:05:52 -0800] INFO: Writing updated content for template[/etc/chef/solr.rb] to /etc/chef/solr.rb
+[Mon, 21 Feb 2011 16:05:52 -0800] DEBUG: setting owner on /tmp/chef-rendered-template20110221-1594-oge72h-0 to 998
+[Mon, 21 Feb 2011 16:05:52 -0800] DEBUG: Processing d: stdout[0K[chefserver] irectory[/srv/chef] on chefserver
+[Mon, 21 Feb 2011 16:05:52 -0800] INFO: Setting owner to 998 for directory[/srv/chef]
+[Mon, 21 Feb 2011 16:05:52 -0800] DEBUG: Processing directory[/srv/chef/cache] on chefserver
+[Mon, 21 Feb 2011 16:05:52 -0800] INFO: Creating directory[/srv/chef/cache] at /srv/chef/cache
+[Mon, 21 Feb 2011 16:05:52 -0800] INFO: Setting owner to 998 for directory[/srv/chef/cache]
+[Mon, 21 Feb 2011 16:05:52 -0800] INFO: Setting group to 0 for directory[/srv/chef/cache]
+[Mon, 21 Feb 2011 16:05:52 -0800] INFO: Setting mode to 755 for directory[/srv/chef/cache]
+[Mon, 21 Feb 2011 16:05:52 -0800] DEBUG: Processing directory[/srv/chef/search_index] on chefserver
+[Mon, 21 Feb 2011 16:05:52 -0800] INFO: Creating directory[/srv/chef/search_index] at /srv/chef/search_index
+[Mon, 21 Feb 2011 16:05:52 -0800] INFO: Setting owner to 998 for directory[/srv/chef/search_index]
+[Mon, 21 Feb 2011 16:05:52 -0800] INFO: Setting group to 0 for directory[/srv/chef/search_index]
+[Mon, 21 Feb 2011 16:05:52 -0800] INFO: Setting mode to 755 for directory[/srv/chef/search_index]
+[Mon, 21 Feb 2011 16:05:52 -0800] DEBUG: Processing directory[/etc/chef/certificates] on chefserver
+[Mon, 21 Feb 2011 16:05:52 -0800] INFO: Creating directory[/etc/chef/certificates] at /etc/chef/certificates
+[Mon, 21 Feb 2011 16:05:52 -0800] INFO: Setting owner to 998 for directory[/etc/chef/certificates]
+[Mon, 21 Feb 2011 16:05:52 -0800] INFO: Setting group to 0 for directory[/etc/chef/certificates]
+[Mon, 21 Feb 2011 16:05:52 -0800] INFO: Setting mode to 700 for directory[/etc/chef/certificates]
+[Mon, 21 Feb 2011 16:05:52 -0800] DEBUG: Processing directory[/srv/chef/run] on chefserver
+[Mon, 21 Feb 2011 16:05:52 -0800] INFO: Creating directory[/srv/chef/run] at /srv/chef/run
+[Mon, 21 Feb 2011 16:05:52 -0800] INFO: Setting owner to 998 for directory[/srv/chef/run]
+[Mon, 21 Feb 2011 16:05:52 -0800] INFO: Setting group to 0 for directory[/srv/chef/run]
+[Mon, 21 Feb 2011 16:05:52 -0800] INFO: Setting mode to 755 for directory[/srv/chef/run]
+[Mon, 21 Feb 2011 16:05:52 -0800] DEBUG: Processing directory[/etc/sv/chef-server] on chefserver
+[Mon, 21 Feb 2011 16:05:52 -0800] INFO: Creating directory[/etc/sv/chef-server] at /etc/sv/chef-server
+[Mon, 21 Feb 2011 16:05:52 -0800] INFO: Setting owner to 0 for directory[/etc/sv/chef-server]
+[Mon, 21 Feb 2011 16:05:52 -0800] INFO: Setting group to 0 for directory[/etc/sv/chef-server]
+[Mon, 21 Feb 2011 16:05:52 -0800] INFO: Setting mode to 755 for directory[/etc/sv/chef-server]
+[Mon, 21 Feb 2011 16:05:52 -0800] DEBUG: Processing directory[/etc/sv/chef-server/log] on chefserver
+[Mon, 21 Feb 2011 16:05:52 -0800] INFO: Creating directory[/etc/sv/chef-server/log] at /etc/sv/chef-server/log
+[Mon, 21 Feb 2011 16:05:52 -0800] INFO: Setting owner to 0 for directory[/etc/sv/chef-server/log]
+[Mon, 21 Feb 2011 16:05:52 -0800] INFO: Setting group to 0 for directory[/etc/sv/chef-server/log]
+[Mon, 21 Feb 2011 16:05:52 -0800] INFO: Setting mode to 755 for directory[/etc/sv/chef-server/log]
+[Mon, 21 Feb 2011 16:05:52 -0800] DEBUG: Processing directory[/etc/sv/chef-server/log/main] on chefserver
+[Mon, 21 Feb 2011 16:05:52 -0800] INFO: Creating directory[/etc/sv/chef-server/log/main] at /etc/sv/chef-server/log/main
+[Mon, 21 Feb 2011 16:05:52 -0800] INFO: Setting owner to 0 for directory[/etc/sv/chef-server/log/main]
+[Mon, 21 Feb 2011 16:05:52 -0800] INFO: Setting group to 0 for directory[/etc/sv/chef-server/log/main]
+[Mon, 21 Feb 2011 16:05:52 -0800] INFO: Setting mode to 755 for directory[/etc/sv/chef-server/log/main]
+[Mon, 21 Feb 2011 16:05:52 -0800] DEBUG: Processing template[/etc/sv/chef-server/run] on chefserver
+[Mon, 21 Feb 2011 16:05:52 -0800] DEBUG: looking for template sv-chef-server-run.erb in cookbook :chef
+[Mon, 21 Feb 2011 16:05:52 -0800] DEBUG: Current content's checksum:  
+[Mon, 21 Feb 2011 16:05:52 -0800] DEBUG: Rendered content's checksum: 189b1e9ae397ca0f0706c152bd196d5639b45cb041074955aeb17dc02913a902
+[Mon, 21 Feb 2011 16:05:52 -0800] INFO: Writing updated content for template[/etc/sv/chef-server/run] to /etc/sv/chef-server: stdout[0K[chefserver] /run
+[Mon, 21 Feb 2011 16:05:52 -0800] DEBUG: setting mode on /tmp/chef-rendered-template20110221-1594-fm0pz4-0 to 755
+[Mon, 21 Feb 2011 16:05:52 -0800] DEBUG: Processing template[/etc/sv/chef-server/log/run] on chefserver
+[Mon, 21 Feb 2011 16:05:52 -0800] DEBUG: looking for template sv-chef-server-log-run.erb in cookbook :chef
+[Mon, 21 Feb 2011 16:05:52 -0800] DEBUG: Current content's checksum:  
+[Mon, 21 Feb 2011 16:05:52 -0800] DEBUG: Rendered content's checksum: e6414888435514f7e40fc743afe7422d6a09e23da9d7353442b025519ce75834
+[Mon, 21 Feb 2011 16:05:52 -0800] INFO: Writing updated content for template[/etc/sv/chef-server/log/run] to /etc/sv/chef-server/log/run
+[Mon, 21 Feb 2011 16:05:52 -0800] DEBUG: setting mode on /tmp/chef-rendered-template20110221-1594-if8uqt-0 to 755
+[Mon, 21 Feb 2011 16:05:52 -0800] DEBUG: Processing link[/etc/init.d/chef-server] on chefserver
+[Mon, 21 Feb 2011 16:05:52 -0800] INFO: Creating a symbolic link from /usr/bin/sv -> /etc/init.d/chef-server for link[/etc/init.d/chef-server]
+[Mon, 21 Feb 2011 16:05:52 -0800] DEBUG: Processing link[/etc/service/chef-server] on chefserver
+[Mon, 21 Feb 2011 16:05:52 -0800] INFO: Creating a symbolic link from /etc/sv/chef-server -> /etc/service/chef-server for link[/etc/service/chef-server]
+[Mon, 21 Feb 2011 16:05:52 -0800] DEBUG: Processing ruby_block[supervise_chef-server_sleep] on chefserver
+[Mon, 21 Feb 2011 16:05:52 -0800] DEBUG: Waiting until named pipe /etc/sv/chef-server/supervise/ok exists.
+[Mon, 21 Feb 2011 16:05:53 -0800] DEBUG: Processing service[chef-server] on chefserver
+[Mon, 21 Feb 2011 16:05:53 -0800] DEBUG: service[chef-server] you have specified a status command, running..
+[Mon, 21 Feb 2011 16:05:53 -0800] DEBUG: Executing /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-server
+: stdout[0K[chefserver] [Mon, 21 Feb 2011 16:05:53 -0800] DEBUG: ---- Begin output of /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-server ----
+[Mon, 21 Feb 2011 16:05:53 -0800] DEBUG: STDOUT: run: /etc/service/chef-server: (pid 23864) 0s; run: log: (pid 23863) 0s
+[Mon, 21 Feb 2011 16:05:53 -0800] DEBUG: STDERR: 
+[Mon, 21 Feb 2011 16:05:53 -0800] DEBUG: ---- End output of /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-server ----
+[Mon, 21 Feb 2011 16:05:53 -0800] DEBUG: Ran /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-server returned 0
+[Mon, 21 Feb 2011 16:05:53 -0800] DEBUG: Doing nothing for service[chef-server]
+[Mon, 21 Feb 2011 16:05:53 -0800] DEBUG: Processing directory[/etc/sv/chef-solr] on chefserver
+[Mon, 21 Feb 2011 16:05:53 -0800] INFO: Creating directory[/etc/sv/chef-solr] at /etc/sv/chef-solr
+[Mon, 21 Feb 2011 16:05:53 -0800] INFO: Setting owner to 0 for directory[/etc/sv/chef-solr]
+[Mon, 21 Feb 2011 16:05:53 -0800] INFO: Setting group to 0 for directory[/etc/sv/chef-solr]
+[Mon, 21 Feb 2011 16:05:53 -0800] INFO: Setting mode to 755 for directory[/etc/sv/chef-solr]
+[Mon, 21 Feb 2011 16:05:53 -0800] DEBUG: Processing directory[/etc/sv/chef-solr/log] on chefserver
+[Mon, 21 Feb 2011 16:05:53 -0800] INFO: Creating directory[/etc/sv/chef-solr/log] at /etc/sv/chef-solr/log
+[Mon, 21 Feb 2011 16:05:53 -0800] INFO: Setting owner to 0 for directory[/etc/sv/chef-solr/log]
+[Mon, 21 Feb 2011 16:05:53 -0800] INFO: Setting group to 0 for directory[/etc/sv/chef-solr/log]
+[Mon, 21 Feb 2011 16:05:53 -0800] INFO: Setting mode to 755 for directory[/etc/sv/chef-solr/log]
+[Mon, 21 Feb 2011 16:05:53 -0800] DEBUG: Processing directory[/etc/sv/chef-solr/log/main] on chefserver
+[Mon, 21 Feb 2011 16:05:53 -0800] INFO: Creating directory[/etc/sv/chef-solr/log/main] at /etc/sv/chef-solr/log/main
+[Mon, 21 Feb 2011 16:05:53 -0800] INFO: Setting owner to 0 for directory[/etc/sv/chef-solr/log/main]
+[Mon, 21 Feb 2011 16:05:53 -0800] INFO: Setting group to 0 for directory[/etc/sv/chef-solr/log/main]
+[Mon, 21 Feb 2011 16:05:53 -0800] INFO: Setting mode to 755 for directory[/etc/sv/chef-solr/log/main]
+[Mon, 21 Feb 2011 16:05:53 -0800] DEBUG: Processing template[/etc/sv/chef-solr/run] on chefserver
+[Mon, 21 Feb 2011 16:05:53 -0800] DEBUG: looking for template sv-chef-solr-run.erb in cookbook :chef
+[Mon, 21 Feb 2011 16:05:53 -0800] DEBUG: Current content's checksum:  
+[Mon, 21 Feb 2011 16:05:53 -0800] DEBUG: Rendered content's checksum: 6a97baaf96c5437e8b2d74466f39f3113f9cefbfd5bd8474daf8e4d1f514d464
+[Mon, 21 Feb 2011 16:05:53 -0800] INFO: Writing updated content for template[/etc/sv/chef-solr/run] to /etc/sv/chef-solr/run
+[Mon, 21 Feb 2011 16:05:53 -0800] DEBUG: setting mode on /tmp/chef-rendered-template20110221-1594-14lntte-0 to 755
+[Mon, 21 Feb 2011 16:05:53 -0800] DEBUG: Processing template[/etc/sv/chef-solr/log/run] on chefserver
+[Mon, 21 Feb 2011 16:05:53 -0800] DEBUG: looking for template sv-chef-solr-log-run.erb in cookbook :chef
+[Mon, 21 Feb 2011 16:05:53 -0800] DEBUG: Current content's checksum:  
+[Mon, 21 Feb 2011 16:05:53 -0800] DEBUG: Rendered content's checksum: e6414888435514f7e40fc743afe7422d6a09e23da9d7353442b025519ce75834
+[Mon, 21 Feb 2011 16:05:53 -0800] INFO: Writing updated content for template[/etc/sv/chef-solr/log/run] to /etc/sv/chef-solr/log/run
+[Mon, 21 Feb 2011 16:05:53 -0800] DEBUG: setting mode on /tmp/chef-rendered-template20110221-1594-s000kz-0 to 755
+[Mon, 21 Feb 2011 16:05:53 -0800] DEBUG: Processing link[/etc/init.d/chef-solr] on chefserver
+[Mon, 21 Feb 2011 16:05:53 -0800] INFO: Creating a symbolic link from /usr/bin/sv -> /etc/init.d/chef-solr for link[/etc/init.d/chef-solr]
+[Mon, 21 Feb 2011 16:05:53 -0800] DEBUG: Processing link[/etc/service/chef-solr] on chefserver
+[Mon, 21 Feb 2011 16:05:53 -0800] INFO: Creating a symbolic link from /etc/sv/chef-solr -> /etc/service/chef-solr for link[/etc/service/chef-solr]
+[Mon, 21 Feb 2011 16:05:53 -0800] DEBUG: Processing ruby_block[supervise_chef-solr_sleep] on chefserver
+[Mon, 21 Feb 2011 16:05:53 -0800] DEBUG: Waiting until named pipe /etc/sv/chef-so: stdout[0K[chefserver] lr/supervise/ok exists.
+[Mon, 21 Feb 2011 16:05:55 -0800] DEBUG: Processing service[chef-solr] on chefserver
+[Mon, 21 Feb 2011 16:05:55 -0800] DEBUG: service[chef-solr] you have specified a status command, running..
+[Mon, 21 Feb 2011 16:05:55 -0800] DEBUG: Executing /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-solr
+: stdout
+[0K[chefserver] [Mon, 21 Feb 2011 16:05:55 -0800] DEBUG: ---- Begin output of /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-solr ----
+[Mon, 21 Feb 2011 16:05:55 -0800] DEBUG: STDOUT: run: /etc/service/chef-solr: (pid 23869) 1s; run: log: (pid 23868) 1s
+[Mon, 21 Feb 2011 16:05:55 -0800] DEBUG: STDERR: 
+[Mon, 21 Feb 2011 16:05:55 -0800] DEBUG: ---- End output of /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-solr ----
+[Mon, 21 Feb 2011 16:05:55 -0800] DEBUG: Ran /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-solr returned 0
+[Mon, 21 Feb 2011 16:05:55 -0800] DEBUG: Doing nothing for service[chef-solr]
+[Mon, 21 Feb 2011 16:05:55 -0800] DEBUG: Processing directory[/etc/sv/chef-solr-indexer] on chefserver
+[Mon, 21 Feb 2011 16:05:55 -0800] INFO: Creating directory[/etc/sv/chef-solr-indexer] at /etc/sv/chef-solr-indexer
+[Mon, 21 Feb 2011 16:05:55 -0800] INFO: Setting owner to 0 for directory[/etc/sv/chef-solr-indexer]
+[Mon, 21 Feb 2011 16:05:55 -0800] INFO: Setting group to 0 for directory[/etc/sv/chef-solr-indexer]
+[Mon, 21 Feb 2011 16:05:55 -0800] INFO: Setting mode to 755 for directory[/etc/sv/chef-solr-indexer]
+[Mon, 21 Feb 2011 16:05:55 -0800] DEBUG: Processing directory[/etc/sv/chef-solr-indexer/log] on chefserver
+[Mon, 21 Feb 2011 16:05:55 -0800] INFO: Creating directory[/etc/sv/chef-solr-indexer/log] at /etc/sv/chef-solr-indexer/log
+[Mon, 21 Feb 2011 16:05:55 -0800] INFO: Setting owner to 0 for directory[/etc/sv/chef-solr-indexer/log]
+[Mon, 21 Feb 2011 16:05:55 -0800] INFO: Setting group to 0 for directory[/etc/sv/chef-solr-indexer/log]
+[Mon, 21 Feb 2011 16:05:55 -0800] INFO: Setting mode to 755 for directory[/etc/sv/chef-solr-indexer/log]
+[Mon, 21 Feb 2011 16:05:55 -0800] DEBUG: Processing directory[/etc/sv/chef-solr-indexer/log/main] on chefserver
+[Mon, 21 Feb 2011 16:05:55 -0800] INFO: Creating directory[/etc/sv/chef-solr-indexer/log/main] at /etc/sv/chef-solr-indexer/log/main
+[Mon, 21 Feb 2011 16:05:55 -0800] INFO: Setting owner to 0 for directory[/etc/sv/chef-solr-indexer/log/main]
+[Mon, 21 Feb 2011 16:05:55 -0800] INFO: Setting group to 0 for directory[/etc/sv/chef-solr-indexer/log/main]
+[Mon, 21 Feb 2011 16:05:55 -0800] INFO: Setting mode to 755 for directory[/etc/sv/chef-solr-indexer/log/main]
+[Mon, 21 Feb 2011 16:05:55 -0800] DEBUG: Processing template[/etc/sv/chef-solr-indexer/run] on chefserver
+[Mon, 21 Feb 2011 16:05:55 -0800] DEBUG: looking for template sv-chef-solr-indexer-run.erb in cookbook :chef
+[Mon, 21 Feb 2011 16:05:55 -0800] DEBUG: Current content's checksum:  
+[Mon, 21 Feb 2011 16:05:55 -0800] DEBUG: Rendered content's checksum: 166c9b6827e5ac432c739d0567877f1483d5c9837990ec0c404df01b90d9b3eb
+[Mon, 21 Feb 2011 16:05:55 -0800] INFO: Writing updated content for template[/etc/sv/chef-solr-indexer/run] to /etc/sv/chef-solr-indexer/run
+[Mon, 21 Feb 2011 16:05:55 -0800] DEBUG: setting mode on /tmp/chef-rendered-template20110221-1594-jwjtrb-0 to 755
+[Mon, 21 Feb 2011 16:05:55 -0800] DEBUG: Processing template[/etc/sv/chef-solr-indexer/log/run] on chefserver
+[Mon, 21 Feb 2011 16:05:55 -0800] DEBUG: looking for template sv-chef-solr-indexer-log-run.erb in cookbook :chef
+[Mon, 21 Feb 2011 16:05:55 -0800] DEBUG: Current content's checksum:  
+[Mon, 21 Feb 2011 16:05:55 -0800] DEBUG: Rendered content's checksum: e6414888435514f7e40fc743afe7422d6a09e23da9d7353442b025519ce75834
+[Mon, 21 Feb 2011 16:05:55 -0800] INFO: Writing updated content for template[/etc/sv/chef-solr-indexer/log/run] to /etc/sv/chef-solr-indexer/log/run
+[Mon, 21 Feb 2011 16:05:55 -0800] DEBUG: setting mode on /tmp/chef-rendered-template20110221-1594-1lpmlin-0 to 755
+[Mon, 21 Feb 2011 16:05:55 -0800] DEBUG: Processing link[/etc/init.d/chef-solr-indexer] on chefserver
+[Mon, 21 Feb 2011 16:05:55 -0800] INFO: Creating a symbolic link from /usr/bin/sv -> /etc/init.d/chef-solr-indexer for link[/etc/init.d/chef-solr-indexer]
+[Mon, 21 Feb 2011 16:05:55 -0800] DEBUG: Processing link[/etc/service/chef-solr-indexer] on chefserver
+[Mon, 21 Feb 2011 16:05:55 -0800] INFO: Creating a symbolic link from /etc/sv/chef-solr-indexer -> /et: stdout[0K[chefserver] c/service/chef-solr-indexer for link[/etc/service/chef-solr-indexer]
+[Mon, 21 Feb 2011 16:05:55 -0800] DEBUG: Processing ruby_block[supervise_chef-solr-indexer_sleep] on chefserver
+[Mon, 21 Feb 2011 16:05:55 -0800] DEBUG: Waiting until named pipe /etc/sv/chef-solr-indexer/supervise/ok exists.
+[Mon, 21 Feb 2011 16:05:57 -0800] DEBUG: Processing service[chef-solr-indexer] on chefserver
+[Mon, 21 Feb 2011 16:05:57 -0800] DEBUG: service[chef-solr-indexer] you have specified a status command, running..
+[Mon, 21 Feb 2011 16:05:57 -0800] DEBUG: Executing /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-solr-indexer
+: stdout
+[0K[chefserver] [Mon, 21 Feb 2011 16:05:57 -0800] DEBUG: ---- Begin output of /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-solr-indexer ----
+[Mon, 21 Feb 2011 16:05:57 -0800] DEBUG: STDOUT: run: /etc/service/chef-solr-indexer: (pid 23915) 1s; run: log: (pid 23914) 1s
+[Mon, 21 Feb 2011 16:05:57 -0800] DEBUG: STDERR: 
+[Mon, 21 Feb 2011 16:05:57 -0800] DEBUG: ---- End output of /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-solr-indexer ----
+[Mon, 21 Feb 2011 16:05:57 -0800] DEBUG: Ran /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-solr-indexer returned 0
+[Mon, 21 Feb 2011 16:05:57 -0800] DEBUG: Doing nothing for service[chef-solr-indexer]
+[Mon, 21 Feb 2011 16:05:57 -0800] DEBUG: Processing directory[/etc/sv/chef-server-webui] on chefserver
+[Mon, 21 Feb 2011 16:05:57 -0800] INFO: Creating directory[/etc/sv/chef-server-webui] at /etc/sv/chef-server-webui
+[Mon, 21 Feb 2011 16:05:57 -0800] INFO: Setting owner to 0 for directory[/etc/sv/chef-server-webui]
+[Mon, 21 Feb 2011 16:05:57 -0800] INFO: Setting group to 0 for directory[/etc/sv/chef-server-webui]
+[Mon, 21 Feb 2011 16:05:57 -0800] INFO: Setting mode to 755 for directory[/etc/sv/chef-server-webui]
+[Mon, 21 Feb 2011 16:05:57 -0800] DEBUG: Processing directory[/etc/sv/chef-server-webui/log] on chefserver
+[Mon, 21 Feb 2011 16:05:57 -0800] INFO: Creating directory[/etc/sv/chef-server-webui/log] at /etc/sv/chef-server-webui/log
+[Mon, 21 Feb 2011 16:05:57 -0800] INFO: Setting owner to 0 for directory[/etc/sv/chef-server-webui/log]
+[Mon, 21 Feb 2011 16:05:57 -0800] INFO: Setting group to 0 for directory[/etc/sv/chef-server-webui/log]
+[Mon, 21 Feb 2011 16:05:57 -0800] INFO: Setting mode to 755 for directory[/etc/sv/chef-server-webui/log]
+[Mon, 21 Feb 2011 16:05:57 -0800] DEBUG: Processing directory[/etc/sv/chef-server-webui/log/main] on chefserver
+[Mon, 21 Feb 2011 16:05:57 -0800] INFO: Creating directory[/etc/sv/chef-server-webui/log/main] at /etc/sv/chef-server-webui/log/main
+[Mon, 21 Feb 2011 16:05:57 -0800] INFO: Setting owner to 0 for directory[/etc/sv/chef-server-webui/log/main]
+[Mon, 21 Feb 2011 16:05:57 -0800] INFO: Setting group to 0 for directory[/etc/sv/chef-server-webui/log/main]
+[Mon, 21 Feb 2011 16:05:57 -0800] INFO: Setting mode to 755 for directory[/etc/sv/chef-server-webui/log/main]
+[Mon, 21 Feb 2011 16:05:57 -0800] DEBUG: Processing template[/etc/sv/chef-server-webui/run] on chefserver
+[Mon, 21 Feb 2011 16:05:57 -0800] DEBUG: looking for template sv-chef-server-webui-run.erb in cookbook :chef
+[Mon, 21 Feb 2011 16:05:57 -0800] DEBUG: Current content's checksum:  
+[Mon, 21 Feb 2011 16:05:57 -0800] DEBUG: Rendered content's checksum: 3988783a51046f04e3d5c37ba6280a27b2d4c5851660ac704d4fe703ad3236a4
+[Mon, 21 Feb 2011 16:05:57 -0800] INFO: Writing updated content for template[/etc/sv/chef-server-webui/run] to /etc/sv/chef-server-webui/run
+[Mon, 21 Feb 2011 16:05:57 -0800] DEBUG: setting mode on /tmp/chef-rendered-template20110221-1594-11lv856-0 to 755
+[Mon, 21 Feb 2011 16:05:57 -0800] DEBUG: Processing template[/etc/sv/chef-server-webui/log/run] on chefserver
+[Mon, 21 Feb 2011 16:05:57 -0800] DEBUG: looking for template sv-chef-server-webui-log-run.erb in cookbook :chef
+[Mon, 21 Feb 2011 16:05:57 -0800] DEBUG: Current content's checksum:  
+[Mon, 21 Feb 2011 16:05:57 -0800] DEBUG: Rendered content's checksum: e6414888435514f7e40fc743afe7422d6a09e23da9d7353442b025519ce75834
+[Mon, 21 Feb 2011 16:05:57 -0800] INFO: Writing updated content for template[/etc/sv/chef-server-webui/log/run] to /etc/sv/chef-server-webui/log/run
+[Mon, 21 Feb 2011 16:05:57 -0800] DEBUG: setting mode on /tmp/chef-rendered-template20110221-1594-jtreep-0 to 755
+[Mon, 21 Feb 2011 16:05:57 -0800] DEBUG: Processing link[/etc/init.d/chef-server-webui] on chefserver
+[Mon, 21 Feb 2011 16:05:57 -0800] INFO: Creating a symbolic link from /usr/bin/sv -> /etc/init.d/chef-server-webui for link[/etc/init.d/chef-server-webui]
+[Mon, 21 Feb 2011 16:05:57 -0800] DEBUG: Processing link[/etc/service/chef-server-webui] on chefserver
+[Mon, 21 Feb 2011 16:05:57 -0800] INFO: Creating a symbolic li: stdout[0K[chefserver] nk from /etc/sv/chef-server-webui -> /etc/service/chef-server-webui for link[/etc/service/chef-server-webui]
+[Mon, 21 Feb 2011 16:05:57 -0800] DEBUG: Processing ruby_block[supervise_chef-server-webui_sleep] on chefserver
+[Mon, 21 Feb 2011 16:05:57 -0800] DEBUG: Waiting until named pipe /etc/sv/chef-server-webui/supervise/ok exists.
+[Mon, 21 Feb 2011 16:05:59 -0800] DEBUG: Processing service[chef-server-webui] on chefserver
+[Mon, 21 Feb 2011 16:05:59 -0800] DEBUG: service[chef-server-webui] you have specified a status command, running..
+[Mon, 21 Feb 2011 16:05:59 -0800] DEBUG: Executing /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-server-webui
+: stdout
+[0K[chefserver] [Mon, 21 Feb 2011 16:05:59 -0800] DEBUG: ---- Begin output of /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-server-webui ----
+[Mon, 21 Feb 2011 16:05:59 -0800] DEBUG: STDOUT: run: /etc/service/chef-server-webui: (pid 23958) 1s; run: log: (pid 23957) 1s
+[Mon, 21 Feb 2011 16:05:59 -0800] DEBUG: STDERR: 
+[Mon, 21 Feb 2011 16:05:59 -0800] DEBUG: ---- End output of /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-server-webui ----
+[Mon, 21 Feb 2011 16:05:59 -0800] DEBUG: Ran /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-server-webui returned 0
+[Mon, 21 Feb 2011 16:05:59 -0800] DEBUG: Doing nothing for service[chef-server-webui]
+[Mon, 21 Feb 2011 16:05:59 -0800] DEBUG: Processing service[chef-server] on chefserver
+[Mon, 21 Feb 2011 16:05:59 -0800] DEBUG: service[chef-server] you have specified a status command, running..
+[Mon, 21 Feb 2011 16:05:59 -0800] DEBUG: Executing /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-server
+: stdout[0K[chefserver] [Mon, 21 Feb 2011 16:05:59 -0800] DEBUG: ---- Begin output of /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-server ----
+[Mon, 21 Feb 2011 16:05:59 -0800] DEBUG: STDOUT: run: /etc/service/chef-server: (pid 23864) 6s; run: log: (pid 23863) 6s
+[Mon, 21 Feb 2011 16:05:59 -0800] DEBUG: STDERR: 
+[Mon, 21 Feb 2011 16:05:59 -0800] DEBUG: ---- End output of /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-server ----
+[Mon, 21 Feb 2011 16:05:59 -0800] DEBUG: Ran /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-server returned 0
+[Mon, 21 Feb 2011 16:05:59 -0800] DEBUG: Doing nothing for service[chef-server]
+[Mon, 21 Feb 2011 16:05:59 -0800] DEBUG: Processing service[chef-server-webui] on chefserver
+[Mon, 21 Feb 2011 16:05:59 -0800] DEBUG: service[chef-server-webui] you have specified a status command, running..
+[Mon, 21 Feb 2011 16:05:59 -0800] DEBUG: Executing /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-server-webui
+: stdout[0K[chefserver] [Mon, 21 Feb 2011 16:05:59 -0800] DEBUG: ---- Begin output of /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-server-webui ----
+[Mon, 21 Feb 2011 16:05:59 -0800] DEBUG: STDOUT: run: /etc/service/chef-server-webui: (pid 23958) 1s; run: log: (pid 23957) 1s
+[Mon, 21 Feb 2011 16:05:59 -0800] DEBUG: STDERR: 
+[Mon, 21 Feb 2011 16:05:59 -0800] DEBUG: ---- End output of /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-server-webui ----
+[Mon, 21 Feb 2011 16:05:59 -0800] DEBUG: Ran /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-server-webui returned 0
+[Mon, 21 Feb 2011 16:05:59 -0800] DEBUG: Doing nothing for service[chef-server-webui]
+[Mon, 21 Feb 2011 16:05:59 -0800] INFO: template[/etc/sv/chef-client/run] sending restart action to service[chef-client] (delayed)
+[Mon, 21 Feb 2011 16:05:59 -0800] DEBUG: service[chef-client] you have specified a status command, running..
+[Mon, 21 Feb 2011 16:05:59 -0800] DEBUG: Executing /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-client
+: stdout[0K[chefserver] [Mon, 21 Feb 2011 16:05:59 -0800] DEBUG: ---- Begin output of /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-client ----
+[Mon, 21 Feb 2011 16:05:59 -0800] DEBUG: STDOUT: run: /etc/service/chef-client: (pid 2260) 670s; run: log: (pid 2259) 670s
+[Mon, 21 Feb 2011 16:05:59 -0800] DEBUG: STDERR: 
+[Mon, 21 Feb 2011 16:05:59 -0800] DEBUG: ---- End output of /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-client ----
+[Mon, 21 Feb 2011 16:05:59 -0800] DEBUG: Ran /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-client returned 0
+[Mon, 21 Feb 2011 16:05:59 -0800] DEBUG: service[chef-client]: attempting to restart
+[Mon, 21 Feb 2011 16:05:59 -0800] DEBUG: Executing /usr/bin/chpst -u root /usr/bin/sv restart /etc/service/chef-client
+: stdout[0K[chefserver] [Mon, 21 Feb 2011 16:06:00 -0800] DEBUG: ---- Begin output of /usr/bin/chpst -u root /usr/bin/sv restart /etc/service/chef-client ----
+[Mon, 21 Feb 2011 16:06:00 -0800] DEBUG: STDOUT: ok: run: /etc/service/chef-client: (pid 23975) 0s
+[Mon, 21 Feb 2011 16:06:00 -0800] DEBUG: STDERR: 
+[Mon, 21 Feb 2011 16:06:00 -0800] DEBUG: ---- End output of /usr/bin/chpst -u root /usr/bin/sv restart /etc/service/chef-client ----
+[Mon, 21 Feb 2011 16:06:00 -0800] DEBUG: Ran /usr/bin/chpst -u root /usr/bin/sv restart /etc/service/chef-client returned 0
+[Mon, 21 Feb 2011 16:06:00 -0800] INFO: service[chef-client]: restarted successfully
+[Mon, 21 Feb 2011 16:06:00 -0800] INFO: package[openjdk-6-jre] sending run action to execute[update-java-alternatives] (delayed)
+[Mon, 21 Feb 2011 16:06:00 -0800] DEBUG: Executing update-java-alternatives --jre -s java-6-openjdk
+: stdout[0K[chefserver] [Mon, 21 Feb 2011 16:06:06 -0800] DEBUG: ---- Begin output of update-java-alternatives --jre -s java-6-openjdk ----
+[Mon, 21 Feb 2011 16:06:06 -0800] DEBUG: STDOUT: 
+[Mon, 21 Feb 2011 16:06:06 -0800] DEBUG: STDERR: 
+[Mon, 21 Feb 2011 16:06:06 -0800] DEBUG: ---- End output of update-java-alternatives --jre -s java-6-openjdk ----
+[Mon, 21 Feb 2011 16:06:06 -0800] DEBUG: Ran update-java-alternatives --jre -s java-6-openjdk returned 0
+[Mon, 21 Feb 2011 16:06:06 -0800] INFO: Ran execute[update-java-alternatives] successfully
+[Mon, 21 Feb 2011 16:06:06 -0800] INFO: execute[update-java-alternatives] sending create action to ruby_block[reload_ohai] (immediate)
+: stdout[0K[chefserver] [Mon, 21 Feb 2011 16:06:13 -0800] INFO: template[/etc/sv/chef-server/run] sending restart action to service[chef-server] (delayed)
+[Mon, 21 Feb 2011 16:06:13 -0800] DEBUG: service[chef-server] you have specified a status command, running..
+[Mon, 21 Feb 2011 16:06:13 -0800] DEBUG: Executing /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-server
+: stdout
+[0K[chefserver] [Mon, 21 Feb 2011 16:06:13 -0800] DEBUG: ---- Begin output of /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-server ----
+[Mon, 21 Feb 2011 16:06:13 -0800] DEBUG: STDOUT: run: /etc/service/chef-server: (pid 23864) 20s; run: log: (pid 23863) 20s
+[Mon, 21 Feb 2011 16:06:13 -0800] DEBUG: STDERR: 
+[Mon, 21 Feb 2011 16:06:13 -0800] DEBUG: ---- End output of /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-server ----
+[Mon, 21 Feb 2011 16:06:13 -0800] DEBUG: Ran /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-server returned 0
+[Mon, 21 Feb 2011 16:06:13 -0800] DEBUG: service[chef-server]: attempting to restart
+[Mon, 21 Feb 2011 16:06:13 -0800] DEBUG: Executing /usr/bin/chpst -u root /usr/bin/sv restart /etc/service/chef-server
+: stdout[0K[chefserver] [Mon, 21 Feb 2011 16:06:14 -0800] DEBUG: ---- Begin output of /usr/bin/chpst -u root /usr/bin/sv restart /etc/service/chef-server ----
+[Mon, 21 Feb 2011 16:06:14 -0800] DEBUG: STDOUT: ok: run: /etc/service/chef-server: (pid 24101) 0s
+[Mon, 21 Feb 2011 16:06:14 -0800] DEBUG: STDERR: 
+[Mon, 21 Feb 2011 16:06:14 -0800] DEBUG: ---- End output of /usr/bin/chpst -u root /usr/bin/sv restart /etc/service/chef-server ----
+[Mon, 21 Feb 2011 16:06:14 -0800] DEBUG: Ran /usr/bin/chpst -u root /usr/bin/sv restart /etc/service/chef-server returned 0
+[Mon, 21 Feb 2011 16:06:14 -0800] INFO: service[chef-server]: restarted successfully
+[Mon, 21 Feb 2011 16:06:14 -0800] INFO: template[/etc/sv/chef-solr/run] sending restart action to service[chef-solr] (delayed)
+[Mon, 21 Feb 2011 16:06:14 -0800] DEBUG: service[chef-solr] you have specified a status command, running..
+[Mon, 21 Feb 2011 16:06:14 -0800] DEBUG: Executing /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-solr
+: stdout[0K[chefserver] [Mon, 21 Feb 2011 16:06:14 -0800] DEBUG: ---- Begin output of /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-solr ----
+[Mon, 21 Feb 2011 16:06:14 -0800] DEBUG: STDOUT: run: /etc/service/chef-solr: (pid 23869) 20s; run: log: (pid 23868) 20s
+[Mon, 21 Feb 2011 16:06:14 -0800] DEBUG: STDERR: 
+[Mon, 21 Feb 2011 16:06:14 -0800] DEBUG: ---- End output of /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-solr ----
+[Mon, 21 Feb 2011 16:06:14 -0800] DEBUG: Ran /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-solr returned 0
+[Mon, 21 Feb 2011 16:06:14 -0800] DEBUG: service[chef-solr]: attempting to restart
+[Mon, 21 Feb 2011 16:06:14 -0800] DEBUG: Executing /usr/bin/chpst -u root /usr/bin/sv restart /etc/service/chef-solr
+: stdout[0K[chefserver] [Mon, 21 Feb 2011 16:06:15 -0800] DEBUG: ---- Begin output of /usr/bin/chpst -u root /usr/bin/sv restart /etc/service/chef-solr ----
+[Mon, 21 Feb 2011 16:06:15 -0800] DEBUG: STDOUT: ok: run: /etc/service/chef-solr: (pid 24129) 0s
+[Mon, 21 Feb 2011 16:06:15 -0800] DEBUG: STDERR: 
+[Mon, 21 Feb 2011 16:06:15 -0800] DEBUG: ---- End output of /usr/bin/chpst -u root /usr/bin/sv restart /etc/service/chef-solr ----
+[Mon, 21 Feb 2011 16:06:15 -0800] DEBUG: Ran /usr/bin/chpst -u root /usr/bin/sv restart /etc/service/chef-solr returned 0
+[Mon, 21 Feb 2011 16:06:15 -0800] INFO: service[chef-solr]: restarted successfully
+[Mon, 21 Feb 2011 16:06:15 -0800] INFO: template[/etc/sv/chef-solr-indexer/run] sending restart action to service[chef-solr-indexer] (delayed)
+[Mon, 21 Feb 2011 16:06:15 -0800] DEBUG: service[chef-solr-indexer] you have specified a status command, running..
+[Mon, 21 Feb 2011 16:06:15 -0800] DEBUG: Executing /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-solr-indexer
+: stdout[0K[chefserver] [Mon, 21 Feb 2011 16:06:15 -0800] DEBUG: ---- Begin output of /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-solr-indexer ----
+[Mon, 21 Feb 2011 16:06:15 -0800] DEBUG: STDOUT: run: /etc/service/chef-solr-indexer: (pid 23915) 19s; run: log: (pid 23914) 19s
+[Mon, 21 Feb 2011 16:06:15 -0800] DEBUG: STDERR: 
+[Mon, 21 Feb 2011 16:06:15 -0800] DEBUG: ---- End output of /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-solr-indexer ----
+[Mon, 21 Feb 2011 16:06:15 -0800] DEBUG: Ran /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-solr-indexer returned 0
+[Mon, 21 Feb 2011 16:06:15 -0800] DEBUG: service[chef-solr-indexer]: attempting to restart
+[Mon, 21 Feb 2011 16:06:15 -0800] DEBUG: Executing /usr/bin/chpst -u root /usr/bin/sv restart /etc/service/chef-solr-indexer
+: stdout[0K[chefserver] [Mon, 21 Feb 2011 16:06:16 -0800] DEBUG: ---- Begin output of /usr/bin/chpst -u root /usr/bin/sv restart /etc/service/chef-solr-indexer ----
+[Mon, 21 Feb 2011 16:06:16 -0800] DEBUG: STDOUT: ok: run: /etc/service/chef-solr-indexer: (pid 24132) 1s
+[Mon, 21 Feb 2011 16:06:16 -0800] DEBUG: STDERR: 
+[Mon, 21 Feb 2011 16:06:16 -0800] DEBUG: ---- End output of /usr/bin/chpst -u root /usr/bin/sv restart /etc/service/chef-solr-indexer ----
+[Mon, 21 Feb 2011 16:06:16 -0800] DEBUG: Ran /usr/bin/chpst -u root /usr/bin/sv restart /etc/service/chef-solr-indexer returned 0
+[Mon, 21 Feb 2011 16:06:16 -0800] INFO: service[chef-solr-indexer]: restarted successfully
+[Mon, 21 Feb 2011 16:06:16 -0800] INFO: template[/etc/sv/chef-server-webui/run] sending restart action to service[chef-server-webui] (delayed)
+[Mon, 21 Feb 2011 16:06:16 -0800] DEBUG: service[chef-server-webui] you have specified a status command, running..
+[Mon, 21 Feb 2011 16:06:16 -0800] DEBUG: Executing /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-server-webui
+: stdout[0K[chefserver] [Mon, 21 Feb 2011 16:06:16 -0800] DEBUG: ---- Begin output of /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-server-webui ----
+[Mon, 21 Feb 2011 16:06:16 -0800] DEBUG: STDOUT: run: /etc/service/chef-server-webui: (pid 23958) 18s; run: log: (pid 23957) 18s
+[Mon, 21 Feb 2011 16:06:16 -0800] DEBUG: STDERR: 
+[Mon, 21 Feb 2011 16:06:16 -0800] DEBUG: ---- End output of /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-server-webui ----
+[Mon, 21 Feb 2011 16:06:16 -0800] DEBUG: Ran /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-server-webui returned 0
+[Mon, 21 Feb 2011 16:06:16 -0800] DEBUG: service[chef-server-webui]: attempting to restart
+[Mon, 21 Feb 2011 16:06:16 -0800] DEBUG: Executing /usr/bin/chpst -u root /usr/bin/sv restart /etc/service/chef-server-webui
+: stdout[0K[chefserver] [Mon, 21 Feb 2011 16:06:16 -0800] DEBUG: ---- Begin output of /usr/bin/chpst -u root /usr/bin/sv restart /etc/service/chef-server-webui ----
+[Mon, 21 Feb 2011 16:06:16 -0800] DEBUG: STDOUT: ok: run: /etc/service/chef-server-webui: (pid 24135) 0s
+[Mon, 21 Feb 2011 16:06:16 -0800] DEBUG: STDERR: 
+[Mon, 21 Feb 2011 16:06:16 -0800] DEBUG: ---- End output of /usr/bin/chpst -u root /usr/bin/sv restart /etc/service/chef-server-webui ----
+[Mon, 21 Feb 2011 16:06:16 -0800] DEBUG: Ran /usr/bin/chpst -u root /usr/bin/sv restart /etc/service/chef-server-webui returned 0
+[Mon, 21 Feb 2011 16:06:16 -0800] INFO: service[chef-server-webui]: restarted successfully
+[Mon, 21 Feb 2011 16:06:16 -0800] INFO: Chef Run complete in 735.34684 seconds
+[Mon, 21 Feb 2011 16:06:16 -0800] INFO: cleaning the checksum cache
+[Mon, 21 Feb 2011 16:06:16 -0800] INFO: Running report handlers
+[Mon, 21 Feb 2011 16:06:16 -0800] INFO: Report handlers complete
+[Mon, 21 Feb 2011 16:06:16 -0800] DEBUG: Exiting
+: stdout[0K[chefserver] 'unknown': unknown terminal type.
+: stderr

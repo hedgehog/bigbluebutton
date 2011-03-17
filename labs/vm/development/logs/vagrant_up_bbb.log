@@ -1,0 +1,518 @@
+[0K[default] VM already created. Booting if its not already running...
+[0K[default] Provisioning enabled with chef_server...
+[0K[default] Running any VM customizations...
+[0K[default] Clearing any previously set forwarded ports...
+[0K[default] Forwarding ports...
+[0K[default] -- ssh: 22 => 48622 (adapter 1)
+[0K[default] -- http: 80 => 48623 (adapter 1)
+[0K[default] Cleaning previously set shared folders...
+[0K[default] Creating shared folders metadata...
+[0K[default] Preparing host only network...
+[0K[default] Booting VM...
+[0K[default] Waiting for VM to boot. This can take a few minutes.
+[0K[default] VM booted and ready for use!
+[0K[default] Enabling host only network...
+[0K[default] Mounting shared folders...
+[0K[default] -- v-root: /vagrant
+[0K[default] -- chef: ~/chef
+[0K[default] -- chef-client-etc: /etc/chef
+[0K[default] Running provisioner: Vagrant::Provisioners::ChefServer...
+[0K[default] Creating folder to hold client key...
+[0K[default] Uploading chef client validation key...
+[0K[default] Generating chef JSON and uploading...
+[0K[default] Running chef-client...
+[0K[default] [Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: Loading plugin os
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: Loading plugin kernel
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: Loading plugin ruby
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: Loading plugin languages
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- Begin ruby -e "require 'rbconfig'; puts %Q(host_os=#{::Config::CONFIG['host_os']},target_vendor=#{::Config::CONFIG['target_vendor']},platform=#{RUBY_PLATFORM},bin_dir=#{::Config::CONFIG['bindir']},host=#{::Config::CONFIG['host']},target_os=#{::Config::CONFIG['target_os']},host_cpu=#{::Config::CONFIG['host_cpu']},host_vendor=#{::Config::CONFIG['host_vendor']},release_date=#{RUBY_RELEASE_DATE},version=#{RUBY_VERSION},ruby_bin=#{::File.join(::Config::CONFIG['bindir'], ::Config::CONFIG['ruby_install_name'])},target_cpu=#{::Config::CONFIG['target_cpu']},target=#{::Config::CONFIG['target']},)" STDOUT ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: host_os=linux-gnu,target_vendor=pc,platform=x86_64-linux,bin_dir=/usr/bin,host=x86_64-pc-linux-gnu,target_os=linux,host_cpu=x86_64,host_vendor=pc,release_date=2010-01-10,version=1.8.7,ruby_bin=/usr/bin/ruby1.8,target_cpu=x86_64,target=x86_64-pc-linux-gnu,
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- End ruby -e "require 'rbconfig'; puts %Q(host_os=#{::Config::CONFIG['host_os']},target_vendor=#{::Config::CONFIG['target_vendor']},platform=#{RUBY_PLATFORM},bin_dir=#{::Config::CONFIG['bindir']},host=#{::Config::CONFIG['host']},target_os=#{::Config::CONFIG['target_os']},host_cpu=#{::Config::CONFIG['host_cpu']},host_vendor=#{::Config::CONFIG['host_vendor']},release_date=#{RUBY_RELEASE_DATE},version=#{RUBY_VERSION},ruby_bin=#{::File.join(::Config::CONFIG['bindir'], ::Config::CONFIG['ruby_install_name'])},target_cpu=#{::Config::CONFIG['target_cpu']},target=#{::Config::CONFIG['target']},)" STDOUT ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- Begin ruby -e "require 'rbconfig'; puts %Q(host_os=#{::Config::CONFIG['host_os']},target_vendor=#{::Config::CONFIG['target_vendor']},platform=#{RUBY_PLATFORM},bin_dir=#{::Config::CONFIG['bindir']},host=#{::Config::CONFIG['host']},target_os=#{::Config::CONFIG['target_os']},host_cpu=#{::Config::CONFIG['host_cpu']},host_vendor=#{::Config::CONFIG['host_vendor']},release_date=#{RUBY_RELEASE_DATE},version=#{RUBY_VERSION},ruby_bin=#{::File.join(::Config::CONFIG['bindir'], ::Config::CONFIG['ruby_install_name'])},target_cpu=#{::Config::CONFIG['target_cpu']},target=#{::Config::CONFIG['target']},)" STDERR ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- End ruby -e "require 'rbconfig'; puts %Q(host_os=#{::Config::CONFIG['host_os']},target_vendor=#{::Config::CONFIG['target_vendor']},platform=#{RUBY_PLATFORM},bin_dir=#{::Config::CONFIG['bindir']},host=#{::Config::CONFIG['host']},target_os=#{::Config::CONFIG['target_os']},host_cpu=#{::Config::CONFIG['host_cpu']},host_vendor=#{::Config::CONFIG['host_vendor']},release_date=#{RUBY_RELEASE_DATE},version=#{RUBY_VERSION},ruby_bin=#{::File.join(::Config::CONFIG['bindir'], ::Config::CONFIG['ruby_install_name'])},target_cpu=#{::Config::CONFIG['target_cpu']},target=#{::Config::CONFIG['target']},)" STDERR ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: Ran  (ruby -e "require 'rbconfig'; puts %Q(host_os=#{::Config::CONFIG['host_os']},target_vendor=#{::Config::CONFIG['target_vendor']},platform=#{RUBY_PLATFORM},bin_dir=#{::Config::CONFIG['bindir']},host=#{::Config::CONFIG['host']},target_os=#{::Config::CONFIG['target_os']},host_cpu=#{::Config::CONFIG['host_cpu']},host_vendor=#{::Config::CONFIG['host_vendor']},release_date=#{RUBY_RELEASE_DATE},version=#{RUBY_VERSION},ruby_bin=#{::File.join(::Config::CONFIG['bindir'], ::Config::CONFIG['ruby_install_name'])},target_cpu=#{::Config::CONFIG['target_cpu']},target=#{::Config::CONFIG['target']},)") returned 0
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- Begin ruby -e "require 'rbconfig'; puts %x{/usr/bin/ruby1.8 /usr/bin/gem env gemdir}.chomp!" STDOUT ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: /usr/lib/ruby/gems/1.8
+[Wed, 02 Mar 2011 03:40:45 -0800] DEB: stdout[0K[default] UG: ---- End ruby -e "require 'rbconfig'; puts %x{/usr/bin/ruby1.8 /usr/bin/gem env gemdir}.chomp!" STDOUT ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- Begin ruby -e "require 'rbconfig'; puts %x{/usr/bin/ruby1.8 /usr/bin/gem env gemdir}.chomp!" STDERR ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- End ruby -e "require 'rbconfig'; puts %x{/usr/bin/ruby1.8 /usr/bin/gem env gemdir}.chomp!" STDERR ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: Ran  (ruby -e "require 'rbconfig'; puts %x{/usr/bin/ruby1.8 /usr/bin/gem env gemdir}.chomp!") returned 0
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- Begin uname -s STDOUT ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: Linux
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- End uname -s STDOUT ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- Begin uname -s STDERR ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- End uname -s STDERR ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: Ran  (uname -s) returned 0
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- Begin uname -r STDOUT ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: 2.6.32-21-server
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- End uname -r STDOUT ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- Begin uname -r STDERR ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- End uname -r STDERR ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: Ran  (uname -r) returned 0
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- Begin uname -v STDOUT ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: #32-Ubuntu SMP Fri Apr 16 09:17:34 UTC 2010
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- End uname -v STDOUT ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- Begin uname -v STDERR ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- End uname -v STDERR ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: Ran  (uname -v) returned 0
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- Begin uname -m STDOUT ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: x86_64
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- End uname -m STDOUT ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- Begin uname -m STDERR ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- End uname -m STDERR ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: Ran  (uname -m) returned 0
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: Loading plugin passwd
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: Loading plugin python
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- Begin python -c "import sys; print sys.version" STDOUT ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: 2.6.5 (r265:79063, Apr 16 2010, 13:57:41) 
+[GCC 4.4.3]
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- End python -c "import sys; print sys.version" STDOUT ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- Begin python -c "import sys; print sys.version" STDERR ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- End python -c "import sys; print sys.version" STDERR ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: Ran  (python -c "import sys; print sys.version") returned 0
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: Loading plugin command
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: Loading plugin c
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- Begin gcc -v STDOUT ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- End gcc -v STDOUT ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- Begin gcc -v STDERR ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: Using built-in specs.
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.4.3-4ubuntu5' --with-bugurl=file:///usr/share/doc/gcc-4.4/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --enable-shared --enable-multiarch --enable-linker-build-id --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.4 --program-suffix=-4.4 --enab: stdout[0K[default] le-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-plugin --enable-objc-gc --disable-werror --with-arch-32=i486 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 4.4.3 (Ubuntu 4.4.3-4ubuntu5)
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- End gcc -v STDERR ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: Ran  (gcc -v) returned 0
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- Begin /lib/libc.so.6 STDOUT ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: GNU C Library (Ubuntu EGLIBC 2.11.1-0ubuntu7.6) stable release version 2.11.1, by Roland McGrath et al.
+Copyright (C) 2009 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.
+There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE.
+Compiled by GNU CC version 4.4.3.
+Compiled on a Linux >>2.6.24-28-server<< system on 2010-11-17.
+Available extensions:
+	crypt add-on version 2.1 by Michael Glad and others
+	GNU Libidn by Simon Josefsson
+	Native POSIX Threads Library by Ulrich Drepper et al
+	BIND-8.2.3-T5B
+For bug reporting instructions, please see:
+<http://www.debian.org/Bugs/>.
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- End /lib/libc.so.6 STDOUT ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- Begin /lib/libc.so.6 STDERR ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- End /lib/libc.so.6 STDERR ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: Ran  (/lib/libc.so.6) returned 0
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- Begin cl /? STDOUT ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- End cl /? STDOUT ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- Begin cl /? STDERR ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: sh: cl: not found
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- End cl /? STDERR ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: Ran  (cl /?) returned 127
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- Begin devenv.com /? STDOUT ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- End devenv.com /? STDOUT ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- Begin devenv.com /? STDERR ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: sh: devenv.com: not found
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- End devenv.com /? STDERR ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: Ran  (devenv.com /?) returned 127
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: Failed to run: xlc -qversion, assuming command not found
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- Begin xlc -qversion STDOUT ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- End xlc -qversion STDOUT ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- Begin xlc -qversion STDERR ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: Failed to run: xlc -qversion, assuming command not found
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- End xlc -qversion STDERR ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: Ran  (xlc -qversion) returned 42
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- Begin cc -V -flags STDOUT ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- End cc -V -flags STDOUT ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- Begin cc -V -flags STDERR ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: cc: error trying to exec 'x86_64-linux-gnu-gcc--flags': execvp: No such file or directory
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: ---- End cc -V -flags STDERR ----
+[Wed, 02 Mar 2011 03:40:45 -0800] DEBUG: Ran  (cc -V -flags) returned 0
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: Failed to run: what /opt/ansic/bin/cc, assuming command not found
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- Begin what /opt/ansic/bin/cc STDOUT ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- End what /opt/ansic/bin/cc STDOUT ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- Begin what /opt/ansic/bin/cc STDERR ----
+[Wed, 02 Mar 2011 03:: stdout[0K[default] 40:46 -0800] DEBUG: Failed to run: what /opt/ansic/bin/cc, assuming command not found
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- End what /opt/ansic/bin/cc STDERR ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: Ran  (what /opt/ansic/bin/cc) returned 42
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: Loading plugin groovy
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: Failed to run: groovy -v, assuming command not found
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- Begin groovy -v STDOUT ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- End groovy -v STDOUT ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- Begin groovy -v STDERR ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: Failed to run: groovy -v, assuming command not found
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- End groovy -v STDERR ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: Ran  (groovy -v) returned 42
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: Loading plugin cloud
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: Loading plugin ec2
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: Loading plugin hostname
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: Loading plugin linux::hostname
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- Begin hostname -s STDOUT ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: vagrantup
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- End hostname -s STDOUT ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- Begin hostname -s STDERR ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- End hostname -s STDERR ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: Ran  (hostname -s) returned 0
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- Begin hostname --fqdn STDOUT ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: vagrantup.com
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- End hostname --fqdn STDOUT ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- Begin hostname --fqdn STDERR ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- End hostname --fqdn STDERR ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: Ran  (hostname --fqdn) returned 0
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: Loading plugin network
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: Loading plugin linux::network
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- Begin route -n | grep -m 1 ^0.0.0.0 | awk '{print $8}' STDOUT ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: eth0
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- End route -n | grep -m 1 ^0.0.0.0 | awk '{print $8}' STDOUT ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- Begin route -n | grep -m 1 ^0.0.0.0 | awk '{print $8}' STDERR ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- End route -n | grep -m 1 ^0.0.0.0 | awk '{print $8}' STDERR ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: Ran  (route -n | grep -m 1 ^0.0.0.0 | awk '{print $8}') returned 0
+: stdout[0K[default] [Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: Loading plugin rackspace
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: Loading plugin network_listeners
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: Plugin network_listeners threw exception #<LoadError: no such file to load -- sigar> /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.5.8/lib/ohai/plugins/network_listeners.rb:19:in `from_file'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.5.8/lib/ohai/system.rb:199:in `require_plugin'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.5.8/lib/ohai/system.rb:194:in `each'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.5.8/lib/ohai/system.rb:194:in `require_plugin'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.5.8/lib/ohai/system.rb:126:in `all_plugins'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.5.8/lib/ohai/system.rb:119:in `each'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.5.8/lib/ohai/system.rb:119:in `all_plugins'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.5.8/lib/ohai/system.rb:117:in `each'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.5.8/lib/ohai/system.rb:117:in `all_plugins'
+/usr/lib/ruby/gems/1.8/gems/chef-0.9.12/bin/../lib/chef/client.rb:192:in `run_ohai'
+/usr/lib/ruby/gems/1.8/gems/chef-0.9.12/bin/../lib/chef/client.rb:143:in `run'
+/usr/lib/ruby/gems/1.8/gems/chef-0.9.12/bin/../lib/chef/application/client.rb:222:in `run_application'
+/usr/lib/ruby/gems/1.8/gems/chef-0.9.12/bin/../lib/chef/application/client.rb:212:in `loop'
+/usr/lib/ruby/gems/1.8/gems/chef-0.9.12/bin/../lib/chef/application/client.rb:212:in `run_application'
+/usr/lib/ruby/gems/1.8/gems/chef-0.9.12/bin/../lib/chef/application.rb:62:in `run'
+/usr/lib/ruby/gems/1.8/gems/chef-0.9.12/bin/chef-client:26
+/usr/bin/chef-client:19:in `load'
+/usr/bin/chef-client:19
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: Loading plugin ohai
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: Loading plugin perl
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- Begin perl -V:version -V:archname STDOUT ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: version='5.10.1';
+archname='x86_64-linux-gnu-thread-multi';
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- End perl -V:version -V:archname STDOUT ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- Begin perl -V:version -V:archname STDERR ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- End perl -V:version -V:archname STDERR ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: Ran  (perl -V:version -V:archname) returned 0
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: Loading plugin lua
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: Failed to run: lua -v, assuming command not found
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- Begin lua -v STDOUT ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- End lua -v STDOUT ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- Begin lua -v STDERR ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: Failed to run: lua -v, assuming command not found
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- End lua -v STDERR ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: Ran  (lua -v) returned 42
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: Loading plugin virtualization
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: Loading plugin linux::virtualization
+: stdout[0K[default] [Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: Loading plugin chef
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: Loading plugin keys
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: Loading plugin mono
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: Failed to run: mono -V, assuming command not found
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- Begin mono -V STDOUT ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- End mono -V STDOUT ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- Begin mono -V STDERR ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: Failed to run: mono -V, assuming command not found
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- End mono -V STDERR ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: Ran  (mono -V) returned 42
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: Loading plugin php
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: Failed to run: php -v, assuming command not found
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- Begin php -v STDOUT ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- End php -v STDOUT ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- Begin php -v STDERR ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: Failed to run: php -v, assuming command not found
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- End php -v STDERR ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: Ran  (php -v) returned 42
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: Loading plugin uptime
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: Loading plugin ohai_time
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: Loading plugin dmi
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- Begin dmidecode --version STDOUT ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: 2.9
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- End dmidecode --version STDOUT ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- Begin dmidecode --version STDERR ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- End dmidecode --version STDERR ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: Ran  (dmidecode --version) returned 0
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- Begin dmidecode -s bios-vendor STDOUT ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: innotek GmbH
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- End dmidecode -s bios-vendor STDOUT ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- Begin dmidecode -s bios-vendor STDERR ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- End dmidecode -s bios-vendor STDERR ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: Ran  (dmidecode -s bios-vendor) returned 0
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- Begin dmidecode -s bios-version STDOUT ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: VirtualBox
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- End dmidecode -s bios-version STDOUT ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- Begin dmidecode -s bios-version STDERR ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- End dmidecode -s bios-version STDERR ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: Ran  (dmidecode -s bios-version) returned 0
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- Begin dmidecode -s bios-release-date STDOUT ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: 12/01/2006
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- End dmidecode -s bios-release-date STDOUT ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- Begin dmidecode -s bios-release-date STDERR ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: ---- End dmidecode -s bios-release-date STDERR ----
+[Wed, 02 Mar 2011 03:40:46 -0800] DEBUG: Ran  (dmidecode -s bios-release-date) returned 0
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- Begin dmidecode -s system-manufacturer STDOUT ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: innotek GmbH
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- End dmidecode -s system-manufacturer STDOUT ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- Begin dmidecode -s system-manufacturer STDERR ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: 
+[Wed,: stdout[0K[default]  02 Mar 2011 03:40:47 -0800] DEBUG: ---- End dmidecode -s system-manufacturer STDERR ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: Ran  (dmidecode -s system-manufacturer) returned 0
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- Begin dmidecode -s system-product-name STDOUT ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: VirtualBox
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- End dmidecode -s system-product-name STDOUT ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- Begin dmidecode -s system-product-name STDERR ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- End dmidecode -s system-product-name STDERR ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: Ran  (dmidecode -s system-product-name) returned 0
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- Begin dmidecode -s system-version STDOUT ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: 1.2
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- End dmidecode -s system-version STDOUT ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- Begin dmidecode -s system-version STDERR ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- End dmidecode -s system-version STDERR ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: Ran  (dmidecode -s system-version) returned 0
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- Begin dmidecode -s system-serial-number STDOUT ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: 0
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- End dmidecode -s system-serial-number STDOUT ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- Begin dmidecode -s system-serial-number STDERR ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- End dmidecode -s system-serial-number STDERR ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: Ran  (dmidecode -s system-serial-number) returned 0
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- Begin dmidecode -s baseboard-manufacturer STDOUT ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- End dmidecode -s baseboard-manufacturer STDOUT ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- Begin dmidecode -s baseboard-manufacturer STDERR ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- End dmidecode -s baseboard-manufacturer STDERR ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: Ran  (dmidecode -s baseboard-manufacturer) returned 0
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- Begin dmidecode -s baseboard-product-name STDOUT ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- End dmidecode -s baseboard-product-name STDOUT ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- Begin dmidecode -s baseboard-product-name STDERR ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- End dmidecode -s baseboard-product-name STDERR ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: Ran  (dmidecode -s baseboard-product-name) returned 0
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- Begin dmidecode -s baseboard-version STDOUT ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- End dmidecode -s baseboard-version STDOUT ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- Begin dmidecode -s baseboard-version STDERR ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- End dmidecode -s baseboard-version STDERR ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: Ran  (dmidecode -s baseboard-version) returned 0
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- Begin dmidecode -s baseboard-serial-number STDOUT ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- End dmidecode -s baseboard-serial-number STDOUT ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- Begin dmidecode -s baseboard-serial-number STDERR ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- End dmidecode -s baseboard-serial-number STDERR ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: Ran  (dmidecode: stdout[0K[default]  -s baseboard-serial-number) returned 0
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- Begin dmidecode -s baseboard-asset-tag STDOUT ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- End dmidecode -s baseboard-asset-tag STDOUT ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- Begin dmidecode -s baseboard-asset-tag STDERR ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- End dmidecode -s baseboard-asset-tag STDERR ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: Ran  (dmidecode -s baseboard-asset-tag) returned 0
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- Begin dmidecode -s chassis-manufacturer STDOUT ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- End dmidecode -s chassis-manufacturer STDOUT ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- Begin dmidecode -s chassis-manufacturer STDERR ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- End dmidecode -s chassis-manufacturer STDERR ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: Ran  (dmidecode -s chassis-manufacturer) returned 0
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- Begin dmidecode -s chassis-version STDOUT ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- End dmidecode -s chassis-version STDOUT ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- Begin dmidecode -s chassis-version STDERR ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- End dmidecode -s chassis-version STDERR ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: Ran  (dmidecode -s chassis-version) returned 0
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- Begin dmidecode -s chassis-serial-number STDOUT ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- End dmidecode -s chassis-serial-number STDOUT ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- Begin dmidecode -s chassis-serial-number STDERR ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- End dmidecode -s chassis-serial-number STDERR ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: Ran  (dmidecode -s chassis-serial-number) returned 0
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- Begin dmidecode -s chassis-asset-tag STDOUT ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- End dmidecode -s chassis-asset-tag STDOUT ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- Begin dmidecode -s chassis-asset-tag STDERR ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- End dmidecode -s chassis-asset-tag STDERR ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: Ran  (dmidecode -s chassis-asset-tag) returned 0
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- Begin dmidecode -s processor-manufacturer STDOUT ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- End dmidecode -s processor-manufacturer STDOUT ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- Begin dmidecode -s processor-manufacturer STDERR ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- End dmidecode -s processor-manufacturer STDERR ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: Ran  (dmidecode -s processor-manufacturer) returned 0
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- Begin dmidecode -s processor-version STDOUT ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- End dmidecode -s processor-version STDOUT ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- Begin dmidecode -s processor-version STDERR ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- End dmidecode -s processor-version STDERR ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: Ran  (dmidecode -s processor-version) returned 0
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- Begin dmidecode -s chassis-type STDOUT ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: 
+[Wed, 02 Mar 2: stdout[0K[default] 011 03:40:47 -0800] DEBUG: ---- End dmidecode -s chassis-type STDOUT ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- Begin dmidecode -s chassis-type STDERR ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: ---- End dmidecode -s chassis-type STDERR ----
+[Wed, 02 Mar 2011 03:40:47 -0800] DEBUG: Ran  (dmidecode -s chassis-type) returned 0
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: ---- Begin dmidecode -s system-uuid STDOUT ----
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: 2584FA20-CF59-48D8-B2FE-F17B6BFA687D
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: ---- End dmidecode -s system-uuid STDOUT ----
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: ---- Begin dmidecode -s system-uuid STDERR ----
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: ---- End dmidecode -s system-uuid STDERR ----
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: Ran  (dmidecode -s system-uuid) returned 0
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: ---- Begin dmidecode -s processor-family STDOUT ----
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: ---- End dmidecode -s processor-family STDOUT ----
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: ---- Begin dmidecode -s processor-family STDERR ----
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: ---- End dmidecode -s processor-family STDERR ----
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: Ran  (dmidecode -s processor-family) returned 0
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: ---- Begin dmidecode -s processor-frequency STDOUT ----
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: ---- End dmidecode -s processor-frequency STDOUT ----
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: ---- Begin dmidecode -s processor-frequency STDERR ----
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: ---- End dmidecode -s processor-frequency STDERR ----
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: Ran  (dmidecode -s processor-frequency) returned 0
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: Loading plugin java
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: Failed to run: java -version, assuming command not found
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: ---- Begin java -version STDOUT ----
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: ---- End java -version STDOUT ----
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: ---- Begin java -version STDERR ----
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: Failed to run: java -version, assuming command not found
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: ---- End java -version STDERR ----
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: Ran  (java -version) returned 42
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: Loading plugin platform
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: Loading plugin linux::platform
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: Loading plugin linux::lsb
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: Loading plugin erlang
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: Failed to run: erl +V, assuming command not found
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: ---- Begin erl +V STDOUT ----
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: ---- End erl +V STDOUT ----
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: ---- Begin erl +V STDERR ----
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: Failed to run: erl +V, assuming command not found
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: ---- End erl +V STDERR ----
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: Ran  (erl +V) returned 42
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: Loading plugin linux::memory
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: Loading plugin linux::block_device
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: Loading plugin linux::filesystem
+: stdout[0K[default] [Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: Loading plugin linux::ssh_host_key
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: Loading plugin linux::cpu
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: Loading plugin linux::kernel
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: ---- Begin uname -o STDOUT ----
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: GNU/Linux
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: ---- End uname -o STDOUT ----
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: ---- Begin uname -o STDERR ----
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: 
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: ---- End uname -o STDERR ----
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: Ran  (uname -o) returned 0
+: stdout[0K[default] [Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: Loading plugin linux::uptime
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: Loading plugin linux::ps
+[Wed, 02 Mar 2011 03:40:48 -0800] INFO: Client key /etc/chef/client.pem is not present - registering
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: Signing the request as chef-validator
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: String to sign: 'Method:POST
+Hashed Path:QHL2lW8OR+xoMFLchjio1Mxgw+0=
+X-Ops-Content-Hash:FpkDck/67ie3wBpsqJocLp+7f/8=
+X-Ops-Timestamp:2011-03-02T11:40:48Z
+X-Ops-UserId:chef-validator'
+Header hash: {"X-Ops-Content-Hash"=>"FpkDck/67ie3wBpsqJocLp+7f/8=", "X-Ops-Authorization-1"=>"egu45PxCU9x11XYWI+eszKf0PO7B7ML1ijbmadqxGBQx8eC2VVlmwBMRJ4Hn", "X-Ops-Userid"=>"chef-validator", "X-Ops-Sign"=>"version=1.0", "X-Ops-Authorization-2"=>"echVH8iqI2cu/AnjqDU2dmOnDfkwnbpTbooOy3XM/YubaR8UdZjaAC/4Baa9", "X-Ops-Authorization-3"=>"AHDpj5fX9I1twoBxq2pJ2hnhQuLDsCx3SaZKEoYEU5VetDlKYcumGo5IPSog", "X-Ops-Authorization-4"=>"EkiF3HBdrQZpj3LLj1xpM1h3yaMyaMAQgAH4YoEmaFOh7RBxh+XcQABGw2SG", "X-Ops-Authorization-5"=>"OCfHKA4tzpi5J65uyvXdfeGZAlZLXJYF/OJibW5/BNMZ3RZClZfbSkSae64J", "X-Ops-Authorization-6"=>"6ofRCOAcTsnT89mjqe4X8HetEIKAINbPu3T1ly2COw==", "X-Ops-Timestamp"=>"2011-03-02T11:40:48Z"}
+[Wed, 02 Mar 2011 03:40:48 -0800] DEBUG: Sending HTTP Request via POST to 33.33.33.10:4000/clients
+[Wed, 02 Mar 2011 03:40:49 -0800] DEBUG: Registration response: {"uri"=>"http://33.33.33.10:4000/clients/bbb", "private_key"=>"-----BEGIN RSA PRIVATE KEY-----\nMIIEowIBAAKCAQEAyxpkPL4KYgxyB3/WfOYkGIhWTjrCBbwkXZi+rCrzf2jR0ejS\nYM+qqmSsUDKn4vGP11cBWry7AnkbWsSjfmG3bvdUBQFXMwF4v+5nIVM1l6cQlpzv\n9HMHm+PlvIEF7EzAOs3BbvgQzhxK+tblyiM57Ba3fQBW0CCa6OKWU5bWJopkeHjx\n9uhnCPJjMJxUmkGSCZ/shKrDtCIJbeykEwWQd0/L9dqj1eITZnn0bSva+czR8FIr\nvX8xBGfOocUpBFhzNZN8ypMlOLveCU18BdUvcEBHlJASxs3qVJLCrxeblbIjXs8k\nXHv17EcdJs/4cCnC/Db1VkSLb6iIyvq+WFfH6QIDAQABAoIBADKkSPwQUpxyB/iw\nunV4GOX5ELP+2KP/bn3b+ScKqp5JL5AMYnB7N023PnPcvZnLq5cA/bh3OJX8RoLS\nZwW7LbbAerWoyOpR4p7QvexESCehI3S6euZTzEDliUIAVc6+sGu5JBMcTWxnB5cW\nAEPvlqC0ZVoIvJy2lIme/eanxIvlIaSmimg97YfXpCcvoixIYcUZHmc0BdwAalfK\n6wXOltyMMbrBpvPF7SVtglpFp7pQrIc9qBwG9c8rsAOq5SVxmcVlJT2lBDv8WOoZ\nAPYw3kkm+0+slO3PpPW4fvXwvV5MNa4NPc+7Sf6xopKFJQht4pESYZ9ocPx1IWDX\nS8xriJECgYEA/SUtqjtp9DhvH6lnvmDHhhF4p1NEMpmH/AhEVbAQr09yFEZP6mOO\nv76oAK+AzY2uv8eATtt1WlB06JKsK8PfcSUBXN3CzB9IP1TEMv1yAzOd+5460Uoo\nfI6JUF5Q+gKukk+2sXLeVDn4eR4hnczTm7bhDRmWvfY/osKXZxB1eBUCgYEAzWS+\nRMJdub0VhdBuo8rtjV0rlhZ2w7yFvl+7R9+uOwOxMKkE0KQ1U9KEBEGjsHnJphCI\nzmWR7sucz3qBhDnNif/rRUa/vm2Fx04Ivm58c1BOccUcnQSSdfIRNM2zw6nEis3Y\n7MeaYJqkOHfKIxe4rXuuoRG0rIOrU1HuDeu7EYUCgYBzdDtpgoOGcR6tcBPyzizx\nxpIirmVSNpfAqPyRoCVb7332JUNZgWKfrRLujRzPoyjqKtEoJgtVz5AiapK/uyvz\nbI88jZ/EfRf0WnLJVrJjJ22MTtRAk/P3KwMRdpK0E/kOnfCS6fLgszfR9Z4bXEm+\noR/vW5ZWuTK4xstKpEUPKQKBgQCrDd+3+/d6nJK0IuZB2tsEBDgsgwDd+r+X0Lp0\nHUFJPMXwtJKiAF+5M3Vm5hOhAYyClPqaidSDf2dVE72RlWIsL8qMo2NFAImNdtup\nXPKgRp1N+s7dpdUkDTlvNHEl3tkkkFK8v28+TQu/S2Q43aScNok08z34/p9MgMs1\nJMFi0QKBgCNYlfXilDR1si4SzSOZy7op4sfElNmKM2FXy5RYakW+p6q+QH6Aqh26\nqFypoAGZPbmol59NnOYJYh73nPHj2U+hMlIdwBQO2rhe4+MwwLF+KKo0BqnhfGSD\njAKEj+3NJLwV2CVw2jXABfkDNEhHedVhuFv/v9hwV3atxKC077nf\n-----END RSA PRIVATE KEY-----\n"}
+[Wed, 02 Mar 2011 03:40:49 -0800] DEBUG: Building node object for 
+[Wed, 02 Mar 2011 03:40:49 -0800] DEBUG: Signing the request as bbb
+[Wed, 02 Mar 2011 03:40:49 -0800] DEBUG: String to sign: 'Method:GET
+Hashed Path:9kGlmlxnObmK/awq3vOm2v4MceI=
+X-Ops-Content-Hash:2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+X-Ops-Timestamp:2011-03-02T11:40:49Z
+X-Ops-UserId:bbb'
+Header hash: {"X-Ops-Content-Hash"=>"2jmj7l5rSw0yVb/vlWAYkK/YBwk=", "X-Ops-Authorization-1"=>"iWGR10+RGCwaxKbgp1qHadbn5loV+k0UxuWPaa47o+a/grXH9Vn9gfAewsSe", "X-Ops-Userid"=>"bbb", "X-Ops-Sign"=>"version=1.0", "X-Ops-Authorization-2"=>"r0ZPTn17ty8qK6KSKTy/BUJ2oGF3kdYvLdadRGrjFwjDl57tvZBUlufU0Sx2", "X-Ops-Authorization-3"=>"VDU23YIUW3BpZJ6R+jPZo7/y55Xs1E9unXeF54TTyQD4aabeS1Uj89dU8A41", "X-Ops-Authorization-4"=>"/68Ikr/ezcS69dEka9ZVwa6V3O9AeblaOTDD+t856sYu5vr60K2Nx+9jdchj", "X-Ops-Authorization-5"=>"xjwnhU3KCHChADESjTlCDTBhfUHAL+eRoXuz9uY88khbiiO+bZDdMuYJEsn/", "X-Ops-Authorizatio: stdout[0K[default] n-6"=>"2EU6Yivd5Pd9zA7UpHW9T5fIEAlyazGP489BinB3EA==", "X-Ops-Timestamp"=>"2011-03-02T11:40:49Z"}
+[Wed, 02 Mar 2011 03:40:49 -0800] DEBUG: Sending HTTP Request via GET to 33.33.33.10:4000/nodes/bbb
+[Wed, 02 Mar 2011 03:40:50 -0800] WARN: HTTP Request Returned 404 Not Found: Cannot load node bbb
+[Wed, 02 Mar 2011 03:40:50 -0800] DEBUG: Signing the request as bbb
+[Wed, 02 Mar 2011 03:40:50 -0800] DEBUG: String to sign: 'Method:POST
+Hashed Path:bEM+o9tCkqf41JkAi8jgkkr5ZvU=
+X-Ops-Content-Hash:nSbk2YLcXB6redJPyfDnI49SWXc=
+X-Ops-Timestamp:2011-03-02T11:40:50Z
+X-Ops-UserId:bbb'
+Header hash: {"X-Ops-Content-Hash"=>"nSbk2YLcXB6redJPyfDnI49SWXc=", "X-Ops-Authorization-1"=>"TJntP3+0Fm5n+H4Fvj0aigMusskXx0hgZ+HG3OaoBAeoZ0P7p28qA1Omrxda", "X-Ops-Userid"=>"bbb", "X-Ops-Sign"=>"version=1.0", "X-Ops-Authorization-2"=>"NLxlnZZt5+jpmiEs12aGkvNz0eATKMddtwFhgqibWgDuUrBbaRqtRhGJKslv", "X-Ops-Authorization-3"=>"2Ivbq9MypQcKj/vof9QHfpY5amgUmatkVulsp/7UFr+3Sy0xTBP8ayVILXQ6", "X-Ops-Authorization-4"=>"8ah69XL1ihlQ5xtrCRq/ue3gC2gD1kOxRsk75cqWZVaneyM9rtyqxgdocYkv", "X-Ops-Authorization-5"=>"tj9eC+A8TeqHcjB34FghTioaAB1d70JoNlIU/wTBoTs1u1EO/yXg0WoBBdh5", "X-Ops-Authorization-6"=>"CW1uekgtwIGyJQtE5jl25Kh09Z0LCmDKR+/l5LP5NQ==", "X-Ops-Timestamp"=>"2011-03-02T11:40:50Z"}
+[Wed, 02 Mar 2011 03:40:50 -0800] DEBUG: Sending HTTP Request via POST to 33.33.33.10:4000/nodes
+[Wed, 02 Mar 2011 03:40:50 -0800] DEBUG: Extracting run list from JSON attributes provided on command line
+[Wed, 02 Mar 2011 03:40:50 -0800] DEBUG: Applying attributes from json file
+[Wed, 02 Mar 2011 03:40:50 -0800] DEBUG: Platform is ubuntu version 10.04
+[Wed, 02 Mar 2011 03:40:50 -0800] DEBUG: Signing the request as bbb
+[Wed, 02 Mar 2011 03:40:50 -0800] DEBUG: String to sign: 'Method:PUT
+Hashed Path:9kGlmlxnObmK/awq3vOm2v4MceI=
+X-Ops-Content-Hash:6AbMIpJ0FkjO5ZHRfPY9T7mANs0=
+X-Ops-Timestamp:2011-03-02T11:40:50Z
+X-Ops-UserId:bbb'
+Header hash: {"X-Ops-Content-Hash"=>"6AbMIpJ0FkjO5ZHRfPY9T7mANs0=", "X-Ops-Authorization-1"=>"F9w7wHVnCXy+4fpfWhG+D9BaP8uD1jEf9jboC00MhLOY+mGsEPMqJgGWqofH", "X-Ops-Userid"=>"bbb", "X-Ops-Sign"=>"version=1.0", "X-Ops-Authorization-2"=>"Ij0cIn7ZHlm4CDaJbuOT7JhYq/zPYanlvTUmLNp8bVK/jPhKKJU/C4aZwxdz", "X-Ops-Authorization-3"=>"bGg7z4YIvCzxhZHRoB+NITu5Qehqj3eVBpL0UFjIWlfTRZl8zz2jEoiT0fR6", "X-Ops-Authorization-4"=>"cHyjGctLz68cjNDx1SlSlGmYLrEVZyMp3mm+6N9aN13Eaub0CjtWCKphsi6i", "X-Ops-Authorization-5"=>"b/Uni4ADOIgIgs4YNCngj6j6dcw2UEMzg1xBTrwLfra+MW/S2m8Y5DdTesjR", "X-Ops-Authorization-6"=>"fQ4hps53Lv8henWZ5Y4J3aNZA9KLiLqrAM6lDX7cjw==", "X-Ops-Timestamp"=>"2011-03-02T11:40:50Z"}
+[Wed, 02 Mar 2011 03:40:50 -0800] DEBUG: Sending HTTP Request via PUT to 33.33.33.10:4000/nodes/bbb
+[Wed, 02 Mar 2011 03:40:50 -0800] INFO: Starting Chef Run (Version 0.9.12)
+[Wed, 02 Mar 2011 03:40:50 -0800] DEBUG: Synchronizing cookbooks
+[Wed, 02 Mar 2011 03:40:50 -0800] DEBUG: Signing the request as bbb
+[Wed, 02 Mar 2011 03:40:50 -0800] DEBUG: String to sign: 'Method:GET
+Hashed Path:+CNUIldo/4Q1s283kjI/My92lo4=
+X-Ops-Content-Hash:2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+X-Ops-Timestamp:2011-03-02T11:40:50Z
+X-Ops-UserId:bbb'
+Header hash: {"X-Ops-Content-Hash"=>"2jmj7l5rSw0yVb/vlWAYkK/YBwk=", "X-Ops-Authorization-1"=>"QTnRnJdqgEjQtMJRTTlCBY7xAhBxt/bXXVGooqdhvuNWlQw8FAOKJHcreQ2o", "X-Ops-Userid"=>"bbb", "X-Ops-Sign"=>"version=1.0", "X-Ops-Authorization-2"=>"gAiXX6VtVzlkCfX+4IAJr9foB45ccKfjbi7yhqqlDKipY2annxDjpFe/jywi", "X-Ops-Authorization-3"=>"0L8mzfAVAgqJnKQPWp+JSzOcbXU/62GzryHjtt1G605oqWtPPMmpg6zx6OJg", "X-Ops-Authorization-4"=>"3JskzNj4Xpme49SZ2qCooDmcs6k8m4ilvC4igwNwo941aSPAaRGkpf/UHynP", "X-Ops-Authorization-5"=>"7PvsvzKtTrtatraltVII62zuCxBNUvFVaF009fwTReBYDKfI3eWsAc47zoK6", "X-Ops-Authorization-6"=>"Rnaht1z8MmVprs9QKFHTckZbJzlF86EbMnyf6wuafw==", "X-Ops-Timestamp"=>"2011-03-02T11:40:50Z"}
+[Wed, 02 Mar 2011 03:40:50 -0800] DEBUG: Sending HTTP Request via GET to 33.33.33.10:4000/nodes/bbb/cookbooks
+[Wed, 02 Mar 2011 03:40:50 -0800] DEBUG: Cookbooks to load: {}
+[Wed, 02 Mar 2011 03:40:50 -0800] WARN: Node bbb has an empty run list.
+[Wed, 02 Mar 2011 03:40:50 -0800] DEBUG: Converging node bbb
+[Wed, 02 Mar 2: stdout
+[0K[default] 011 03:40:50 -0800] DEBUG: Saving the current state of node bbb
+[Wed, 02 Mar 2011 03:40:50 -0800] DEBUG: Signing the request as bbb
+[Wed, 02 Mar 2011 03:40:50 -0800] DEBUG: String to sign: 'Method:PUT
+Hashed Path:9kGlmlxnObmK/awq3vOm2v4MceI=
+X-Ops-Content-Hash:6AbMIpJ0FkjO5ZHRfPY9T7mANs0=
+X-Ops-Timestamp:2011-03-02T11:40:50Z
+X-Ops-UserId:bbb'
+Header hash: {"X-Ops-Content-Hash"=>"6AbMIpJ0FkjO5ZHRfPY9T7mANs0=", "X-Ops-Authorization-1"=>"F9w7wHVnCXy+4fpfWhG+D9BaP8uD1jEf9jboC00MhLOY+mGsEPMqJgGWqofH", "X-Ops-Userid"=>"bbb", "X-Ops-Sign"=>"version=1.0", "X-Ops-Authorization-2"=>"Ij0cIn7ZHlm4CDaJbuOT7JhYq/zPYanlvTUmLNp8bVK/jPhKKJU/C4aZwxdz", "X-Ops-Authorization-3"=>"bGg7z4YIvCzxhZHRoB+NITu5Qehqj3eVBpL0UFjIWlfTRZl8zz2jEoiT0fR6", "X-Ops-Authorization-4"=>"cHyjGctLz68cjNDx1SlSlGmYLrEVZyMp3mm+6N9aN13Eaub0CjtWCKphsi6i", "X-Ops-Authorization-5"=>"b/Uni4ADOIgIgs4YNCngj6j6dcw2UEMzg1xBTrwLfra+MW/S2m8Y5DdTesjR", "X-Ops-Authorization-6"=>"fQ4hps53Lv8henWZ5Y4J3aNZA9KLiLqrAM6lDX7cjw==", "X-Ops-Timestamp"=>"2011-03-02T11:40:50Z"}
+[Wed, 02 Mar 2011 03:40:50 -0800] DEBUG: Sending HTTP Request via PUT to 33.33.33.10:4000/nodes/bbb
+[Wed, 02 Mar 2011 03:40:50 -0800] INFO: Chef Run complete in 0.510355 seconds
+[Wed, 02 Mar 2011 03:40:50 -0800] INFO: cleaning the checksum cache
+[Wed, 02 Mar 2011 03:40:50 -0800] INFO: Running report handlers
+[Wed, 02 Mar 2011 03:40:50 -0800] INFO: Report handlers complete
+[Wed, 02 Mar 2011 03:40:50 -0800] DEBUG: Exiting
+: stdout
+[0K[default] 'unknown': unknown terminal type.
+: stderr

@@ -1,0 +1,167 @@
+GIT
+  folder: /usr/src/bigbluebutton/labs/dev-vm/chefserver/cookbooks/apache2
+  remote: git://github.com/cookbooks/apache2.git
+  revision: 961d096dddb08625783543c1abab372ccb70bc11
+  tag: qa-latest
+  specs:
+    apache2 (0.99.2)
+
+GIT
+  folder: /usr/src/bigbluebutton/labs/dev-vm/chefserver/cookbooks/apt
+  remote: git://github.com/cookbooks/apt.git
+  revision: fe35028d06f26cf6e2a62d6ceb2e42054d0d6b67
+  tag: qa-latest
+  specs:
+    apt (0.9.3)
+
+GIT
+  folder: /usr/src/bigbluebutton/labs/dev-vm/chefserver/cookbooks/bluepill
+  remote: git://github.com/cookbooks/bluepill.git
+  revision: 5efef4ad9b2189a881190c6737a3bb3b3fd4e6c2
+  tag: qa-latest
+  specs:
+    bluepill (0.2.0)
+
+GIT
+  folder: /usr/src/bigbluebutton/labs/dev-vm/chefserver/cookbooks/build-essential
+  remote: git://github.com/cookbooks/build-essential.git
+  revision: 63a03171b452a11e217eb0667e9f417034df2af8
+  tag: qa-latest
+  specs:
+    build-essential (0.7.1)
+
+GIT
+  folder: /usr/src/bigbluebutton/labs/dev-vm/chefserver/cookbooks/chef
+  remote: git://github.com/cookbooks/chef.git
+  revision: 05b4d574c915465cd2a69bb70c46ffa83702c00d
+  tag: qa-latest
+  specs:
+    chef (0.22.1)
+      apache2
+      bluepill
+      couchdb
+      daemontools
+      java
+      openssl
+      rabbitmq_chef
+      runit
+      xml
+      zlib
+
+GIT
+  folder: /usr/src/bigbluebutton/labs/dev-vm/chefserver/cookbooks/couchdb
+  remote: git://github.com/cookbooks/couchdb.git
+  revision: 2ea9221115eb65e2cef2e4bc62d0ae59730457b9
+  tag: qa-latest
+  specs:
+    couchdb (0.14.1)
+      erlang
+
+GIT
+  folder: /usr/src/bigbluebutton/labs/dev-vm/chefserver/cookbooks/daemontools
+  remote: git://github.com/cookbooks/daemontools.git
+  revision: 4ef5c2253d059576f342c43697e0dfb84b23825b
+  tag: qa-latest
+  specs:
+    daemontools (0.9.0)
+      build-essential
+      ucspi-tcp
+
+GIT
+  folder: /usr/src/bigbluebutton/labs/dev-vm/chefserver/cookbooks/erlang
+  remote: git://github.com/cookbooks/erlang.git
+  revision: cbbbbc11579c0e034512a882b1d8ebc311328aad
+  tag: qa-latest
+  specs:
+    erlang (0.8.2)
+
+GIT
+  folder: /usr/src/bigbluebutton/labs/dev-vm/chefserver/cookbooks/openssl
+  remote: git://github.com/cookbooks/openssl.git
+  revision: 8fa5fe9a3f441538f0e714b0c66ff5c16ad25f95
+  tag: qa-latest
+  specs:
+    openssl (0.1.0)
+
+GIT
+  folder: /usr/src/bigbluebutton/labs/dev-vm/chefserver/cookbooks/rabbitmq_chef
+  remote: git://github.com/cookbooks/rabbitmq_chef.git
+  revision: 2f0a435c5f33776a3833fa70e2fc76c28589d456
+  tag: qa-latest
+  specs:
+    rabbitmq_chef (0.10.4)
+      erlang
+
+GIT
+  folder: /usr/src/bigbluebutton/labs/dev-vm/chefserver/cookbooks/runit
+  remote: git://github.com/cookbooks/runit.git
+  revision: e0b102759d6bf4cfd6ef920dd43733baad240903
+  tag: qa-latest
+  specs:
+    runit (0.14.2)
+
+GIT
+  folder: /usr/src/bigbluebutton/labs/dev-vm/chefserver/cookbooks/ucspi-tcp
+  remote: git://github.com/cookbooks/ucspi-tcp.git
+  revision: bea61382967271bd304aa179d88add0cdb1f8ba7
+  tag: qa-latest
+  specs:
+    ucspi-tcp (1.0.0)
+      build-essential
+
+GIT
+  folder: /usr/src/bigbluebutton/labs/dev-vm/chefserver/cookbooks/xml
+  remote: git://github.com/cookbooks/xml.git
+  revision: 330c77c1d6e9173957171c3eccab1a9fb9576954
+  tag: qa-latest
+  specs:
+    xml (0.1.1)
+
+GIT
+  folder: /usr/src/bigbluebutton/labs/dev-vm/chefserver/cookbooks/zlib
+  remote: git://github.com/cookbooks/zlib.git
+  revision: 73743b5fcdf228b62f4740b775f7e0b507636039
+  tag: qa-latest
+  specs:
+    zlib (0.1.1)
+
+GIT
+  folder: /usr/src/bigbluebutton/labs/dev-vm/chefserver/cookbooks/hosts
+  remote: git://github.com/hedgehog/hosts.git
+  revision: 892a1fa46d2f107d59372ed5f230501cd856b95f
+  ref: 892a1fa46d2f107d5937
+  specs:
+    hosts (0.1.0)
+
+GIT
+  folder: /usr/src/bigbluebutton/labs/dev-vm/chefserver/cookbooks/java
+  remote: git://github.com/hedgehog/java.git
+  revision: c409429edae84da308ba3f41e4acfb1e86892573
+  ref: c409429edae84da308ba
+  specs:
+    java (0.10.3)
+      apt
+
+GEM
+  specs:
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  apache2!
+  apt!
+  bluepill!
+  build-essential!
+  chef!
+  couchdb!
+  daemontools!
+  erlang!
+  hosts!
+  java!
+  openssl!
+  rabbitmq_chef!
+  runit!
+  ucspi-tcp!
+  xml!
+  zlib!

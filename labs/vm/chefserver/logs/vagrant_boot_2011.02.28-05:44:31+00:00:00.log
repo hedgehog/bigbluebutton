@@ -1,0 +1,67 @@
+[0K[chefserver] VM already created. Booting if its not already running...
+[0K[chefserver] Provisioning enabled with chef_solo...
+[0K[chefserver] Running any VM customizations...
+[0K[chefserver] Clearing any previously set forwarded ports...
+[0K[chefserver] Forwarding ports...
+[0K[chefserver] -- ssh: 22 => 2200 (adapter 1)
+[0K[chefserver] -- chefs: 4000 => 4000 (adapter 1)
+[0K[chefserver] -- chefs_web: 4040 => 4040 (adapter 1)
+[0K[chefserver] Cleaning previously set shared folders...
+[0K[chefserver] Creating shared folders metadata...
+[0K[chefserver] Preparing host only network...
+[0K[chefserver] Creating new host only network for environment...
+/home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/virtualbox-0.8.3/lib/virtualbox/com/implementer/ffi.rb:95:in `call_and_check': Error in API call to create_host_only_network_interface: 2147500036 (VirtualBox::Exceptions::FFIException)
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/virtualbox-0.8.3/lib/virtualbox/com/implementer/ffi.rb:69:in `call_vtbl_function'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/virtualbox-0.8.3/lib/virtualbox/com/implementer/ffi.rb:50:in `call_function'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/virtualbox-0.8.3/lib/virtualbox/com/abstract_interface.rb:134:in `call_function'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/virtualbox-0.8.3/lib/virtualbox/com/abstract_interface.rb:51:in `block in function'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/virtualbox-0.8.3/lib/virtualbox/host_network_interface.rb:49:in `create'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/virtualbox-0.8.3/lib/virtualbox/proxies/collection.rb:25:in `create'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/vagrant-0.7.2/lib/vagrant/action/vm/network.rb:96:in `network_name'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/vagrant-0.7.2/lib/vagrant/action/vm/network.rb:67:in `block in assign_network'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/vagrant-0.7.2/lib/vagrant/action/vm/network.rb:63:in `each'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/vagrant-0.7.2/lib/vagrant/action/vm/network.rb:63:in `assign_network'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/vagrant-0.7.2/lib/vagrant/action/vm/network.rb:22:in `call'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/vagrant-0.7.2/lib/vagrant/action/warden.rb:28:in `call'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/vagrant-0.7.2/lib/vagrant/action/vm/host_name.rb:10:in `call'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/vagrant-0.7.2/lib/vagrant/action/warden.rb:28:in `call'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/vagrant-0.7.2/lib/vagrant/action/vm/share_folders.rb:15:in `call'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/vagrant-0.7.2/lib/vagrant/action/warden.rb:28:in `call'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/vagrant-0.7.2/lib/vagrant/action/vm/clear_shared_folders.rb:14:in `call'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/vagrant-0.7.2/lib/vagrant/action/warden.rb:28:in `call'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/vagrant-0.7.2/lib/vagrant/action/vm/nfs.rb:39:in `call'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/vagrant-0.7.2/lib/vagrant/action/warden.rb:28:in `call'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/vagrant-0.7.2/lib/vagrant/action/vm/provision.rb:17:in `call'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/vagrant-0.7.2/lib/vagrant/action/warden.rb:28:in `call'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/vagrant-0.7.2/lib/vagrant/action/vm/forward_ports.rb:88:in `call'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/vagrant-0.7.2/lib/vagrant/action/warden.rb:28:in `call'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/vagrant-0.7.2/lib/vagrant/action/vm/clear_forwarded_ports.rb:17:in `call'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/vagrant-0.7.2/lib/vagrant/action/warden.rb:28:in `call'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/vagrant-0.7.2/lib/vagrant/action/vm/customize.rb:16:in `call'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/vagrant-0.7.2/lib/vagrant/action/warden.rb:28:in `call'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/vagrant-0.7.2/lib/vagrant/action/vm/clean_machine_folder.rb:17:in `call'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/vagrant-0.7.2/lib/vagrant/action/warden.rb:28:in `call'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/vagrant-0.7.2/lib/vagrant/action/builder.rb:120:in `call'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/vagrant-0.7.2/lib/vagrant/action.rb:131:in `block in run'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/vagrant-0.7.2/lib/vagrant/util/busy.rb:19:in `busy'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/vagrant-0.7.2/lib/vagrant/action.rb:131:in `run'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/vagrant-0.7.2/lib/vagrant/vm.rb:143:in `start'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/vagrant-0.7.2/lib/vagrant/command/up.rb:11:in `block in execute'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/vagrant-0.7.2/lib/vagrant/command/up.rb:8:in `each'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/vagrant-0.7.2/lib/vagrant/command/up.rb:8:in `execute'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/thor-0.14.6/lib/thor/task.rb:22:in `run'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/thor-0.14.6/lib/thor/invocation.rb:118:in `invoke_task'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/thor-0.14.6/lib/thor/invocation.rb:124:in `block in invoke_all'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/thor-0.14.6/lib/thor/invocation.rb:124:in `each'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/thor-0.14.6/lib/thor/invocation.rb:124:in `map'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/thor-0.14.6/lib/thor/invocation.rb:124:in `invoke_all'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/thor-0.14.6/lib/thor/group.rb:226:in `dispatch'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/thor-0.14.6/lib/thor/invocation.rb:109:in `invoke'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/vagrant-0.7.2/lib/vagrant/cli.rb:45:in `block in register'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/thor-0.14.6/lib/thor/task.rb:22:in `run'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/thor-0.14.6/lib/thor/invocation.rb:118:in `invoke_task'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/thor-0.14.6/lib/thor.rb:263:in `dispatch'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/thor-0.14.6/lib/thor/base.rb:389:in `start'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/gems/vagrant-0.7.2/bin/vagrant:15:in `<top (required)>'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/bin/vagrant:19:in `load'
+	from /home/hedge/.rvm/gems/ruby-1.9.2-p136@bbb-dev-vm/bin/vagrant:19:in `<main>'

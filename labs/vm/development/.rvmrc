@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+ruby_string=ruby-1.9.2-p136
+gemset_name=bbb_vm_dev
+environment_id="ruby-1.9.2-p136@bbb_vm_dev"
+
+if rvm list strings | grep -q "${ruby_string}" ; then
+
+  # Load or create the specified environment
+  if [[ -d "${rvm_path:-$HOME/.rvm}/environments"     && -s "${rvm_path:-$HOME/.rvm}/environments/${ruby_string}@${gemset_name}" ]] ; then
+    . "${rvm_path:-$HOME/.rvm}/environments/${ruby_string}@${gemset_name}"
+    if [[ -d "${gemset_name}.gems" ]] ; then
+      echo 'we are importing'
+      rvm gemset import ${gemset_name}.gems
+    fi
+  else
+    rvm --create "${ruby_string}@${gemset_name}"
+    if [[ -d "${gemset_name}.gems" ]] ; then
+      rvm gemset import ${gemset_name}.gems
+    else
+      gem install chef --verbose --version '0.9.12' --no-rdoc --no-ri
+      gem install vagrant --verbose --version '0.7.2' --no-rdoc --no-ri
+    fi
+  fi
+
+else
+
+  # Notify the user to install the desired interpreter before proceeding.
+  echo " was not found, please run 'rvm install ' and then cd back into the project directory."
+
+fi

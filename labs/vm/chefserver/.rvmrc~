@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+
+ruby_string=ruby-1.9.2-p136
+gemset_name=chefserver
+
+if rvm list strings | grep -q "${ruby_string}" ; then
+
+  # Load or create the specified environment
+  if [[ -d "${rvm_path:-$HOME/.rvm}/environments"     && -s "${rvm_path:-$HOME/.rvm}/environments/${ruby_string}@${gemset_name}" ]] ; then
+    . "${rvm_path:-$HOME/.rvm}/environments/${ruby_string}@${gemset_name}"
+  else
+    rvm --create "${ruby_string}@${gemset_name}"
+  fi
+
+  (
+    #
+    # Install the Bundler fork targeting Chef usage
+    #
+    if ! command -v bundle ; then
+      # git cone would get to much... branches and history
+      mkdir -p /home/hedge/chef/kitchens/bundler/tmp
+      wget --quiet --no-check-certificate -O bundler4chef.tgz https://github.com/hedgehog/bundler/tarball/v1.1.pre.1-chef
+      tar --extract --overwrite --file=bundler4chef.tgz --strip-components=1 --directory=/home/hedge/chef/kitchens/bundler/tmp
+      rm bundler4chef.tgz
+      pushd /home/hedge/chef/kitchens/bundler
+        pushd tmp
+          rake install
+        popd
+        rm -rf tmp 
+      popd
+    fi
+
+    # Bundle while redcing excess noise.
+    printf "Bundling your gems this may take a few minutes on a fresh clone.n"
+    bundle | grep -v 'Using' | grep -v 'complete' | sed '/^$/d'
+  )
+
+else
+
+  # Notify the user to install the desired interpreter before proceeding.
+  echo " was not found, please run 'rvm install ' and then cd back into the project directory."
+
+fi

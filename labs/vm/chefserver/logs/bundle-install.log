@@ -1,0 +1,34 @@
+Fetching git://github.com/cookbooks/apt.git
+Fetching git://github.com/cookbooks/build-essential.git
+Fetching git://github.com/cookbooks/chef.git
+Fetching git://github.com/hedgehog/java.git
+Fetching git://github.com/cookbooks/rabbitmq_chef.git
+Fetching git://github.com/cookbooks/couchdb.git
+Fetching git://github.com/cookbooks/erlang.git
+Fetching git://github.com/cookbooks/runit.git
+Fetching git://github.com/cookbooks/daemontools.git
+Fetching git://github.com/cookbooks/bluepill.git
+Fetching git://github.com/cookbooks/apache2.git
+Fetching git://github.com/cookbooks/openssl.git
+Fetching git://github.com/cookbooks/zlib.git
+Fetching git://github.com/cookbooks/xml.git
+Fetching git://github.com/cookbooks/ucspi-tcp.git
+Fetching git://github.com/hedgehog/hosts.git
+Using apache2 (0.99.2) from git://github.com/cookbooks/apache2.git (at qa-latest) 
+Using apt (0.9.3) from git://github.com/cookbooks/apt.git (at qa-latest) 
+Using bluepill (0.2.0) from git://github.com/cookbooks/bluepill.git (at qa-latest) 
+Using build-essential (0.7.1) from git://github.com/cookbooks/build-essential.git (at qa-latest) 
+Using erlang (0.8.2) from git://github.com/cookbooks/erlang.git (at qa-latest) 
+Using couchdb (0.14.1) from git://github.com/cookbooks/couchdb.git (at qa-latest) 
+Using ucspi-tcp (1.0.0) from git://github.com/cookbooks/ucspi-tcp.git (at qa-latest) 
+Using daemontools (0.9.0) from git://github.com/cookbooks/daemontools.git (at qa-latest) 
+Using java (0.10.3) from git://github.com/hedgehog/java.git (at c409429) 
+Using openssl (0.1.0) from git://github.com/cookbooks/openssl.git (at qa-latest) 
+Using rabbitmq_chef (0.10.4) from git://github.com/cookbooks/rabbitmq_chef.git (at qa-latest) 
+Using runit (0.14.2) from git://github.com/cookbooks/runit.git (at qa-latest) 
+Using xml (0.1.1) from git://github.com/cookbooks/xml.git (at qa-latest) 
+Using zlib (0.1.1) from git://github.com/cookbooks/zlib.git (at qa-latest) 
+Using chef (0.22.1) from git://github.com/cookbooks/chef.git (at qa-latest) 
+Using hosts (0.1.0) from git://github.com/hedgehog/hosts.git (at 892a1fa) 
+Using bundler (1.1.pre.1) 
+[32mYour bundle is complete! Use `bundle show [gemname]` to see where a bundled gem is installed.[0m

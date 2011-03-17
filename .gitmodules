@@ -1,0 +1,117 @@
+[submodule "labs/dev-vm/chefserver/cookbooks/apache2"]
+	path = labs/dev-vm/chefserver/cookbooks/apache2
+	url = git://github.com/cookbooks/apache2
+[submodule "labs/dev-vm/chefserver/cookbooks/apt"]
+	path = labs/dev-vm/chefserver/cookbooks/apt
+	url = git@github.com:cookbooks/apt
+[submodule "labs/dev-vm/chefserver/cookbooks/bluepill"]
+	path = labs/dev-vm/chefserver/cookbooks/bluepill
+	url = git://github.com/cookbooks/bluepill
+[submodule "labs/dev-vm/chefserver/cookbooks/build-essential"]
+	path = labs/dev-vm/chefserver/cookbooks/build-essential
+	url = git@github.com:cookbooks/build-essential
+[submodule "labs/dev-vm/chefserver/cookbooks/chef"]
+	path = labs/dev-vm/chefserver/cookbooks/chef
+	url = git@github.com:cookbooks/chef
+[submodule "labs/dev-vm/chefserver/cookbooks/couchdb"]
+	path = labs/dev-vm/chefserver/cookbooks/couchdb
+	url = git@github.com:cookbooks/couchdb
+[submodule "labs/dev-vm/chefserver/cookbooks/daemontools"]
+	path = labs/dev-vm/chefserver/cookbooks/daemontools
+	url = git://github.com/cookbooks/daemontools
+[submodule "labs/dev-vm/chefserver/cookbooks/openssl"]
+	path = labs/dev-vm/chefserver/cookbooks/openssl
+	url = git://github.com/cookbooks/openssl
+[submodule "labs/dev-vm/chefserver/cookbooks/rabbitmq_chef"]
+	path = labs/dev-vm/chefserver/cookbooks/rabbitmq_chef
+	url = git@github.com:cookbooks/rabbitmq_chef
+[submodule "labs/dev-vm/chefserver/cookbooks/runit"]
+	path = labs/dev-vm/chefserver/cookbooks/runit
+	url = git://github.com/cookbooks/runit
+[submodule "labs/dev-vm/chefserver/cookbooks/ucspi-tcp"]
+	path = labs/dev-vm/chefserver/cookbooks/ucspi-tcp
+	url = git://github.com/cookbooks/ucspi-tcp
+[submodule "labs/dev-vm/chefserver/cookbooks/xml"]
+	path = labs/dev-vm/chefserver/cookbooks/xml
+	url = git://github.com/cookbooks/xml
+[submodule "labs/dev-vm/chefserver/cookbooks/zlib"]
+	path = labs/dev-vm/chefserver/cookbooks/zlib
+	url = git://github.com/cookbooks/zlib
+[submodule "labs/dev-vm/chefserver/cookbooks/hosts"]
+	path = labs/dev-vm/chefserver/cookbooks/hosts
+	url = git://github.com/cookbooks/hosts
+[submodule "labs/dev-vm/chefserver/cookbooks/java"]
+	path = labs/dev-vm/chefserver/cookbooks/java
+	url = git@github.com:cookbooks/java
+[submodule "labs/dev-vm/chefserver/cookbooks/erlang"]
+	path = labs/dev-vm/chefserver/cookbooks/erlang
+	url = git@github.com:cookbooks/erlang
+[submodule "labs/dev-vm/chefserver/site-cookbooks/java"]
+	path = labs/dev-vm/chefserver/site-cookbooks/java
+	url = git@github.com:hedgehog/java
+[submodule "labs/dev-vm/chefserver/site-cookbooks/hosts"]
+	path = labs/dev-vm/chefserver/site-cookbooks/hosts
+	url = git@github.com:hedgehog/hosts
+[submodule "labs/vm/chefserver/cookbooks/apache2"]
+	path = labs/vm/chefserver/cookbooks/apache2
+	url = git://github.com/cookbooks/apache2
+[submodule "labs/vm/chefserver/cookbooks/apt"]
+	path = labs/vm/chefserver/cookbooks/apt
+	url = git://github.com/cookbooks/apt
+[submodule "labs/vm/chefserver/cookbooks/bluepill"]
+	path = labs/vm/chefserver/cookbooks/bluepill
+	url = git://github.com/cookbooks/bluepill
+[submodule "labs/vm/chefserver/cookbooks/build-essential"]
+	path = labs/vm/chefserver/cookbooks/build-essential
+	url = git://github.com/cookbooks/build-essential
+[submodule "labs/vm/chefserver/cookbooks/chef"]
+	path = labs/vm/chefserver/cookbooks/chef
+	url = git://github.com/cookbooks/chef
+[submodule "labs/vm/chefserver/cookbooks/couchdb"]
+	path = labs/vm/chefserver/cookbooks/couchdb
+	url = git://github.com/cookbooks/couchdb
+[submodule "labs/vm/chefserver/cookbooks/daemontools"]
+	path = labs/vm/chefserver/cookbooks/daemontools
+	url = git://github.com/cookbooks/daemontools
+[submodule "labs/vm/chefserver/cookbooks/erlang"]
+	path = labs/vm/chefserver/cookbooks/erlang
+	url = git://github.com/cookbooks/erlang
+[submodule "labs/vm/chefserver/cookbooks/hosts"]
+	path = labs/vm/chefserver/cookbooks/hosts
+	url = git://github.com/cookbooks/hosts
+[submodule "labs/vm/chefserver/cookbooks/java"]
+	path = labs/vm/chefserver/cookbooks/java
+	url = git://github.com/cookbooks/java
+[submodule "labs/vm/chefserver/cookbooks/openssl"]
+	path = labs/vm/chefserver/cookbooks/openssl
+	url = git://github.com/cookbooks/openssl
+[submodule "labs/vm/chefserver/cookbooks/rabbitmq_chef"]
+	path = labs/vm/chefserver/cookbooks/rabbitmq_chef
+	url = git://github.com/cookbooks/rabbitmq_chef
+[submodule "labs/vm/chefserver/cookbooks/runit"]
+	path = labs/vm/chefserver/cookbooks/runit
+	url = git://github.com/cookbooks/runit
+[submodule "labs/vm/chefserver/cookbooks/ucspi-tcp"]
+	path = labs/vm/chefserver/cookbooks/ucspi-tcp
+	url = git://github.com/cookbooks/ucspi-tcp
+[submodule "labs/vm/chefserver/cookbooks/xml"]
+	path = labs/vm/chefserver/cookbooks/xml
+	url = git://github.com/cookbooks/xml
+[submodule "labs/vm/chefserver/cookbooks/zlib"]
+	path = labs/vm/chefserver/cookbooks/zlib
+	url = git://github.com/cookbooks/zlib
+[submodule "labs/vm/chefserver/site-cookbooks/hosts"]
+	path = labs/vm/chefserver/site-cookbooks/hosts
+	url = git@github.com:hedgehog/hosts
+[submodule "labs/vm/chefserver/site-cookbooks/java"]
+	path = labs/vm/chefserver/site-cookbooks/java
+	url = git@github.com:hedgehog/java
+[submodule "labs/vm/chefserver/cookbooks/djbdns"]
+	path = labs/vm/chefserver/cookbooks/djbdns
+	url = git://github.com/cookbooks/djbdns.git
+[submodule "labs/vm/development/nodes/site-cookbooks/hosts"]
+	path = labs/vm/development/nodes/site-cookbooks/hosts
+	url = git@github.com:hedgehog/hosts.git
+[submodule "labs/vm/development/nodes/bbb/site-cookbooks/hosts"]
+	path = labs/vm/development/nodes/bbb/site-cookbooks/hosts
+	url = git@github.com:hedgehog/hosts.git

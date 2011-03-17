@@ -1,0 +1,522 @@
+[0K[chefserver] Provisioning enabled with chef_solo...
+[0K[chefserver] Running provisioner: Vagrant::Provisioners::ChefSolo...
+[0K[chefserver] Generating chef JSON and uploading...
+[0K[chefserver] Running chef-solo...
+[0K[chefserver] [Tue, 01 Mar 2011 20:05:37 -0800] DEBUG: Building node object for 
+[Tue, 01 Mar 2011 20:05:37 -0800] DEBUG: Extracting run list from JSON attributes provided on command line
+[Tue, 01 Mar 2011 20:05:37 -0800] INFO: Setting the run_list to ["recipe[hosts::chefserver]", "recipe[apt]", "recipe[build-essential]", "recipe[chef::bootstrap_server]", "recipe[chef::client_service]"] from JSON
+[Tue, 01 Mar 2011 20:05:37 -0800] DEBUG: Applying attributes from json file
+[Tue, 01 Mar 2011 20:05:37 -0800] DEBUG: Platform is ubuntu version 10.04
+[Tue, 01 Mar 2011 20:05:37 -0800] INFO: Starting Chef Run (Version 0.9.12)
+[Tue, 01 Mar 2011 20:05:38 -0800] DEBUG: Loading cookbook openssl's library file: /tmp/vagrant-chef/cookbooks-0/openssl/libraries/secure_password.rb
+[Tue, 01 Mar 2011 20:05:38 -0800] DEBUG: Loading cookbook daemontools's providers from /tmp/vagrant-chef/cookbooks-0/daemontools/providers/service.rb
+[Tue, 01 Mar 2011 20:05:38 -0800] DEBUG: Loaded contents of /tmp/vagrant-chef/cookbooks-0/daemontools/providers/service.rb into a provider named daemontools_service defined in Chef::Provider::DaemontoolsService
+[Tue, 01 Mar 2011 20:05:38 -0800] DEBUG: Loading cookbook apt's providers from /tmp/vagrant-chef/cookbooks-0/apt/providers/repository.rb
+[Tue, 01 Mar 2011 20:05:38 -0800] DEBUG: Loaded contents of /tmp/vagrant-chef/cookbooks-0/apt/providers/repository.rb into a provider named apt_repository defined in Chef::Provider::AptRepository
+[Tue, 01 Mar 2011 20:05:38 -0800] DEBUG: Loading cookbook bluepill's providers from /tmp/vagrant-chef/cookbooks-0/bluepill/providers/service.rb
+[Tue, 01 Mar 2011 20:05:38 -0800] DEBUG: Loaded contents of /tmp/vagrant-chef/cookbooks-0/bluepill/providers/service.rb into a provider named bluepill_service defined in Chef::Provider::BluepillService
+[Tue, 01 Mar 2011 20:05:38 -0800] DEBUG: Loading cookbook daemontools's resources from /tmp/vagrant-chef/cookbooks-0/daemontools/resources/service.rb
+[Tue, 01 Mar 2011 20:05:38 -0800] DEBUG: Loaded contents of /tmp/vagrant-chef/cookbooks-0/daemontools/resources/service.rb into a resource named daemontools_service defined in Chef::Resource::DaemontoolsService
+[Tue, 01 Mar 2011 20:05:38 -0800] DEBUG: Loading cookbook apt's resources from /tmp/vagrant-chef/cookbooks-0/apt/resources/repository.rb
+[Tue, 01 Mar 2011 20:05:38 -0800] DEBUG: Loaded contents of /tmp/vagrant-chef/cookbooks-0/apt/resources/repository.rb into a resource named apt_repository defined in Chef::Resource::AptRepository
+[Tue, 01 Mar 2011 20:05:38 -0800] DEBUG: Loading cookbook bluepill's resources from /tmp/vagrant-chef/cookbooks-0/bluepill/resources/service.rb
+[Tue, 01 Mar 2011 20:05:38 -0800] DEBUG: Loaded contents of /tmp/vagrant-chef/cookbooks-0/bluepill/resources/service.rb into a resource named bluepill_service defined in Chef::Resource::BluepillService
+[Tue, 01 Mar 2011 20:05:38 -0800] DEBUG: node bbb-chefserver loading cookbook runit's attribute file /tmp/vagrant-chef/cookbooks-0/runit/attributes/default.rb
+[Tue, 01 Mar 2011 20:05:38 -0800] DEBUG: node bbb-chefserver loading cookbook daemontools's attribute file /tmp/vagrant-chef/cookbooks-0/daemontools/attributes/default.rb
+[Tue, 01 Mar 2011 20:05:38 -0800] DEBUG: node bbb-chefserver loading cookbook couchdb's attribute file /tmp/vagrant-chef/cookbooks-0/couchdb/attributes/default.rb
+[Tue, 01 Mar 2011 20:05:38 -0800] DEBUG: node bbb-chefserver loading cookbook java's attribute file /tmp/vagrant-chef/cookbooks-1/java/attributes/default.rb
+[Tue, 01 Mar 2011 20:05:38 -0800] DEBUG: node bbb-chefserver loading cookbook hosts's attribute file /tmp/vagrant-chef/cookbooks-1/hosts/attributes/hosts.rb
+[Tue, 01 Mar 2011 20:05:38 -0800] DEBUG: node bbb-chefserver loading cookbook chef's attribute file /tmp/vagrant-chef/cookbooks-0/chef/attributes/server_proxy.rb
+[Tue, 01 Mar 2011 20:05:38 -0800] DEBUG: Loading Attribute apache2
+[Tue, 01 Mar 2011 20:05:38 -0800] DEBUG: Loading Attribute chef
+[Tue, 01 Mar 2011 20:05:38 -0800] DEBUG: node bbb-chefserver loading cookbook chef's attribute file /tmp/vagrant-chef/cookbooks-0/chef/attributes/default.rb: stdout[0K[chefserver] 
+[Tue, 01 Mar 2011 20:05:38 -0800] DEBUG: node bbb-chefserver loading cookbook apache2's attribute file /tmp/vagrant-chef/cookbooks-0/apache2/attributes/default.rb
+[Tue, 01 Mar 2011 20:05:38 -0800] DEBUG: node bbb-chefserver loading cookbook ucspi-tcp's attribute file /tmp/vagrant-chef/cookbooks-0/ucspi-tcp/attributes/default.rb
+[Tue, 01 Mar 2011 20:05:38 -0800] DEBUG: node bbb-chefserver loading cookbook erlang's attribute file /tmp/vagrant-chef/cookbooks-0/erlang/attributes/default.rb
+[Tue, 01 Mar 2011 20:05:38 -0800] DEBUG: node bbb-chefserver loading cookbook bluepill's attribute file /tmp/vagrant-chef/cookbooks-0/bluepill/attributes/default.rb
+[Tue, 01 Mar 2011 20:05:38 -0800] DEBUG: Loading cookbook runit's definitions from /tmp/vagrant-chef/cookbooks-0/runit/definitions/runit_service.rb
+[Tue, 01 Mar 2011 20:05:38 -0800] DEBUG: Loading cookbook apache2's definitions from /tmp/vagrant-chef/cookbooks-0/apache2/definitions/apache_conf.rb
+[Tue, 01 Mar 2011 20:05:38 -0800] DEBUG: Loading cookbook apache2's definitions from /tmp/vagrant-chef/cookbooks-0/apache2/definitions/apache_module.rb
+[Tue, 01 Mar 2011 20:05:38 -0800] DEBUG: Loading cookbook apache2's definitions from /tmp/vagrant-chef/cookbooks-0/apache2/definitions/web_app.rb
+[Tue, 01 Mar 2011 20:05:38 -0800] DEBUG: Loading cookbook apache2's definitions from /tmp/vagrant-chef/cookbooks-0/apache2/definitions/apache_site.rb
+[Tue, 01 Mar 2011 20:05:38 -0800] DEBUG: Loading Recipe hosts::chefserver via include_recipe
+[Tue, 01 Mar 2011 20:05:38 -0800] DEBUG: Found recipe chefserver in cookbook hosts
+[Tue, 01 Mar 2011 20:05:38 -0800] DEBUG: Loading Recipe apt via include_recipe
+[Tue, 01 Mar 2011 20:05:38 -0800] DEBUG: Found recipe default in cookbook apt
+[Tue, 01 Mar 2011 20:05:38 -0800] DEBUG: Executing apt-get update
+: stdout[0K[chefserver] [Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: ---- Begin output of apt-get update ----
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: STDOUT: Hit http://ppa.launchpad.net lucid Release.gpg
+Hit http://security.ubuntu.com lucid-security Release.gpg
+Hit http://us.archive.ubuntu.com lucid Release.gpg
+Hit http://us.archive.ubuntu.com lucid-updates Release.gpg
+Hit http://ppa.launchpad.net lucid Release
+Hit http://security.ubuntu.com lucid-security Release
+Hit http://us.archive.ubuntu.com lucid Release
+Hit http://ppa.launchpad.net lucid/main Packages
+Hit http://security.ubuntu.com lucid-security/main Packages
+Hit http://us.archive.ubuntu.com lucid-updates Release
+Hit http://security.ubuntu.com lucid-security/restricted Packages
+Hit http://security.ubuntu.com lucid-security/main Sources
+Hit http://security.ubuntu.com lucid-security/restricted Sources
+Hit http://security.ubuntu.com lucid-security/universe Packages
+Hit http://security.ubuntu.com lucid-security/universe Sources
+Hit http://us.archive.ubuntu.com lucid/main Packages
+Hit http://us.archive.ubuntu.com lucid/restricted Packages
+Hit http://us.archive.ubuntu.com lucid/main Sources
+Hit http://us.archive.ubuntu.com lucid/restricted Sources
+Hit http://us.archive.ubuntu.com lucid/universe Packages
+Hit http://us.archive.ubuntu.com lucid/universe Sources
+Hit http://us.archive.ubuntu.com lucid/multiverse Packages
+Hit http://us.archive.ubuntu.com lucid/multiverse Sources
+Hit http://us.archive.ubuntu.com lucid-updates/main Packages
+Hit http://us.archive.ubuntu.com lucid-updates/restricted Packages
+Hit http://us.archive.ubuntu.com lucid-updates/main Sources
+Hit http://us.archive.ubuntu.com lucid-updates/restricted Sources
+Hit http://security.ubuntu.com lucid-security/multiverse Packages
+Hit http://security.ubuntu.com lucid-security/multiverse Sources
+Hit http://us.archive.ubuntu.com lucid-updates/universe Packages
+Hit http://us.archive.ubuntu.com lucid-updates/universe Sources
+Hit http://us.archive.ubuntu.com lucid-updates/multiverse Packages
+Hit http://us.archive.ubuntu.com lucid-updates/multiverse Sources
+Reading package lists...
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: STDERR: 
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: ---- End output of apt-get update ----
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Ran apt-get update returned 0
+[Tue, 01 Mar 2011 20:05:41 -0800] INFO: Ran execute[apt-get update] successfully
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Loading Recipe build-essential via include_recipe
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Found recipe default in cookbook build-essential
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Loading Recipe chef::bootstrap_server via include_recipe
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Found recipe bootstrap_server in cookbook chef
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Loading Recipe chef::bootstrap_client via include_recipe
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Found recipe bootstrap_client in cookbook chef
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Loading Recipe chef::client_service via include_recipe
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Found recipe client_service in cookbook chef
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Setting directory[/var/log/chef] to the state of the prior directory[/var/log/chef]
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Loading Recipe runit via include_recipe
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Found recipe default in cookbook runit
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: I am not loading runit, because I have already seen it.
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Loading Recipe couchdb via include_recipe
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Found recipe default in cookbook couchdb
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Loading Recipe erlang via include_recipe
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Found recipe default in cookbook erlang
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Loading Recipe java via include_recipe
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Found recipe default in cookbook java
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Loading Recipe java::openjdk via include_recipe
+[Tue, 01 Mar 2011 20:05:4: stdout[0K[chefserver] 1 -0800] DEBUG: Found recipe openjdk in cookbook java
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Loading Recipe rabbitmq_chef via include_recipe
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Found recipe default in cookbook rabbitmq_chef
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Loading Recipe zlib via include_recipe
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Found recipe default in cookbook zlib
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Loading Recipe xml via include_recipe
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Found recipe default in cookbook xml
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Setting directory[/srv/chef] to the state of the prior directory[/srv/chef]
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: I am not loading runit, because I have already seen it.
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: I am not loading runit, because I have already seen it.
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: I am not loading runit, because I have already seen it.
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: I am not loading runit, because I have already seen it.
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: I am not loading runit, because I have already seen it.
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Setting service[chef-server] to the state of the prior service[chef-server]
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Setting service[chef-server-webui] to the state of the prior service[chef-server-webui]
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: I am not loading chef::client_service, because I have already seen it.
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: loading from cookbook_path: /tmp/vagrant-chef/cookbooks-0, /tmp/vagrant-chef/cookbooks-1
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Converging node bbb-chefserver
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Processing template[/usr/bin/update_vagrant_hostname] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: looking for template update_vagrant_hostname.erb in cookbook :hosts
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Current content's checksum:  dc380eb0c75338eac031971164739462e178593e0a1f0b3a2916911a80ec9573
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Rendered content's checksum: dc380eb0c75338eac031971164739462e178593e0a1f0b3a2916911a80ec9573
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: template[/usr/bin/update_vagrant_hostname] content has not changed.
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Processing execute[update_vagrant_hostname] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Executing /usr/bin/update_vagrant_hostname
+: stdout
+[0K[chefserver] [Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: ---- Begin output of /usr/bin/update_vagrant_hostname ----
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: STDOUT: 127.0.0.1	localhost
+10.0.2.15 bbb-chefserver.private.org bbb-chefserver
+33.33.33.10 bbb-chefserver.private.org bbb-chefserver
+
+# The following lines are desirable for IPv6 capable hosts
+::1     localhost ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: STDERR: 
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: ---- End output of /usr/bin/update_vagrant_hostname ----
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Ran /usr/bin/update_vagrant_hostname returned 0
+[Tue, 01 Mar 2011 20:05:41 -0800] INFO: Ran execute[update_vagrant_hostname] successfully
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Processing execute[apt-get update] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Doing nothing for execute[apt-get update]
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Processing directory[/var/cache/local] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Processing directory[/var/cache/local/preseeding] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Processing package[build-essential] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Checking apt-cache policy for build-essential
+: stdout[0K[chefserver] [Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Current version is 11.4build1
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Current version is 11.4build1
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Processing package[binutils-doc] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Checking apt-cache policy for binutils-doc
+: stdout
+[0K[chefserver] [Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Current version is 2.20.1-3ubuntu7
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Current version is 2.20.1-3ubuntu7
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Processing package[autoconf] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Checking apt-cache policy for autoconf
+: stdout
+[0K[chefserver] [Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Current version is 2.65-3ubuntu1
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Current version is 2.65-3ubuntu1
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Processing package[flex] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Checking apt-cache policy for flex
+: stdout
+[0K[chefserver] [Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Current version is 2.5.35-9
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Current version is 2.5.35-9
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Processing package[bison] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Checking apt-cache policy for bison
+: stdout
+[0K[chefserver] [Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Current version is 1:2.4.1.dfsg-3
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Current version is 1:2.4.1.dfsg-3
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Processing gem_package[chef] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Found installed gem chef version 0.9.12 matching chef (= 0.9.12, runtime)
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Processing directory[/var/log/chef] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Processing directory[/srv/chef] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:41 -0800] INFO: Setting owner to 0 for directory[/srv/chef]
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Processing directory[/etc/chef] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:41 -0800] INFO: Setting owner to 0 for directory[/etc/chef]
+[Tue, 01 Mar 2011 20:05:41 -0800] INFO: Setting group to 0 for directory[/etc/chef]
+[Tue, 01 Mar 2011 20:05:41 -0800] INFO: Setting mode to 755 for directory[/etc/chef]
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Processing template[/etc/chef/client.rb] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: looking for template client.rb.erb in cookbook :chef
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Current content's checksum:  d85e7aa439b83b5ed64050f66114c75e299eecdf34af131d9ca0c1f91291166e
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Rendered content's checksum: d85e7aa439b83b5ed64050f66114c75e299eecdf34af131d9ca0c1f91291166e
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: template[/etc/chef/client.rb] content has not changed.
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: setting owner on /etc/chef/client.rb to 0
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: setting group on /etc/chef/client.rb to 0
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Processing directory[/var/log/chef] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Processing execute[start-runsvdir] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Doing nothing for execute[start-runsvdir]
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Processing execute[runit-hup-init] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Executing grep ^SV /etc/inittab
+: stdout
+[0K[chefserver] [Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: ---- Begin output of grep ^SV /etc/inittab ----
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: STDOUT: 
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: STDERR: grep: /etc/inittab: No such file or directory
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: ---- End output of grep ^SV /etc/inittab ----
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Ran grep ^SV /etc/inittab returned 2
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Skipping execute[runit-hup-init] due to only_if
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Processing package[runit] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Checking apt-cache policy for runit
+: stdout[0K[chefserver] [Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Current version is 2.0.0-1ubuntu4
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Current version is 2.0.0-1ubuntu4
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Processing directory[/etc/sv/chef-client] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Processing directory[/etc/sv/chef-client/log] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Processing directory[/etc/sv/chef-client/log/main] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Processing template[/etc/sv/chef-client/run] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: looking for template sv-chef-client-run.erb in cookbook :chef
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Current content's checksum:  646d73ee1732cfb64ef95fd8ad4e93959f6666959ee97f6778b692dddd461d47
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Rendered content's checksum: 646d73ee1732cfb64ef95fd8ad4e93959f6666959ee97f6778b692dddd461d47
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: template[/etc/sv/chef-client/run] content has not changed.
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Processing template[/etc/sv/chef-client/log/run] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: looking for template sv-chef-client-log-run.erb in cookbook :chef
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Current content's checksum:  e6414888435514f7e40fc743afe7422d6a09e23da9d7353442b025519ce75834
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Rendered content's checksum: e6414888435514f7e40fc743afe7422d6a09e23da9d7353442b025519ce75834
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: template[/etc/sv/chef-client/log/run] content has not changed.
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Processing link[/etc/init.d/chef-client] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Processing link[/etc/service/chef-client] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Processing ruby_block[supervise_chef-client_sleep] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Skipping ruby_block[supervise_chef-client_sleep] due to not_if
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Processing service[chef-client] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: service[chef-client] you have specified a status command, running..
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Executing /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-client
+: stdout
+[0K[chefserver] [Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: ---- Begin output of /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-client ----
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: STDOUT: run: /etc/service/chef-client: (pid 617) 4800s; run: log: (pid 612) 4800s
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: STDERR: 
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: ---- End output of /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-client ----
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Ran /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-client returned 0
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Doing nothing for service[chef-client]
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Processing user[chef] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Processing package[erlang-nox] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Checking apt-cache policy for erlang-nox
+: stdout[0K[chefserver] [Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Current version is 1:13.b.3-dfsg-2ubuntu2.1
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Current version is 1:13.b.3-dfsg-2ubuntu2.1
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Processing package[erlang-dev] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Checking apt-cache policy for erlang-dev
+: stdout
+[0K[chefserver] [Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Current version is 1:13.b.3-dfsg-2ubuntu2.1
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Current version is 1:13.b.3-dfsg-2ubuntu2.1
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Processing package[couchdb] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Checking apt-cache policy for couchdb
+: stdout
+[0K[chefserver] [Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Current version is 0.10.0-1ubuntu2
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Current version is 0.10.0-1ubuntu2
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Processing directory[/var/lib/couchdb] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Processing service[couchdb] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: service[couchdb] supports status, running
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Executing /etc/init.d/couchdb status
+: stdout
+[0K[chefserver] [Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: ---- Begin output of /etc/init.d/couchdb status ----
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: STDOUT: Apache CouchDB is running as process 790, time to relax.
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: STDERR: 
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: ---- End output of /etc/init.d/couchdb status ----
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Ran /etc/init.d/couchdb status returned 0
+: stdout[0K[chefserver] [Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: service[couchdb]: not enabling, already enabled
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: service[couchdb] supports status, running
+[Tue, 01 Mar 2011 20:05:41 -0800] DEBUG: Executing /etc/init.d/couchdb status
+: stdout
+[0K[chefserver] [Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: ---- Begin output of /etc/init.d/couchdb status ----
+[Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: STDOUT: Apache CouchDB is running as process 790, time to relax.
+[Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: STDERR: 
+[Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: ---- End output of /etc/init.d/couchdb status ----
+[Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: Ran /etc/init.d/couchdb status returned 0
+: stdout[0K[chefserver] [Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: service[couchdb]: not starting, already running
+[Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: Processing ruby_block[reload_ohai] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: Doing nothing for ruby_block[reload_ohai]
+[Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: Processing execute[update-java-alternatives] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: Doing nothing for execute[update-java-alternatives]
+[Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: Processing package[openjdk-6-jre] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: Checking apt-cache policy for openjdk-6-jre
+: stdout
+[0K[chefserver] [Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: Current version is 6b20-1.9.5-0ubuntu1~10.04.1
+[Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: Current version is 6b20-1.9.7-0ubuntu1~10.04.1
+[Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: Processing package[default-jre] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: Checking apt-cache policy for default-jre
+: stdout
+[0K[chefserver] [Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: Current version is 1.6-34
+[Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: Current version is 1.6-34
+[Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: Processing package[icedtea6-plugin] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: Checking apt-cache policy for icedtea6-plugin
+: stdout
+[0K[chefserver] [Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: Current version is 6b20-1.9.5-0ubuntu1~10.04.1
+[Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: Current version is 6b20-1.9.7-0ubuntu1~10.04.1
+[Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: Processing package[rabbitmq-server] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: Checking apt-cache policy for rabbitmq-server
+: stdout
+[0K[chefserver] [Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: Current version is 1.7.2-1ubuntu1
+[Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: Current version is 1.7.2-1ubuntu1
+[Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: Processing service[rabbitmq-server] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: service[rabbitmq-server] supports status, running
+[Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: Executing /etc/init.d/rabbitmq-server status
+: stdout
+[0K[chefserver] [Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: ---- Begin output of /etc/init.d/rabbitmq-server status ----
+[Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: STDOUT: Status of all running nodes...
+Node ''rabbit@bbb-chefserver'' with Pid 2219: running
+done.
+[Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: STDERR: 
+[Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: ---- End output of /etc/init.d/rabbitmq-server status ----
+[Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: Ran /etc/init.d/rabbitmq-server status returned 0
+: stdout[0K[chefserver] [Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: service[rabbitmq-server]: not enabling, already enabled
+[Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: service[rabbitmq-server] supports status, running
+[Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: Executing /etc/init.d/rabbitmq-server status
+: stdout
+[0K[chefserver] [Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: ---- Begin output of /etc/init.d/rabbitmq-server status ----
+[Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: STDOUT: Status of all running nodes...
+Node ''rabbit@bbb-chefserver'' with Pid 2219: running
+done.
+[Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: STDERR: 
+[Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: ---- End output of /etc/init.d/rabbitmq-server status ----
+[Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: Ran /etc/init.d/rabbitmq-server status returned 0
+: stdout[0K[chefserver] [Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: service[rabbitmq-server]: not starting, already running
+[Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: Processing execute[rabbitmqctl add_vhost /chef] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: Executing rabbitmqctl list_vhosts| grep /chef
+: stdout
+[0K[chefserver] [Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: ---- Begin output of rabbitmqctl list_vhosts| grep /chef ----
+[Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: STDOUT: /chef
+[Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: STDERR: 
+[Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: ---- End output of rabbitmqctl list_vhosts| grep /chef ----
+[Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: Ran rabbitmqctl list_vhosts| grep /chef returned 0
+[Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: Skipping execute[rabbitmqctl add_vhost /chef] due to not_if
+[Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: Processing execute[rabbitmqctl add_user chef testing] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: Executing rabbitmqctl list_users |grep chef
+: stdout[0K[chefserver] [Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: ---- Begin output of rabbitmqctl list_users |grep chef ----
+[Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: STDOUT: chef
+[Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: STDERR: 
+[Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: ---- End output of rabbitmqctl list_users |grep chef ----
+[Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: Ran rabbitmqctl list_users |grep chef returned 0
+[Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: Skipping execute[rabbitmqctl add_user chef testing] due to not_if
+[Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: Processing execute[rabbitmqctl set_permissions -p /chef chef ".*" ".*" ".*"] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:42 -0800] DEBUG: Executing rabbitmqctl list_user_permissions chef|grep /chef
+: stdout[0K[chefserver] [Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: ---- Begin output of rabbitmqctl list_user_permissions chef|grep /chef ----
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: STDOUT: /chef	.*	.*	.*
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: STDERR: 
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: ---- End output of rabbitmqctl list_user_permissions chef|grep /chef ----
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Ran rabbitmqctl list_user_permissions chef|grep /chef returned 0
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Skipping execute[rabbitmqctl set_permissions -p /chef chef ".*" ".*" ".*"] due to not_if
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Processing package[zlib-devel] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Checking apt-cache policy for zlib1g-dev
+: stdout[0K[chefserver] [Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Current version is 1:1.2.3.3.dfsg-15ubuntu1
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Current version is 1:1.2.3.3.dfsg-15ubuntu1
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Processing package[libxml-devel] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Checking apt-cache policy for libxml2-dev
+: stdout
+[0K[chefserver] [Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Current version is 2.7.6.dfsg-1ubuntu1.1
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Current version is 2.7.6.dfsg-1ubuntu1.1
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Processing gem_package[chef-server-api] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Found installed gem chef-server-api version 0.9.12 matching chef-server-api (= 0.9.12, runtime)
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Processing gem_package[chef-solr] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Found installed gem chef-solr version 0.9.12 matching chef-solr (= 0.9.12, runtime)
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Processing gem_package[chef-server-webui] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Found installed gem chef-server-webui version 0.9.12 matching chef-server-webui (= 0.9.12, runtime)
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Processing template[/etc/chef/server.rb] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: looking for template server.rb.erb in cookbook :chef
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Current content's checksum:  56760e226547309b72c14e9a47d0ba49ff58a3a0570f7612c4a8c0253630b480
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Rendered content's checksum: 56760e226547309b72c14e9a47d0ba49ff58a3a0570f7612c4a8c0253630b480
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: template[/etc/chef/server.rb] content has not changed.
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: setting owner on /etc/chef/server.rb to 998
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: setting group on /etc/chef/server.rb to 0
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Processing template[/etc/chef/solr.rb] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: looking for template solr.rb.erb in cookbook :chef
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Current content's checksum:  30c8f6555cd0c59db8470fee0dc222cadc08288dff90e30d3a576af2d3a3ac97
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Rendered content's checksum: 30c8f6555cd0c59db8470fee0dc222cadc08288dff90e30d3a576af2d3a3ac97
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: template[/etc/chef/solr.rb] content has not changed.
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: setting owner on /etc/chef/solr.rb to 998
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: setting group on /etc/chef/solr.rb to 0
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Processing directory[/srv/chef] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] INFO: Setting owner to 998 for directory[/srv/chef]
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Processing directory[/srv/chef/cache] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Processing directory[/srv/chef/search_index] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Processing directory[/etc/chef/certificates] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] INFO: Setting owner to 998 for directory[/etc/chef/certificates]
+[Tue, 01 Mar 2011 20:05:43 -0800] INFO: Setting group to 0 for directory[/etc/chef/certificates]
+[Tue, 01 Mar 2011 20:05:43 -0800] INFO: Setting mode to 700 for directory[/etc/chef/certificates]
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Processing directory[/srv/chef/run] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Processing directory[/etc/sv/chef-server] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Processing directory[/etc/sv/chef-server/log] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Processing directory[/etc/sv/chef-server/log/main] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Processing template[/etc/sv/chef-server/run] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: looking for template sv-chef-server-run.erb in cookbook :chef
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Current content's checksum:  189b1e9ae397ca0f0706c152bd196d5639b45cb041074955aeb17dc02913a902
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Rendered content's checksum: 189b1e9ae397ca0f0706c152bd196d5639b45cb041074955aeb17dc02913a902
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: template[/etc/sv/chef-server/run] content has not changed.
+[Tue, 01 Mar 2011 20:05:43: stdout
+[0K[chefserver]  -0800] DEBUG: Processing template[/etc/sv/chef-server/log/run] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: looking for template sv-chef-server-log-run.erb in cookbook :chef
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Current content's checksum:  e6414888435514f7e40fc743afe7422d6a09e23da9d7353442b025519ce75834
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Rendered content's checksum: e6414888435514f7e40fc743afe7422d6a09e23da9d7353442b025519ce75834
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: template[/etc/sv/chef-server/log/run] content has not changed.
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Processing link[/etc/init.d/chef-server] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Processing link[/etc/service/chef-server] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Processing ruby_block[supervise_chef-server_sleep] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Skipping ruby_block[supervise_chef-server_sleep] due to not_if
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Processing service[chef-server] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: service[chef-server] you have specified a status command, running..
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Executing /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-server
+: stdout
+[0K[chefserver] [Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: ---- Begin output of /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-server ----
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: STDOUT: run: /etc/service/chef-server: (pid 1407) 4805s; run: log: (pid 609) 4802s
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: STDERR: 
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: ---- End output of /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-server ----
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Ran /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-server returned 0
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Doing nothing for service[chef-server]
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Processing directory[/etc/sv/chef-solr] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Processing directory[/etc/sv/chef-solr/log] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Processing directory[/etc/sv/chef-solr/log/main] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Processing template[/etc/sv/chef-solr/run] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: looking for template sv-chef-solr-run.erb in cookbook :chef
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Current content's checksum:  6a97baaf96c5437e8b2d74466f39f3113f9cefbfd5bd8474daf8e4d1f514d464
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Rendered content's checksum: 6a97baaf96c5437e8b2d74466f39f3113f9cefbfd5bd8474daf8e4d1f514d464
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: template[/etc/sv/chef-solr/run] content has not changed.
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Processing template[/etc/sv/chef-solr/log/run] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: looking for template sv-chef-solr-log-run.erb in cookbook :chef
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Current content's checksum:  e6414888435514f7e40fc743afe7422d6a09e23da9d7353442b025519ce75834
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Rendered content's checksum: e6414888435514f7e40fc743afe7422d6a09e23da9d7353442b025519ce75834
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: template[/etc/sv/chef-solr/log/run] content has not changed.
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Processing link[/etc/init.d/chef-solr] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Processing link[/etc/service/chef-solr] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Processing ruby_block[supervise_chef-solr_sleep] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Skipping ruby_block[supervise_chef-solr_sleep] due to not_if
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Processing service[chef-solr] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: service[chef-solr] you have specified a status command, running..
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Executing /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-solr
+: stdout[0K[chefserver] [Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: ---- Begin output of /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-solr ----
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: STDOUT: run: /etc/service/chef-solr: (pid 608) 4802s; run: log: (pid 607) 4802s
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: STDERR: 
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: ---- End output of /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-solr ----
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Ran /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-solr returned 0
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Doing nothing for service[chef-solr]
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Processing directory[/etc/sv/chef-solr-indexer] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Processing directory[/etc/sv/chef-solr-indexer/log] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Processing directory[/etc/sv/chef-solr-indexer/log/main] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Processing template[/etc/sv/chef-solr-indexer/run] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: looking for template sv-chef-solr-indexer-run.erb in cookbook :chef
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Current content's checksum:  166c9b6827e5ac432c739d0567877f1483d5c9837990ec0c404df01b90d9b3eb
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Rendered content's checksum: 166c9b6827e5ac432c739d0567877f1483d5c9837990ec0c404df01b90d9b3eb
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: template[/etc/sv/chef-solr-indexer/run] content has not changed.
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Processing template[/etc/sv/chef-solr-indexer/log/run] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: looking for template sv-chef-solr-indexer-log-run.erb in cookbook :chef
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Current content's checksum:  e6414888435514f7e40fc743afe7422d6a09e23da9d7353442b025519ce75834
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Rendered content's checksum: e6414888435514f7e40fc743afe7422d6a09e23da9d7353442b025519ce75834
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: template[/etc/sv/chef-solr-indexer/log/run] content has not changed.
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Processing link[/etc/init.d/chef-solr-indexer] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Processing link[/etc/service/chef-solr-indexer] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Processing ruby_block[supervise_chef-solr-indexer_sleep] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Skipping ruby_block[supervise_chef-solr-indexer_sleep] due to not_if
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Processing service[chef-solr-indexer] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: service[chef-solr-indexer] you have specified a status command, running..
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Executing /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-solr-indexer
+: stdout[0K[chefserver] [Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: ---- Begin output of /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-solr-indexer ----
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: STDOUT: run: /etc/service/chef-solr-indexer: (pid 2267) 4776s; run: log: (pid 611) 4802s
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: STDERR: 
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: ---- End output of /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-solr-indexer ----
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Ran /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-solr-indexer returned 0
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Doing nothing for service[chef-solr-indexer]
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Processing directory[/etc/sv/chef-server-webui] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Processing directory[/etc/sv/chef-server-webui/log] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Processing directory[/etc/sv/chef-server-webui/log/main] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Processing template[/etc/sv/chef-server-webui/run] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: looking for template sv-chef-server-webui-run.erb in cookbook :chef
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Current content's checksum:  3988783a51046f04e3d5c37ba6280a27b2d4c5851660ac704d4fe703ad3236a4
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Rendered content's checksum: 3988783a51046f04e3d5c37ba6280a27b2d4c5851660ac704d4fe703ad3236a4
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: template[/etc/sv/chef-server-webui/run] content has not changed.
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Processing template[/etc/sv/chef-server-webui/log/run] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: looking for template sv-chef-server-webui-log-run.erb in cookbook :chef
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Current content's checksum:  e6414888435514f7e40fc743afe7422d6a09e23da9d7353442b025519ce75834
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Rendered content's checksum: e6414888435514f7e40fc743afe7422d6a09e23da9d7353442b025519ce75834
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: template[/etc/sv/chef-server-webui/log/run] content has not changed.
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Processing link[/etc/init.d/chef-server-webui] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Processing link[/etc/service/chef-server-webui] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Processing ruby_block[supervise_chef-server-webui_sleep] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Skipping ruby_block[supervise_chef-server-webui_sleep] due to not_if
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Processing service[chef-server-webui] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: service[chef-server-webui] you have specified a status command, running..
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Executing /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-server-webui
+: stdout[0K[chefserver] [Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: ---- Begin output of /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-server-webui ----
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: STDOUT: run: /etc/service/chef-server-webui: (pid 1422) 4803s; run: log: (pid 613) 4802s
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: STDERR: 
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: ---- End output of /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-server-webui ----
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Ran /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-server-webui returned 0
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Doing nothing for service[chef-server-webui]
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Processing service[chef-server] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: service[chef-server] you have specified a status command, running..
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Executing /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-server
+: stdout[0K[chefserver] [Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: ---- Begin output of /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-server ----
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: STDOUT: run: /etc/service/chef-server: (pid 1407) 4805s; run: log: (pid 609) 4802s
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: STDERR: 
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: ---- End output of /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-server ----
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Ran /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-server returned 0
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Doing nothing for service[chef-server]
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Processing service[chef-server-webui] on bbb-chefserver
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: service[chef-server-webui] you have specified a status command, running..
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Executing /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-server-webui
+: stdout[0K[chefserver] [Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: ---- Begin output of /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-server-webui ----
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: STDOUT: run: /etc/service/chef-server-webui: (pid 1422) 4803s; run: log: (pid 613) 4802s
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: STDERR: 
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: ---- End output of /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-server-webui ----
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Ran /usr/bin/chpst -u root /usr/bin/sv status /etc/service/chef-server-webui returned 0
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Doing nothing for service[chef-server-webui]
+[Tue, 01 Mar 2011 20:05:43 -0800] INFO: Chef Run complete in 5.430456 seconds
+[Tue, 01 Mar 2011 20:05:43 -0800] INFO: cleaning the checksum cache
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: removing unused checksum cache file /var/chef/cache/checksums/chef-file--tmp-chef-rendered-template20110301-2797-16xeq-0
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: removing unused checksum cache file /var/chef/cache/checksums/chef-file--tmp-chef-rendered-template20110301-2797-1apbs1j-0
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: removing unused checksum cache file /var/chef/cache/checksums/chef-file--tmp-chef-rendered-template20110301-2797-h52tec-0
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: removing unused checksum cache file /var/chef/cache/checksums/chef-file--tmp-chef-rendered-template20110301-2797-8j5ncs-0
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: removing unused checksum cache file /var/chef/cache/checksums/chef-file--tmp-chef-rendered-template20110301-2797-1rn8qog-0
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: removing unused checksum cache file /var/chef/cache/checksums/chef-file--tmp-chef-rendered-template20110301-2797-dcu1c3-0
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: removing unused checksum cache file /var/chef/cache/checksums/chef-file--tmp-chef-rendered-template20110301-2797-1azs4s5-0
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: removing unused checksum cache file /var/chef/cache/checksums/chef-file--tmp-chef-rendered-template20110301-2797-1yb47dt-0
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: removing unused checksum cache file /var/chef/cache/checksums/chef-file--tmp-chef-rendered-template20110301-2797-byug9n-0
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: removing unused checksum cache file /var/chef/cache/checksums/chef-file--tmp-chef-rendered-template20110301-2797-3yu65b-0
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: removing unused checksum cache file /var/chef/cache/checksums/chef-file--tmp-chef-rendered-template20110301-2797-vonjg1-0
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: removing unused checksum cache file /var/chef/cache/checksums/chef-file--tmp-chef-rendered-template20110301-2797-y1q3uf-0
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: removing unused checksum cache file /var/chef/cache/checksums/chef-file--tmp-chef-rendered-template20110301-2797-dph320-0
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: removing unused checksum cache file /var/chef/cache/checksums/chef-file--tmp-chef-rendered-template20110301-2797-uek4fo-0
+[Tue, 01 Mar 2011 20:05:43 -0800] INFO: Running report handlers
+[Tue, 01 Mar 2011 20:05:43 -0800] INFO: Report handlers complete
+[Tue, 01 Mar 2011 20:05:43 -0800] DEBUG: Exiting
+: stdout[0K[chefserver] 'unknown': unknown terminal type.
+: stderr

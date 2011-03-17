@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+
+ruby_string=ruby-1.9.2-p136
+gemset_name=bbb_chefserver
+environment_id="ruby-1.9.2-p136@bbb_chefserver"
+if rvm list strings | grep -q "${ruby_string}" ; then
+
+  # Load or create the specified environment
+  if [[ -d "${rvm_path:-$HOME/.rvm}/environments"     && -s "${rvm_path:-$HOME/.rvm}/environments/${ruby_string}@${gemset_name}" ]] ; then
+    . "${rvm_path:-$HOME/.rvm}/environments/${ruby_string}@${gemset_name}"
+  else
+    rvm --create "${ruby_string}@${gemset_name}"
+    gem install chef --verbose --version '0.9.12' --no-rdoc --no-ri
+    gem install vagrant --verbose --version '0.7.2' --no-rdoc --no-ri
+  fi
+
+else
+
+  # Notify the user to install the desired interpreter before proceeding.
+  echo " was not found, please run 'rvm install ' and then cd back into the project directory."
+
+fi
+#
+# We use an RVM gemset file to install a list of BBB related gems
+# These will be automatically loaded when the folder is entered
+# but only if using cd, i.e. pushd and popd are safe, in that they won't
+# change the current RVM Gemset.
+#
+filename="bbb_chefserver.gems"
+if [[ -s "$filename" ]] ; then
+  rvm gemset import "$filename" | grep -v already | grep -v listed | grep -v complete | sed '/^$/d'
+fi
