@@ -16,30 +16,27 @@
 * with BigBlueButton; if not, see <http://www.gnu.org/licenses/>.
 * 
 */
-package org.bigbluebutton.common.events
+
+package org.bigbluebutton.modules.classyaudio.events
 {
 	import flash.events.Event;
-	
-	import org.bigbluebutton.common.IBbbToolbarComponent;
-	
-	/**
-	 * Allows you to add a button to the top toolbar of bbb-client. Dispatch an instance of ToolbarButtonEvent with the
-	 * reference to the button attached.
-	 * 
-	 */	
-	public class ToolbarButtonEvent extends Event
+
+	public class PlayStreamStatusEvent extends Event
 	{
-		public static const ADD:String = "Add Toolbar Button Event";
-		public static const REMOVE:String = "Remove Toolbar Button Event";
+		public static const STREAM_NOT_FOUND:String = 'STREAM_NOT_FOUND';
+		public static const FAILED:String = 'FAILED';
+		public static const START:String = 'START';
+		public static const STOP:String = 'STOP';
+		public static const BUFFER_FULL:String = 'BUFFER_FULL';
+		public static const UNKNOWN:String = 'UNKNOWN';
 		
-		/**
-		 * The ui component to add to the toolbar. 
-		 */		
-		public var button:IBbbToolbarComponent;
+		public static const PLAY_STREAM_STATUS_EVENT:String = 'PLAY_STREAM_STATUS_EVENT';
 		
-		public function ToolbarButtonEvent(type:String, bubbles:Boolean=true, cancelable:Boolean=false)
+		public var status:String = UNKNOWN;
+		
+		public function PlayStreamStatusEvent(bubbles:Boolean=false, cancelable:Boolean=false)
 		{
-			super(type, bubbles, cancelable);
+			super(PLAY_STREAM_STATUS_EVENT, bubbles, cancelable);
 		}
 		
 	}

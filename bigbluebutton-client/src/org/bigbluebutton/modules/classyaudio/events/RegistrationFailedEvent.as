@@ -16,30 +16,18 @@
 * with BigBlueButton; if not, see <http://www.gnu.org/licenses/>.
 * 
 */
-package org.bigbluebutton.common.events
+
+package org.bigbluebutton.modules.classyaudio.events
 {
 	import flash.events.Event;
-	
-	import org.bigbluebutton.common.IBbbToolbarComponent;
-	
-	/**
-	 * Allows you to add a button to the top toolbar of bbb-client. Dispatch an instance of ToolbarButtonEvent with the
-	 * reference to the button attached.
-	 * 
-	 */	
-	public class ToolbarButtonEvent extends Event
+
+	public class RegistrationFailedEvent extends Event
 	{
-		public static const ADD:String = "Add Toolbar Button Event";
-		public static const REMOVE:String = "Remove Toolbar Button Event";
+		public static const REGISTRATION_FAILED_EVENT:String = 'REGISTRATION_FAILED_EVENT';
 		
-		/**
-		 * The ui component to add to the toolbar. 
-		 */		
-		public var button:IBbbToolbarComponent;
-		
-		public function ToolbarButtonEvent(type:String, bubbles:Boolean=true, cancelable:Boolean=false)
+		public function RegistrationFailedEvent(bubbles:Boolean=false, cancelable:Boolean=false)
 		{
-			super(type, bubbles, cancelable);
+			super(REGISTRATION_FAILED_EVENT, bubbles, cancelable);
 		}
 		
 	}
