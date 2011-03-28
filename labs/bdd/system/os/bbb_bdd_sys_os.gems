@@ -1,0 +1,24 @@
+# bbb-bdd-sys-os.gems generated gem export file. Note that any env variable settings will be missing. Append these after using a ';' field separator
+amqp -v0.6.7
+builder -v3.0.0
+bundler -v1.0.10
+bundler08 -v0.8.5
+cucumber -v0.10.0
+cucumber-nagios -v0.8.0
+diff-lcs -v1.1.2
+eventmachine -v0.12.10
+extlib -v0.9.15
+gherkin -v2.3.3
+highline -v1.6.1
+json -v1.4.6
+net-ssh -v2.0.18
+nokogiri -v1.4.4
+rack -v1.2.1
+rack-test -v0.5.7
+rspec -v2.5.0
+rspec-core -v2.5.1
+rspec-expectations -v2.5.0
+rspec-mocks -v2.5.0
+templater -v1.0.0
+term-ansicolor -v1.0.5
+webrat -v0.7.0

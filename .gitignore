@@ -1,3 +1,5 @@
 .metadata
 bigbluebutton-client/.actionScriptProperties
 bigbluebutton-client/.flexProperties
+#vagrant boxes
+*.box

@@ -1,0 +1,58 @@
+Vagrant::Config.run do |config|
+  
+  @cs_root_path      = File.dirname(File.absolute_path(__FILE__))
+  @cs_box            = "chef"
+  @cs_box_url        = "#{File.dirname(@cs_root_path)}/lucid64_4.0.4.box"
+  @cs_nodename       = "chef"
+  @cs_tld            = "private.org"
+  @cs_ip             = "33.33.33.254"   # Host-only networking
+  @cs_port           = 4000
+  @cs_ssh_port       = 2200
+  @cs_webui_port     = 4040
+  @cs_kitchen        = @cs_root_path
+  @cs_validation_client_name = "chef-validator"
+  
+  config.vm.define :chef do |csc|
+
+    csc.send :eval, IO.read('hobos/vm.bo')
+
+    csc.vm.box = "#{@cs_box}"
+    csc.vm.box_url = "#{@cs_box_url}"
+    csc.vm.forward_port("chefs", @cs_port, @cs_port)
+    csc.vm.forward_port("chefs_web", @cs_webui_port, @cs_webui_port)  
+    csc.vm.forward_port("ssh", 22, @cs_ssh_port, :auto => true)  
+    csc.vm.network(@cs_ip)
+    csc.vm.share_folder("chef", "~/chef", "#{@cs_root_path}/mnt/chef" )
+    csc.vm.share_folder("chef-server-etc", "/etc/chef", "#{@cs_kitchen}/etc" ) 
+    csc.vm.provision :chef_solo do |chef|
+      chef.log_level = :debug # :info or :debug
+      chef.node_name = @cs_nodename
+      chef.cookbooks_path = [
+          File.expand_path("#{@cs_kitchen}/cookbooks"),
+          File.expand_path("#{@cs_kitchen}/site-cookbooks")]
+      chef.add_recipe("hosts::chefserver")
+      chef.add_recipe("apt")
+      chef.add_recipe("build-essential")
+      chef.add_recipe("chef::bootstrap_server")
+      chef.json.merge!({
+          :chef=> {
+          :name=> @cs_nodename,
+          :validation_client_name=> @cs_validation_client_name,
+          :url_type=>"http",
+          :server_fqdn=> "#{@cs_nodename}.#{@cs_tld}",
+          :server_port=> "#{@cs_port}",
+          :webui_port=> "#{@cs_webui_port}",
+          :webui_enabled=> true,
+         }
+        })
+    end
+#    config.vm.provision :chef_server do |chef|
+#       chef.log_level = :debug
+#       chef.node_name = @cs_nodename
+#       chef.chef_server_url = "http://#{@cs_nodename}.#{@cs_tld}:#{@cs_port}"
+#       chef.validation_key_path = @cs_validation_key_path
+#       chef.validation_client_name = "chef-validator"
+#       chef.add_recipe("hosts::chef_dns")
+#     end
+  end
+end
